@@ -24,7 +24,9 @@ a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
-
+.il_logo {
+    padding-left: 20px;
+}
 .navbar {
     padding: 15px 10px;
     background: #CACFE6;
@@ -76,7 +78,7 @@ a:focus {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #475496;
 }
 
 #sidebar ul p {
@@ -85,11 +87,17 @@ a:focus {
 }
 
 #sidebar ul li a {
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     font-size: 1.1em;
     display: flex;
+    
 }
-
+#sidebar ul li a span {
+    font-size: 1.1em;
+    display: flex;
+    padding-left: 15px;
+    
+}
 #sidebar ul li a:hover {
     color: #fff;
     background: #475496;
@@ -187,17 +195,39 @@ a.article:hover {
     background-color: #50C9B5;
     color: #fff;
   }
-
+  .projections-icon {
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    padding: 5px;
+  }
   .projections-box-1, .projections-box-2, .projections-box-3 {
       background-color: #149FBF;
       color: #fff;
+      min-height: 100px;
   }
+  .projections-box-1 .material-icons {
+    font-size: 60px;
+    padding: 5px;
+}
+.projections-box-2 .material-icons {
+    font-size: 60px;
+    padding: 5px;
+}
+  .projections-box-3 .material-icons {
+    font-size: 60px;
+    padding: 5px;
+}
 
   .projections-box-4 {
       background-color: #EEAA02;
       color: #fff;
+      min-height: 100px;
   }
-
+  .projections-box-4 .material-icons {
+      font-size: 60px;
+      padding: 5px;
+  }
   .next-step-box-1 {
       background-color: #67B023;
       color: #fff;
@@ -221,7 +251,13 @@ a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+    
     #sidebarCollapse {
         display: block;
+    }
+}
+@media (min-width: 796px){
+    .profile {
+        display: none;
     }
 }
