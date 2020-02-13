@@ -11,7 +11,7 @@ body {
 
 p {
     font-family: 'Lato', sans-serif;
-    font-size: 1.1em;
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.7em;
     
@@ -169,7 +169,7 @@ a.article:hover {
     transition: all 0.3s;
     
 }
-.box {
+.box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,14 +186,28 @@ a.article:hover {
     justify-content: flex-start;
     margin: 20px 0;
 }
+.welcome-boxes {
+    
+}
   .welcome-box-1 {
     background-color: #F0F1F7;
     color: #333;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
   }
 
   .welcome-box-2 {
     background-color: #50C9B5;
     color: #fff;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  .box svg{
+    font-size: 100px;
   }
   .projections-icon {
     justify-content: center;
@@ -204,7 +218,9 @@ a.article:hover {
   .projections-box-1, .projections-box-2, .projections-box-3 {
       background-color: #149FBF;
       color: #fff;
-      min-height: 100px;
+      min-height: 120px;
+      display: flex;
+      justify-content: center;
   }
   .projections-box-1 .material-icons {
     font-size: 60px;
@@ -222,20 +238,85 @@ a.article:hover {
   .projections-box-4 {
       background-color: #EEAA02;
       color: #fff;
-      min-height: 100px;
+      min-height: 120px;
+      display: flex;
+      justify-content: center;
   }
   .projections-box-4 .material-icons {
       font-size: 60px;
       padding: 5px;
   }
+  .projections-total {
+      display: flex;
+      justify-content: center;
+  }
+  .projections-subtext {
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+  }
   .next-step-box-1 {
       background-color: #67B023;
       color: #fff;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;  
   }
 
   .next-step-box-2 {
       background-color: #4C8A21;
       color: #fff;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+  }
+  ul.custom-bullet, ol.custom-bullet{
+    list-style:none;
+  }
+  ul.custom-bullet > li, ol.custom-bullet >li {
+    clear:left;
+  }
+  ol.custom-bullet {
+    counter-reset: liNum;
+  }
+  ol.custom-bullet > li {
+    counter-increment:liNum 1;
+  }
+  
+  ul.custom-bullet > li:before, ol.custom-bullet > li:before {
+    content:"";
+    height:1em;
+    width:1em;
+    display:block;
+    float:left;
+    margin-left:-1.5em;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:100%:
+  }
+  ol.custom-bullet > li:before{
+    content:counter(liNum);
+    text-align:center;
+  }
+  ul.plus > li:before{
+    background:url('img/plus-circle-outline.svg');
+    background-size:90%;
+    background-position:center;
+    transition: background-size 0.3s;
+    -webkit-transition: background-size 0.3s;
+  }
+  ul.plus > li:hover:before{
+    background-size:100%;
+  }
+  ul.plus > li:before{
+    background:url('img/plus-circle-outline.svg');
+    background-position:center;
+    background-size:90%;
+    background-color:lightblue;
+    border-radius:50%;
+  }
+  ul.plus > li:hover:before{
+    background-color:pink;
   }
 /* ---------------------------------------------------
     MEDIAQUERIES
