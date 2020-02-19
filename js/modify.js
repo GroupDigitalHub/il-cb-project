@@ -1,28 +1,41 @@
 
 $(function () {
-    $("#slider-range-max").slider({
+    $("#employee-contribution").slider({
         range: "max",
         min: 1,
         max: 1000,
         value: 500,
         slide: function (event, ui) {
-            $("#amount").val(ui.value);
+            $("#amount-employee").val("€" + ui.value);
         }
     });
-    $("#amount").val($("#slider-range-max").slider("value"));
+    $("#amount-employee").val("€" + $("#employee-contribution").slider("value"));
 });
 
 
 $(function () {
-    $("#slider-range-max1").slider({
+    $("#employer-contribution").slider({
         range: "max",
         min: 1,
         max: 7,
         value: 2,
         slide: function (event, ui) {
-            $("#amount1").val(ui.value);
+            $("#amount-employer").val(ui.value + "%");
         }
     });
-    $("#amount1").val($("#slider-range-max1").slider("value"));
+    $("#amount-employer").val($("#employer-contribution").slider("value") + "%");
+});
+
+$(function () {
+    $("#avc-contribution").slider({
+        range: "max",
+        min: 1,
+        max: 25,
+        value: 0,
+        slide: function (event, ui) {
+            $("#amount-avc").val(ui.value + "%");
+        }
+    });
+    $("#amount-avc").val($("#avc-contribution").slider("value") + "%");
 });
 
