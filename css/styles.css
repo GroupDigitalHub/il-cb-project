@@ -372,6 +372,7 @@
        background-color: #5261AC;
        padding: 20px;
        display: flex;
+       flex-flow: row wrap;
        margin-top: 5px;
    }
 
