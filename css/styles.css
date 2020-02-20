@@ -195,7 +195,7 @@
         justify-content: flex-start;
         margin: 20px 0;
     }
-    .welcome-boxes {
+    .chart-boxes {
         margin: 5px;
     }
     .welcome-box-1 {
@@ -329,6 +329,8 @@
         border: 1px solid #E0E1E8;
         border-top: 0;
         padding: 20px;
+        display: flex;
+        flex-flow: column;
     }
 
     .contribution-split-box {
@@ -370,6 +372,7 @@
        background-color: #5261AC;
        padding: 20px;
        display: flex;
+       flex-flow: row wrap;
        margin-top: 5px;
    }
 
@@ -457,21 +460,28 @@
     justify-content: center;
     flex-flow: column wrap;
 }
+/*---- Ordering Contribution Sliders / Text ---*/
+    .employee {
+        order: 2;
+    }
+    .employer {
+        order: 3;
+    }
 
- /*#slider-range-max {
-    width: 50%;
-    position: relative;
-    margin: 50px auto;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    border: 0;
-    height: 2px;
-    background: #959799;
-    outline: none;
-  }*/
+    .avc {
+        order: 4;
+    }
+    .avc-reordered {
+        order: 1;
+    }
+    .contributions-text-subtext {
+        order: 5;
+    }
+
+    .contribution-split-box {
+        order: 6;
+    }
+    
   #employee-contribution {
     width: 100%;
     display: flex;

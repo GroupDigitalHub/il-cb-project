@@ -36,7 +36,7 @@
 			<nav id="sidebar">
 				<ul class="list-unstyled components">
 					<li>
-						<a href="#homeSubmenu">
+						<a href="index.html">
 							<svg style="width:24px;height:24px;" viewbox="0 0 24 24">
 								<path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
 							</svg>
@@ -52,7 +52,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="modify.html">
 							<svg style="width:24px;height:24px" viewbox="0 0 24 24">
 								<path fill="currentColor" d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"/>
 							</svg>
@@ -441,7 +441,7 @@
 							<div
 								class="col-lg-12 col-md-12 col-sm-12 contributions-box">
 								<!--Employee Contribution Slider-->
-								<div class="row" style="display: flex;">
+								<div class="row employee" style="display: flex;">
 									<div class="col-lg-6 col-md-6 col-sm-6 projections-text">
 										<label for="amount" style="font-size: 18px;">My employee contribution</label>
 									</div>
@@ -457,7 +457,7 @@
 								</div>
 								<!--End of Employee Contribution Slider-->
 								<!--Employer Contribution Slider-->
-								<div class="row" style="display: flex;">
+								<div class="row employer" style="display: flex;">
 									<div class="col-lg-6 col-md-6 col-sm-6 projections-text">
 										<label for="amount" style="font-size: 18px;">My employer contribution</label>
 
@@ -471,7 +471,7 @@
 								</div>
 								<!--End of Employer Contribution Slider-->
 								<!--AVC Contribution Slider-->
-								<div class="row" style="display: flex;">
+								<div class="row avc" style="display: flex;">
 									<div class="col-lg-6 col-md-6 col-sm-6 projections-text">
 										<label for="amount" style="font-size: 18px;">My additional voluntary contribution</label>
 
@@ -490,17 +490,30 @@
 							</div>
 
 							<div class="col-lg-12 col-md-12 col-sm-12 submit-changes">
-								<button class="submit-changes-btn">Submit Changes</button>
+								<button class="submit-changes-btn" id="btnSubmit" value="Submit">Submit Changes</button>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 what-else-can-i-do"></div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="box what-else-can-i-do">
+								<h2>What else can I do?</h2>
+								<ul class="custom-bullet plus">
+									<li>Continue to save</li>
+									<li>Maximise contributions</li>
+									<li>Save on tax</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 
 				</div>
 			</div>
 		</div>
 		<!-- Projection Columns (4) -->
-
+		<script>
+			document.getElementById('btnSubmit').onclick = function () {
+document.getElementsByClassName('avc')[0].classList.toggle("avc-reordered");
+}
+		</script>
 		<!--Next Step columns(2) -->
 
 

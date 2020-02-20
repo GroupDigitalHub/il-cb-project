@@ -39,3 +39,10 @@ $(function () {
     $("#amount-avc").val($("#avc-contribution").slider("value") + "%");
 });
 
+var block = document.getElementById('btnSubmit');
+
+block.addEventListener('click', function () {
+
+    if (block.getAttribute('class') == 'avc') block.setAttribute('class', 'avc-reordered');
+    else block.setAttribute('class', 'avc');
+});
