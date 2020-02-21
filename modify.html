@@ -27,6 +27,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" integrity="sha256-AAhU14J4Gv8bFupUUcHaPQfvrdNauRHMt+S4UVcaJb0=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js" integrity="sha256-8zyeSXm+yTvzUN1VgAOinFgaVFEFTyYzWShOy9w7WoQ=" crossorigin="anonymous"></script>
 		<script src="js/modify.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -490,6 +492,7 @@
 							</div>
 
 							<div class="col-lg-12 col-md-12 col-sm-12 submit-changes">
+								<div class="alert" role="alert" id="result"></div>
 								<button class="submit-changes-btn" id="btnSubmit" value="Submit">Submit Changes</button>
 							</div>
 						</div>
@@ -507,19 +510,87 @@
 
 				</div>
 			</div>
-		</div>
-		<!-- Projection Columns (4) -->
-		<script>
-			document.getElementById('btnSubmit').onclick = function () {
-document.getElementsByClassName('avc')[0].classList.toggle("avc-reordered");
-}
-		</script>
-		<!--Next Step columns(2) -->
+			<!-- SUMMARY OF CHANGES MODAL-->
+			<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="my-modal">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<span class="modal-title" id="myModalLabel">Summary of Changes</span>
+						</div>
+						<div class="modal-body">
+							<div class="col-lg-12 col-md-12 col-sm-12 modal-content" style="display: flex; height: 100%; width: 100%;">
+								<div class="col-lg-12 col-md-12 col-sm-12 modal-content">
+									<div class="row" style="border: 1px solid #F4F5F7;">
+										<div class="col-lg-4 col-md-4 col-sm-4" style="display: flex;flex-flow: row wrap; padding-top:20px;">
+											<span>Employee Contribution</span>
+											<span>Employer Contribution</span>
+											<span>Additional Contribution</span>
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4" style="display: flex;flex-flow: row wrap; padding-top:20px;">
+											<span>4% ---------> 7%</span>
+											<span>4% ---------> 7%</span>
+											<span>7% --------->
+											</span>
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4" style="display: flex;flex-flow: row wrap;background-color:#F4F5F7;"></div>
 
+										<div class="col-lg-4 col-md-4 col-sm-4" style="display: flex;flex-flow: row wrap; padding-top:20px; padding-bottom: 20px;">
+											<span>
+												<b>Total Contribution</b>
+											</span>
 
-		<div class="line"></div>
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4" style="display: flex;flex-flow: row wrap; padding-top:20px;">
+											<span>
+												<b>4% ---------> 7%</b>
+											</span>
+
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-4" style="display: flex;flex-flow: row wrap;background-color:#F4F5F7;"></div>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 confirm-summary-text">
+									<span>By clicking confirm you are agreeing to update your pension investment.</span>
+									<span>Contribution instruction changes will take effect from the next Payroll run.</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" id="modal-btn-cancel">Cancel</button>
+							<button type="button" class="btn btn-primary" id="modal-btn-confirm">Confirm</button>
+						</div>
+					</div>
+				</div>
+			</body>
+		</html>
 	</body>
-</html></body></html></body></html><!-- jQuery CDN - Slim version (=without AJAX) --><!-- Popper.JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script><!-- Bootstrap JS --><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script><script type="text/javascript">$(document).ready(function () {
+</html></div></div><!-- END OF SUMMARY OF CHANGES MODAL--><script>var modalConfirm = function (callback) {
+
+$("#btnSubmit").on("click", function () {
+$("#my-modal").modal('show');
+});
+
+$("#modal-btn-confirm").on("click", function () {
+callback(true);
+$("#my-modal").modal('hide');
+});
+
+$("#modal-btn-cancel").on("click", function () {
+callback(false);
+$("#my-modal").modal('hide');
+});
+};
+
+modalConfirm(function (confirm) {
+if (confirm) { // Acciones si el usuario confirma
+$("#result").html("CONFIRMED");
+} else { // Acciones si el usuario no confirma
+$("#result").html("NOT CONFIRMED");
+}
+});</script></body></body></html></div><!-- Projection Columns (4) --><script>document.getElementById('modal-btn-confirm').onclick = function () {
+document.getElementsByClassName('avc')[0].classList.toggle("avc-reordered");
+}</script><!--Next Step columns(2) --><div class="line"></div></body></html></body> </html></body></html><!-- jQuery CDN - Slim version (=without AJAX) --><!-- Popper.JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script><!-- Bootstrap JS --><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script><script type="text/javascript">$(document).ready(function () {
 $('#sidebarCollapse').on('click', function () {
 $('#sidebar').toggleClass('active');
 });
@@ -528,4 +599,4 @@ $('#sidebar').toggleClass('active');
 $('[data-toggle="tooltip1"]').tooltip({'placement': 'top'});
 $('[data-toggle="tooltip2"]').tooltip({'placement': 'top'});
 $('[data-toggle="tooltip3"]').tooltip({'placement': 'top'});
-$('[data-toggle="tooltip4"]').tooltip({'placement': 'top'});</script></body></html></body></html></body> </html>
+$('[data-toggle="tooltip4"]').tooltip({'placement': 'top'});</script></body></html></body></html></body></html>

@@ -619,3 +619,22 @@
     text-align: center;
     margin-top: -40px;
   }
+
+  /*------ MODAL STYLING ------- */
+  .modal-header {
+      background-color: #5261AC;
+      color: #fff;
+  }
+  .modal-title {
+      font-size: 24px;
+  }
+
+  .modal-content {
+    border: 0px;
+    display: flex; 
+    width: 100%;
+}
+
+.confirm-summary-text {
+    padding: 20px 10px 20px 10px;
+}
