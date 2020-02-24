@@ -470,9 +470,11 @@
 
     .avc {
         order: 4;
+        display: none;
     }
     .avc-reordered {
         order: 1;
+        
     }
     .contributions-text-subtext {
         order: 5;

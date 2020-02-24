@@ -323,7 +323,8 @@
 					</div>
 				</nav>
 
-				<!-- Welcome Columns (2) -->
+				<!-- MODIFY CONTENT -->
+				<!-- MODIFY HEADER -->
 				<div class="container modify-content">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 modify-body">
@@ -436,6 +437,8 @@
 								</div>
 							</div>
 						</div>
+						<!--MODIFY HEADER END-->
+						<!-- SLIDERS -->
 						<div class="col-lg-8 col-md-8 col-sm-8">
 							<div class="col-lg-12 col-md-12 col-sm-12 manage-my-contributions">
 								<h4>Manage my contributions</h4>
@@ -473,8 +476,8 @@
 								</div>
 								<!--End of Employer Contribution Slider-->
 								<!--AVC Contribution Slider-->
-								<div class="row avc" style="display: flex;">
-									<div class="col-lg-6 col-md-6 col-sm-6 projections-text">
+								<div class="row avc">
+									<div class="col-lg-6 col-md-6 col-sm-6 projections-text" style="display: flex;">
 										<label for="amount" style="font-size: 18px;">My additional voluntary contribution</label>
 
 									</div>
@@ -483,6 +486,7 @@
 									<div class="col-lg-8 col-md-8 col-sm-8" id="avc-contribution" style="display: flex;"></div>
 									<div class="col-lg-2 col-md-2 col-sm-2" style="display: flex;"><input type="text" id="amount-avc" readonly style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;"></div>
 								</div>
+								<!--End of AVC Contribution Slider-->
 								<!--End of AVC Contribution Slider-->
 								<div class="contributions-text-subtext">My total monthly contribution of €338.00 or 8% of your salary</div>
 								<div class="contribution-split-box">
@@ -496,6 +500,8 @@
 								<button class="submit-changes-btn" id="btnSubmit" value="Submit">Submit Changes</button>
 							</div>
 						</div>
+						<!-- SLIDERS END -->
+						<!-- WHAT ELSE CAN I DO BOX -->
 						<div class="col-lg-4 col-md-4 col-sm-4">
 							<div class="box what-else-can-i-do">
 								<h2>What else can I do?</h2>
@@ -506,6 +512,7 @@
 								</ul>
 							</div>
 						</div>
+						<!-- WHAT ELSE CAN I DO BOX -->
 					</div>
 
 				</div>
@@ -565,7 +572,7 @@
 			</body>
 		</html>
 	</body>
-</html></div></div><!-- END OF SUMMARY OF CHANGES MODAL--><script>var modalConfirm = function (callback) {
+</html></body></html></div></div><!-- END OF SUMMARY OF CHANGES MODAL--><script>var modalConfirm = function (callback) {
 
 $("#btnSubmit").on("click", function () {
 $("#my-modal").modal('show');
@@ -590,7 +597,7 @@ $("#result").html("NOT CONFIRMED");
 }
 });</script></body></body></html></div><!-- Projection Columns (4) --><script>document.getElementById('modal-btn-confirm').onclick = function () {
 document.getElementsByClassName('avc')[0].classList.toggle("avc-reordered");
-}</script><!--Next Step columns(2) --><div class="line"></div></body></html></body> </html></body></html><!-- jQuery CDN - Slim version (=without AJAX) --><!-- Popper.JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script><!-- Bootstrap JS --><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script><script type="text/javascript">$(document).ready(function () {
+}</script><!--Next Step columns(2) --><div class="line"></div></body> </html></body></html></body></html><!-- jQuery CDN - Slim version (=without AJAX) --><!-- Popper.JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script><!-- Bootstrap JS --><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script><script type="text/javascript">$(document).ready(function () {
 $('#sidebarCollapse').on('click', function () {
 $('#sidebar').toggleClass('active');
 });
