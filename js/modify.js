@@ -3,13 +3,44 @@ $(function () {
     $("#employee-contribution").slider({
         range: "max",
         min: 1,
-        max: 1000,
-        value: 500,
+        max: 7,
+        value: 4,
         slide: function (event, ui) {
-            $("#amount-employee").val("€" + ui.value);
+            $("#amount-employee").val(ui.value + "%");
+            if (ui.value == 1) {
+                $("#amount-employer").val(ui.value + "%");
+                $('.ui-slider-handle').css("left", "0%");
+            }
+            else if (ui.value == 2) {
+                $("#amount-employer").val(ui.value + "%");
+                $('.ui-slider-handle').css("left", "16.667%");
+            }
+            else if (ui.value == 3) {
+                $("#amount-employer").val(ui.value + "%");
+                $('.ui-slider-handle').css("left", "33.33%");
+            }
+            else if (ui.value == 4) {
+                $("#amount-employer").val(ui.value + "%");
+                $('.ui-slider-handle').css("left", "50%");
+            }
+            else if (ui.value == 5) {
+                $("#amount-employer").val(ui.value + "%");
+                $('.ui-slider-handle').css("left", "66.667%");
+            }
+            else if (ui.value == 6) {
+                $("#amount-employer").val(ui.value + "%");
+                $('.ui-slider-handle').css("left", "83.333%");
+            }
+            else if (ui.value == 7) {
+                $("#amount-employer").val(ui.value + "%");
+                $('.ui-slider-handle').css("left", "100%");
+                $('#avc-contribution .ui-slider-handle').css("left", "0%");
+                $('.avc').css("display", "flex");
+            }
+
         }
     });
-    $("#amount-employee").val("€" + $("#employee-contribution").slider("value"));
+    $("#amount-employee").val($("#employee-contribution").slider("value") + "%");
 });
 
 
@@ -18,12 +49,16 @@ $(function () {
         range: "max",
         min: 1,
         max: 7,
-        value: 2,
+        value: 4,
         slide: function (event, ui) {
             $("#amount-employer").val(ui.value + "%");
+
         }
     });
     $("#amount-employer").val($("#employer-contribution").slider("value") + "%");
+    $('#employer-contribution').slider('disable');
+
+
 });
 
 $(function () {
