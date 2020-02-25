@@ -10,33 +10,46 @@ $(function () {
             if (ui.value == 1) {
                 $("#amount-employer").val(ui.value + "%");
                 $('.ui-slider-handle').css("left", "0%");
+                $('#avc-contribution').slider('disable');
             }
             else if (ui.value == 2) {
                 $("#amount-employer").val(ui.value + "%");
                 $('.ui-slider-handle').css("left", "16.667%");
+                $('#avc-contribution').slider('disable');
             }
             else if (ui.value == 3) {
                 $("#amount-employer").val(ui.value + "%");
                 $('.ui-slider-handle').css("left", "33.33%");
+                $('#avc-contribution').slider('disable');
             }
             else if (ui.value == 4) {
                 $("#amount-employer").val(ui.value + "%");
                 $('.ui-slider-handle').css("left", "50%");
+                $('#avc-contribution').slider('disable');
             }
             else if (ui.value == 5) {
                 $("#amount-employer").val(ui.value + "%");
                 $('.ui-slider-handle').css("left", "66.667%");
+                $('#avc-contribution').slider('disable');
             }
             else if (ui.value == 6) {
                 $("#amount-employer").val(ui.value + "%");
                 $('.ui-slider-handle').css("left", "83.333%");
+                $('#avc-contribution').slider('disable');
+                $('#avc-contribution .ui-slider-handle').css("display", "none");
             }
             else if (ui.value == 7) {
                 $("#amount-employer").val(ui.value + "%");
                 $('.ui-slider-handle').css("left", "100%");
                 $('#avc-contribution .ui-slider-handle').css("left", "0%");
+                $('#avc-contribution').slider('enable');
                 $('.avc').css("display", "flex");
+                $('#avc-contribution .ui-slider-handle').css("display", "flex");
             }
+            else if (ui.value <= 7) {
+                $('#avc-contribution .ui-slider-handle').css("left", "0%");
+            }
+
 
         }
     });
@@ -64,23 +77,30 @@ $(function () {
 $(function () {
     $("#avc-contribution").slider({
         range: "max",
-        min: 1,
+        min: 0,
         max: 25,
         value: 0,
         slide: function (event, ui) {
             $("#amount-avc").val(ui.value + "%");
+            $("#amount-avc").val(ui.value + "%");
+            if (ui.value > 0) {
+                $('#employee-contribution').slider('disable');
+            }
+            else if (ui.value == 0) {
+                $('#employee-contribution').slider('enable');
+            }
         }
     });
     $("#amount-avc").val($("#avc-contribution").slider("value") + "%");
 });
 
-var block = document.getElementById('modal-btn-yes');
+//var block = document.getElementById('modal-btn-yes');
 
-block.addEventListener('click', function () {
+// block.addEventListener('click', function () {
 
-    if (block.getAttribute('class') == 'avc') block.setAttribute('class', 'avc-reordered');
-    else block.setAttribute('class', 'avc');
-});
+//     if (block.getAttribute('class') == 'avc') block.setAttribute('class', 'avc-reordered');
+//     else block.setAttribute('class', 'avc');
+// });
 
 var modalConfirm = function (callback) {
 
