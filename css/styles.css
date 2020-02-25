@@ -352,7 +352,7 @@
     }
     .contributions-text-subtext {
         display: flex;
-        margin: 15px;
+        font-size: 14px;
         
     }
 
@@ -472,10 +472,10 @@
         order: 4;
         display: none;
     }
-    .avc-reordered {
+    /*.avc-reordered {
         order: 1;
         
-    }
+    }*/
     .contributions-text-subtext {
         order: 5;
     }
