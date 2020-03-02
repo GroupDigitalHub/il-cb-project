@@ -168,6 +168,9 @@
         display: flex;
         justify-content: center;
     }
+    .flex-flow-rw {
+        flex-flow: row wrap;
+    }
     #content {
         width: 100%;
         /*padding: 20px;*/
@@ -180,6 +183,10 @@
         min-height: 100vh;
         transition: all 0.3s;
         
+    }
+    .subtitle {
+            font-size: 34px;
+            text-align: center;
     }
     .box{
  
@@ -273,6 +280,7 @@
         background-color: #EEAA02;
         color: #fff;
         min-height: 120px;
+        font-size: 100%
     }
     .projections-box-4 .material-icons {
         font-size: 60px;
@@ -281,6 +289,7 @@
     .projections-total {
         display: flex;
         justify-content: flex-start;
+        font-size: 34px;
     }
     .upper_right {
         width: 20px;
@@ -299,16 +308,21 @@
         background-color: #67B023;
         color: #fff;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         justify-content: flex-start;  
+        align-items: center;
+        padding: 30px 10px 30px 10px;
     }
 
     .next-step-box-2 {
         background-color: #4C8A21;
         color: #fff;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         justify-content: flex-start;
+        align-items: center;    
+        padding: 30px 10px 30px 10px;
+        height: 100%;
     }
     .button-contributions {
         flex-flow: row wrap;
@@ -470,6 +484,9 @@
         }
         .my-balance-mobile {
             display: block;
+        }
+        .next-step-box-2 {
+            margin-top: 20px;
         }
     }
     @media (min-width: 796px){
