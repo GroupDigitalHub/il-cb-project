@@ -190,6 +190,19 @@
         width: 100%;
         min-height: 200px;
         color: #fff;
+        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .my-balance {
+        font-size: 28px;
+    }
+    .my-balance-desktop {
+        
+    }
+
+    .my-balance-mobile {
+        display: none;
     }
     .dashboard-heading {
         display: flex;
@@ -206,14 +219,21 @@
         padding: 25px;
         flex-flow: row wrap;
     }
-
+    .years {
+        font-size: 28px;
+    }
+    .retirement-text {
+        text-align: center;
+    }
     .welcome-box-2 {
         background-color: #50C9B5;
         color: #fff;
         padding: 25px;
         flex-flow: column wrap;
     }
-
+    .tt {
+        float: right;
+    }
     .button-transactions {
         flex-flow: row wrap;   
         width: 180px;
@@ -444,6 +464,12 @@
         }
         #amount-avc {
             order: 0
+        }
+        .my-balance-desktop {
+            display: none;
+        }
+        .my-balance-mobile {
+            display: block;
         }
     }
     @media (min-width: 796px){
