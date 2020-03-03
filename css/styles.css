@@ -57,6 +57,65 @@
         border-bottom: 1px dashed #ddd;
         margin: 40px 0;
     }
+    /*TOOL TIP*/
+    /* span.tooltips {
+        position: relative;
+        display: inline;
+    }
+    span.tooltips span {
+        position: absolute;
+        width:140px;
+        color: #6A59FF;
+        text-shadow: 0px 0px 1px #800000;
+        background: #C4E2FF;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        visibility: hidden;
+        border-radius: 6px;
+    }
+    span.tooltips span:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -8px;
+        width: 0; height: 0;
+        border-top: 8px solid #C4E2FF;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+    }
+    span:hover.tooltips span {
+        visibility: visible;
+        opacity: 0.8;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -76px;
+        z-index: 999;
+    }    */
+[data-tooltip-text]:hover {
+	position: relative;
+}
+
+[data-tooltip-text]:hover:after {
+	background-color: #000000;
+	background-color: rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: 12px;
+	content: attr(data-tooltip-text);
+    margin-bottom: 10px;
+    top: 50%;
+	left: 0;    
+	padding: 7px 12px;
+	position: absolute;
+	width: auto;
+	min-width: 50px;
+	max-width: 300px;
+	word-wrap: break-word;
+	z-index: 9999;
+}
 
     /* ---------------------------------------------------
         SIDEBAR STYLE
@@ -257,6 +316,10 @@
         align-self: center;
         padding: 5px;
     }
+
+    .projections-icon img {
+        padding-bottom: 20px;
+    }
     .projections-box-1, .projections-box-2, .projections-box-3 {
         background-color: #149FBF;
         color: #fff;
@@ -290,14 +353,15 @@
         display: flex;
         justify-content: flex-start;
         font-size: 34px;
+        margin-top: -20px;
     }
-    .upper_right {
+    .upper-right {
         width: 20px;
         height: 20px;
         position: absolute;
         top: 20%;
         right: 10%;
-        background-image: url('/Users/conorkelly/Development/Corporate Business/img/info.png');
+        /*background-image: url('/Users/conorkelly/Development/Corporate Business/img/info.png');*/
         background-repeat: no-repeat;
         padding: 12px;
     }
@@ -333,8 +397,8 @@
         color: #fff;
         margin: 10px;
         align-self: flex-start;
+        border: 0px;
     }
-
     .modify-content {
         margin: 5px;
     }
@@ -452,7 +516,7 @@
         .projections-total {
             justify-content: center;
         }
-        .upper_right {
+        .upper-right {
             top: 15%;
         }
         .button-contributions {
@@ -460,6 +524,9 @@
         }
         .projections-text {
             text-align: center;
+        }
+        .projections-icon img {
+            padding-bottom: 20px;
         }
         #employee-contribution {
             order: 1;
