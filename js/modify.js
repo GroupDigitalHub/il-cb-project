@@ -131,3 +131,6 @@ modalConfirm(function (confirm) {
 
 
 
+$(function () {
+    $(document).tooltip();
+});

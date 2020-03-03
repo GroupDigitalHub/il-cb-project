@@ -19,6 +19,7 @@
 		<!-- Font Awesome JS -->
 		<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
 	</head>
 
 	<body>
@@ -384,7 +385,7 @@
 							<div class="box flex-center;" style="display: block" ;>
 								<div class="row">
 									<div class="col-lg-12">
-										<span class="tt"><img src="img/info.png"></span>
+										<span class="tt" data-tooltip-text="Lorem Ipsum"><img src="img/info.png"></span>
 									</div>
 								</div>
 								<div class="col-lg-12 flex-center my-balance-desktop">
@@ -441,12 +442,15 @@
 				<div class="container">
 					<div class="row display-flex dashboard-heading">
 						<span class="subtitle">My retirement income projections</span>
+
 					</div>
 					<div class="row display-flex">
 						<div class="col-xs-12 col-sm-6 col-md-3">
 							<div class="box projections-box-1 flex-center">
 								<div class="row display-flex">
-									<span class="upper_right" data-toggle="tooltip1" title="Default tooltip"></span>
+									<div class="col-xs-12 col-sm-12">
+										<span class="tt tooltips" data-tooltip-text="Lorem Ipsum"><img src="img/info.png"></span>
+									</div>
 									<div class="col-xs-12 col-sm-3 projections-icon flex-center">
 										<img src="img/chart-line.png">
 									</div>
@@ -463,8 +467,9 @@
 						<div class="col-xs-12 col-sm-6 col-md-3">
 							<div class="box projections-box-2 flex-center">
 								<div class="row display-flex">
-									<span class="upper_right" data-toggle="tooltip2" title="Default tooltip"></span>
-
+									<div class="col-xs-12 col-sm-12">
+										<span class="tt" data-tooltip-text="Lorem Ipsum"><img src="img/info.png"></span>
+									</div>
 									<div class="col-xs-12 col-sm-3 projections-icon flex-center">
 										<img src="img/wallet.png">
 									</div>
@@ -481,7 +486,9 @@
 						<div class="col-xs-12 col-sm-6 col-md-3">
 							<div class="box projections-box-3 flex-center">
 								<div class="row display-flex">
-									<span class="upper_right" data-toggle="tooltip3" title="Default tooltip"></span>
+									<div class="col-xs-12 col-sm-12">
+										<span class="tt" data-tooltip-text="Lorem Ipsum"><img src="img/info.png"></span>
+									</div>
 									<div class="col-xs-12 col-sm-3 projections-icon flex-center">
 										<img src="img/wallet.png">
 									</div>
@@ -495,10 +502,14 @@
 							</div>
 						</div>
 
+
 						<div class="col-xs-12 col-sm-6 col-md-3">
 							<div class="box projections-box-4 flex-center">
 								<div class="row display-flex">
-									<span class="upper_right" data-toggle="tooltip4" title="Default tooltip"></span>
+									<div class="col-xs-12 col-sm-12">
+										<span class="tt" title="That what this widget is"><img src="img/info.png"></span>
+									</div>
+
 									<div class="col-xs-12 col-sm-3 projections-icon flex-center">
 										<img src="img/alert.png">
 									</div>
@@ -506,7 +517,11 @@
 										<span class="projections-total" id="opportunity-to-grow">
 											€12,024
 										</span>
-
+										<script>
+											$(function () {
+$(document).tooltip();
+});
+										</script>
 										<span class="projections-subtext flex-center">Opportunity to grow</span>
 									</div>
 								</div>
@@ -526,7 +541,7 @@
 								<div class="col-lg-9">
 									<h2>Maximise your employers contribution</h2>
 									<p>Get the most out of your company pension by maximising your employers contribution. Take
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													the next step and get the income you want in retirement.
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							the next step and get the income you want in retirement.
 									</p>
 									<button class="button-contributions flex-center">Maximise Contributions</button>
 								</div>
@@ -568,9 +583,4 @@ $('#sidebarCollapse').on('click', function () {
 $('#sidebar').toggleClass('active');
 });
 });
-
-$('[data-toggle="tooltip1"]').tooltip({'placement': 'top'});
-$('[data-toggle="tooltip2"]').tooltip({'placement': 'top'});
-$('[data-toggle="tooltip3"]').tooltip({'placement': 'top'});
-$('[data-toggle="tooltip4"]').tooltip({'placement': 'top'});
 </script></body></html>
