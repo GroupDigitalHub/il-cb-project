@@ -368,7 +368,15 @@
 					<div class="row">
 						<div class="col-lg-8 col-md-8 col-sm-8">
 							<div class="col-lg-12 col-md-12 col-sm-12 manage-my-contributions">
-								<h4>Manage my contributions</h4>
+								<div class="row">
+									<div class="col-lg-6 ">
+										<span>Manage my contributions</span>
+									</div>
+									<div class="col-lg-6 year-month-tab">
+										<span>Monthly</span>
+										<span>Yearly</span>
+									</div>
+								</div>
 							</div>
 							<div
 								class="col-lg-12 col-md-12 col-sm-12 contributions-box">
@@ -421,8 +429,8 @@
 								<!--End of Employer Contribution Slider-->
 								<!--AVC Contribution Slider-->
 								<div class="row avc">
-									<div class="col-10 flex-center" style="height: 61px;background-color: #a9e2d9;margin: 10px;">
-										<span style="color: #333;align-self: center;">Ready to start AVCs and unlock more tax savings?</span>
+									<div class="col-lg-10" style="height: 61px;background-color: #a9e2d9;margin: 10px; display: flex;">
+										<span style="color: #606060;align-self: center; font-size: 14px;">Ready to start AVCs and unlock more tax savings?</span>
 									</div>
 									<div class="col-lg-9 col-md-9 col-sm-9 projections-text" style="display: flex;">
 										<label for="amount" style="font-size: 18px;">My additional voluntary contribution (AVCs)</label>
@@ -447,12 +455,12 @@
 								<!--End of AVC Contribution Slider-->
 								<div class="contributions-text-subtext">Total monthly contribution of&nbsp;
 									<span id="total-monthly-contribution" class="bold">€338.00</span>&nbsp;
-																																																																																																																																																																																																																																																																																																																																								or&nbsp;
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				or&nbsp;
 									<span id="total-percentage-monthly-contribution" class="bold">8%</span>&nbsp;
+
 																																																																																																																																																																																																																																																																																																																																								of your salary</div>
 								<div class="contributions-text-subtext">My total monthly contribution of €338.00 or 8%
-																																																																																																																																														of
-																																																																																																																																														your salary</div>
+
 								<div class="contribution-split-box">
 									<span>€169.00 Employee</span>
 									<span>Employer €169.00</span>
@@ -462,7 +470,10 @@
 							<div class="col-lg-12 col-md-12 col-sm-12 submit-changes flex-center">
 								<div class="alert" role="alert" id="result"></div>
 								<button class="submit-changes-btn" id="btnSubmit" value="Submit">Submit Changes</button>
+
 							</div>
+							<span style="font-size: 14px; color: #333; margin: 5px;">
+								* Potential projected fund value is an estimation and not guaranteed.</span>
 						</div>
 
 						<!-- SLIDERS END -->
@@ -493,8 +504,11 @@
 									<span class="modify-projections-total" id="projected-fund-value">
 										€127,540
 									</span>
-									<span class="modify-projections-subtext">Current projected value</span>
+									<span class="modify-projections-subtext">Potential fund value with further investment</span>
 								</div>
+							</div>
+							<div class="row modify-simulate-button flex-center">
+								<span>Simulate</span>
 							</div>
 						</div>
 
