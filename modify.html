@@ -332,6 +332,20 @@
 							<span id="customer-name">John Smith</span><br>
 							<span class="profile-subtitle">Age</span><br>
 							<span id="customer-age">40 years</span>
+
+						</div>
+						<div class="col-2">
+							<br>
+							<span class="profile-subtitle">Annual Salary</span><br>
+							<span id="customer-annual-salary">€50,776</span>
+						</div>
+						<div class="col-2">
+							<br>
+							<span class="profile-subtitle">Gross monthly</span><br>
+							<span id="customer-gross-monthly">€4,231</span>
+						</div>
+						<div class="col-2">
+							<br>
 						</div>
 						<div class="col-2">
 							<br>
@@ -367,7 +381,9 @@
 										<span class="input-group-addon" style="background-color: #fff; font-weight: bold;">€296.00</span>
 
 									</div>
-									<div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Includes government contribution of €118.00 by way of tax relief</div>
+									<div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Includes tax saving of&nbsp;
+										<span id="tax-saving-total" class="bold">€67.00</span>&nbsp;
+									</div>
 
 								</div>
 								<div class="row employee" style="display: flex;">
@@ -387,6 +403,11 @@
 
 									</div>
 
+									<div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Your employer will contribute up to&nbsp;
+										<span id="employer-contribution-total" class="bold">
+											7%
+										</span>
+										&nbsp;into your pension</div>
 									<div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Your employer will
 																																																																																																																																																														match up to 7% investment
 																																																																																																																																																														into your pension</div>
@@ -400,7 +421,15 @@
 								<!--End of Employer Contribution Slider-->
 								<!--AVC Contribution Slider-->
 								<div class="row avc">
+									<div class="col-10 flex-center" style="height: 61px;background-color: #a9e2d9;margin: 10px;">
+										<span style="color: #333;align-self: center;">Ready to start AVCs and unlock more tax savings?</span>
+									</div>
 									<div class="col-lg-9 col-md-9 col-sm-9 projections-text" style="display: flex;">
+										<label for="amount" style="font-size: 18px;">My additional voluntary contribution (AVCs)</label>
+									</div>
+									<div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">You age related tax relief is&nbsp;
+										<span id="tax-relief-total" class="bold">25%</span>&nbsp;
+									</div>
 										<label for="amount" style="font-size: 18px;">My additional voluntary
 																																																																																																																																																																														contribution</label>
 									</div>
@@ -416,6 +445,11 @@
 
 								<!--End of AVC Contribution Slider-->
 								<!--End of AVC Contribution Slider-->
+								<div class="contributions-text-subtext">Total monthly contribution of&nbsp;
+									<span id="total-monthly-contribution" class="bold">€338.00</span>&nbsp;
+																																																																																																																																																																																																																																																																																																																																								or&nbsp;
+									<span id="total-percentage-monthly-contribution" class="bold">8%</span>&nbsp;
+																																																																																																																																																																																																																																																																																																																																								of your salary</div>
 								<div class="contributions-text-subtext">My total monthly contribution of €338.00 or 8%
 																																																																																																																																														of
 																																																																																																																																														your salary</div>
@@ -433,16 +467,37 @@
 
 						<!-- SLIDERS END -->
 						<!-- WHAT ELSE CAN I DO BOX -->
-						<div class="col-lg-4 col-md-4 col-sm-4">
-							<div class="box what-else-can-i-do flex-center">
-								<h2>What else can I do?</h2>
-								<ul class="custom-bullet plus">
-									<li>Continue to save</li>
-									<li>Maximise contributions</li>
-									<li>Save on tax</li>
-								</ul>
+						<div class="col-lg-4 col-md-4 col-sm-8">
+							<div class="row modify-projections-box-1 flex-center">
+								<div class="col-lg-3 ">
+									<svg class="circle" viewbox="0 0 24 24">
+										<path fill="#BABABA" d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64"/>
+									</svg>
+
+								</div>
+								<div class="col-lg-9">
+									<span class="modify-projections-total" id="projected-fund-value">
+										€127,540
+									</span>
+									<span class="modify-projections-subtext">Current projected value</span>
+								</div>
+							</div>
+							<div class="row modify-projections-box-2 flex-center">
+								<div class="col-lg-3 ">
+									<svg class="circle-2" viewbox="0 0 24 24">
+										<path fill="#D5DAEB" d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64"/>
+									</svg>
+
+								</div>
+								<div class="col-lg-9">
+									<span class="modify-projections-total" id="projected-fund-value">
+										€127,540
+									</span>
+									<span class="modify-projections-subtext">Current projected value</span>
+								</div>
 							</div>
 						</div>
+
 						<!-- WHAT ELSE CAN I DO BOX -->
 					</div>
 				</div>
@@ -490,7 +545,7 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 confirm-summary-text">
 					<span>By clicking confirm you are agreeing to update your pension investment.</span>
 					<span>Contribution instruction changes will take effect from the next Payroll
-																																																																																																														run.</span>
+
 				</div>
 			</div>
 		</div>
