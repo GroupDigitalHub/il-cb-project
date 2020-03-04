@@ -411,6 +411,18 @@
         border-bottom: 1px solid #E0E1E8;
         margin-bottom: -5px;
         padding: 20px;
+        font-size: 20px;
+    }
+    .year-month-tab {
+    height: auto;
+    background: linear-gradient(to right, #ffff 50%, #e3e3e3 50%);
+    justify-content: space-around;
+    display: flex;
+    padding: 10px 15px 10px 15px;
+    color: #606060;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 4px;
     }
     .contributions-box {
         margin: 5px;
@@ -528,7 +540,7 @@
     flex-flow: nowrap;
 
   } .modify-projections-box-2 {
-    background-color: #149FBF;
+    background-color: #5261AC;
     color: #fff;
     min-height: 120px;
     font-size: 100%;
@@ -537,14 +549,23 @@
     align-items: center;
     flex-flow: nowrap;
   }
+  .modify-simulate-button {
+    color: #3333;
+    min-height: 48px;
+    font-size: 100%;
+    margin: 5px;
+    padding: 20px;
+    align-items: center;
+    flex-flow: nowrap;
+    border: 1px solid grey;
+    border-radius: 4px;
+  }
   .modify-projections-total {
     font-size: 34px;
-    padding-left: 20px;
-    
+   
 }
 .modify-projections-subtext {
     font-size: 14px;
-    padding-left: 20px;
 }
   .circle{
     background: #EEF1F5;
@@ -622,10 +643,11 @@
         .next-step-box-2 {
             margin-top: 20px;
         }
-        .circle {
-            border-radius: 65px;
+        .circle, .circle-2 {
+            border-radius: 90px;
         }
-    }
+        
+          }
     @media (min-width: 796px){
         .profile {
             display: none;
