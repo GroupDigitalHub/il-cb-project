@@ -107,7 +107,7 @@
 	font-size: 12px;
 	content: attr(data-tooltip-text);
     margin: 10px;
-    bottom: 50%;
+    top: -45%;
 	right: 0;    
 	padding: 7px 12px;
 	position: absolute;
@@ -840,4 +840,104 @@
 
 .confirm-summary-text {
     padding: 20px 10px 20px 10px;
+}
+
+/*---------- CARD STYLING -------- */
+.cb-card.no-max-height {
+    max-height: none!important;
+    min-height: 120px;
+    margin: 10px 0px;
+}
+.il-aquagreen {
+    background: #039fbf!important;
+}
+.il-orange {
+    background: #EEAA02;
+}
+.icon-circle-orange {
+    width: 55px;
+    height: 55px;
+    background: #F1BC50;
+}
+.cb-card {
+    height: 99px;
+    display: flex;
+    max-height: 99px;
+}
+
+.cb-card .left-box {
+    float: left;
+    width: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cb-card .right-box {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.right-box img {
+    width: 25px;
+    height: 25px;
+}
+.cb-card .icon-circle{
+    width: 55px;
+    height: 55px;
+    background: #56B2CC;
+}
+.cb-card .icon-circle-orange{
+    width: 55px;
+    height: 55px;
+    background: #F1Bc50;
+}
+.icon-circle {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: #909090;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-circle-orange {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: #F1BC50;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.
+
+.cb-card .icon-circle .inner-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+}
+.il-aquagreen-text.text-darken-1 {
+    color: #C7EBF0!important;
+}
+.cb-card .details-box {
+    float: right;
+    width: calc(100% - 99px);
+    padding: 20px 0px 20px 20px;
+    color: #fff;
+}
+.s-font-16 {
+    font-size: 16px!important;
+}
+
+.s-font-28 {
+    font-size: 28px!important;
+}
+.s-margin-bottom-5 {
+    margin-bottom: 5px!important;
+}
+.s-font-14 {
+    font-size: 14px!important;
 }
