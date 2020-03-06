@@ -918,6 +918,9 @@
 .il-aquagreen-text.text-darken-1 {
     color: #C7EBF0!important;
 }
+.il-info-icon.text-darken-1 {
+    color: #99D0E0;
+}
 .cb-card .details-box {
     float: right;
     width: calc(100% - 99px);
