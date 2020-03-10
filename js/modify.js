@@ -78,7 +78,7 @@ $(function () {
     $("#avc-contribution").slider({
         range: "max",
         min: 0,
-        max: 25,
+        max: 18,
         value: 0,
         slide: function (event, ui) {
             $("#amount-avc").val(ui.value + "%");

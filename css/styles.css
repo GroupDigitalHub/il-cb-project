@@ -52,7 +52,12 @@
         outline: none !important;
         border: none;
     }
-
+    button#dropdownMenu1 {
+        background: #F8F9FA;
+    }
+    .btn:focus {
+        box-shadow: none;
+    }
     .line {
         width: 100%;
         height: 1px;
@@ -176,8 +181,7 @@
 
     #sidebar ul li.active>a,
     a[aria-expanded="true"] {
-        color: #CACFE6;
-        background: #6d7fcc;
+        
     }
     #sidebarCollapse {
         display: none;
@@ -646,12 +650,19 @@
         .circle, .circle-2 {
             border-radius: 90px;
         }
+        .x {
+            display: none !important;
+        }
         
           }
     @media (min-width: 796px){
         .profile {
             display: none;
         }
+        .nav-link {
+            display: none;
+        }
+        
     }
  /*-- SLIDER STYLES */
 
@@ -850,10 +861,17 @@
 .il-orange {
     background: #EEAA02;
 }
+.il-blue {
+    color: #5261AC;
+}
 .icon-circle-orange {
     width: 55px;
     height: 55px;
     background: #F1BC50;
+}
+.dropdown-menu li a {
+    padding: 20px;
+    margin: 5px;
 }
 .cb-card {
     height: 99px;
@@ -940,3 +958,16 @@
 .s-font-14 {
     font-size: 14px!important;
 }
+
+/*----- SIDEBAR DROPDOWN --- */
+.bg-custom-1 {
+    background-color: #85144b;
+  }
+  
+  .bg-custom-2 {
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  }
+
+  .dropdown-menu {
+      right: 0 !important;
+  }

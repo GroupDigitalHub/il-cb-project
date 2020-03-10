@@ -422,7 +422,6 @@
 										<span id="tax-relief-total" class="bold">25%</span>&nbsp;
 									</div>
 								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6" style="flex: 50%; text-align: right; font-size: 18px;"></div>
 								<div class="row avc">
 									<div class="col-lg-8 col-md-8 col-sm-8" id="avc-contribution" style="display: flex;"></div>
 									<div class="col-lg-2 col-md-2 col-sm-2" style="display: flex;"><input type="text" id="amount-avc" readonly style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">
@@ -430,10 +429,9 @@
 								</div>
 
 								<!--End of AVC Contribution Slider-->
-								<!--End of AVC Contribution Slider-->
 								<div class="contributions-text-subtext">Total monthly contribution of&nbsp;
 									<span id="total-monthly-contribution" class="bold">€338.00</span>&nbsp;
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		or&nbsp;
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								or&nbsp;
 									<span id="total-percentage-monthly-contribution" class="bold">8%</span>&nbsp;
 								</div>
 								of your salary</div>
@@ -441,52 +439,54 @@
 								<span>€169.00 Employee</span>
 								<span>Employer €169.00</span>
 							</div>
-						</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 submit-changes flex-center">
+								<div class="alert" role="alert" id="result"></div>
+								<button class="submit-changes-btn" id="btnSubmit" value="Submit">Submit Changes</button>
 
-						<div class="col-lg-12 col-md-12 col-sm-12 submit-changes flex-center">
-							<div class="alert" role="alert" id="result"></div>
-							<button class="submit-changes-btn" id="btnSubmit" value="Submit">Submit Changes</button>
-
+							</div>
+							<span style="font-size: 14px; color: #333; margin: 5px;">
+								* Potential projected fund value is an estimation and not guaranteed.</span>
 						</div>
-						<span style="font-size: 14px; color: #333; margin: 5px;">
-							* Potential projected fund value is an estimation and not guaranteed.</span>
+						<!--Start of Simulate Projection Boxes-->
+						<div class="col-lg-4 col-md-4 col-sm-8">
+							<div class="row modify-projections-box-1 flex-center">
+								<div class="col-lg-3 ">
+									<svg class="circle" viewbox="0 0 24 24">
+										<path fill="#BABABA" d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64"/>
+									</svg>
+
+								</div>
+								<div class="col-lg-9">
+									<span class="modify-projections-total" id="projected-fund-value">
+										€127,540
+									</span>
+									<span class="modify-projections-subtext">Current projected value</span>
+								</div>
+							</div>
+							<div class="row modify-projections-box-2 flex-center">
+								<div class="col-lg-3 ">
+									<svg class="circle-2" viewbox="0 0 24 24">
+										<path fill="#D5DAEB" d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64"/>
+									</svg>
+
+								</div>
+								<div class="col-lg-9">
+									<span class="modify-projections-total" id="projected-fund-value">
+										€127,540
+									</span>
+									<span class="modify-projections-subtext">Potential fund value with further investment</span>
+								</div>
+							</div>
+							<div class="row modify-simulate-button flex-center">
+								<span>Simulate</span>
+							</div>
+						</div>
+						<!--End of Projections / Simulate-->
 					</div>
 
 					<!-- SLIDERS END -->
-					<!-- WHAT ELSE CAN I DO BOX -->
-					<div class="col-lg-4 col-md-4 col-sm-8">
-						<div class="row modify-projections-box-1 flex-center">
-							<div class="col-lg-3 ">
-								<svg class="circle" viewbox="0 0 24 24">
-									<path fill="#BABABA" d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64"/>
-								</svg>
+				<!-- SIMULATE /PROJECTIONS  BOX -->
 
-							</div>
-							<div class="col-lg-9">
-								<span class="modify-projections-total" id="projected-fund-value">
-									€127,540
-								</span>
-								<span class="modify-projections-subtext">Current projected value</span>
-							</div>
-						</div>
-						<div class="row modify-projections-box-2 flex-center">
-							<div class="col-lg-3 ">
-								<svg class="circle-2" viewbox="0 0 24 24">
-									<path fill="#D5DAEB" d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64"/>
-								</svg>
-
-							</div>
-							<div class="col-lg-9">
-								<span class="modify-projections-total" id="projected-fund-value">
-									€127,540
-								</span>
-								<span class="modify-projections-subtext">Potential fund value with further investment</span>
-							</div>
-						</div>
-						<div class="row modify-simulate-button flex-center">
-							<span>Simulate</span>
-						</div>
-					</div>
 
 					<!-- WHAT ELSE CAN I DO BOX -->
 				</div>
@@ -532,7 +532,7 @@
 		<div class="col-lg-12 col-md-12 col-sm-12 confirm-summary-text">
 			<span>By clicking confirm you are agreeing to update your pension investment.</span>
 			<span>Contribution instruction changes will take effect from the next Payroll
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																														run.</span>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										run.</span>
 		</div>
 	</div>
 </div>
