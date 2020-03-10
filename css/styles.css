@@ -530,6 +530,7 @@
   }
   #customer-age, #customer-annual-salary, #customer-gross-monthly, #customer-tax-band {
       font-size: 16px;
+
       
   }
   
@@ -581,6 +582,9 @@
     background: #7481BC;
     padding: 10px;
     border-radius: 35px;
+  }
+
+
   }
 
     /* ---------------------------------------------------
