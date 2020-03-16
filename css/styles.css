@@ -53,10 +53,14 @@
         border: none;
     }
     button#dropdownMenu1 {
-        background: #F8F9FA;
+        background: #FFF;
+        text-align: right;
     }
     .btn:focus {
         box-shadow: none;
+    }
+    .bg-light {
+        background: #FFF !important;
     }
     .line {
         width: 100%;
@@ -242,6 +246,7 @@
         /*padding: 20px;*/
         min-height: 100vh;
         transition: all 0.3s;
+        background: #EDEDED;
     }
     .main-content {
         width: 100%;
@@ -277,6 +282,19 @@
     .my-balance-mobile {
         display: none;
     }
+    .view-transactions-btn {
+        height: 48px;
+        width: 180px;
+        border: 1px solid #fff;
+        margin-top: 20px;
+        border-radius: 10px;
+        text-align: center;
+        display: block;
+        vertical-align: middle;
+        margin-left: -50px;
+        line-height: 48px;
+    }
+    }
     .dashboard-heading {
         display: flex;
         align-items: flex-start;
@@ -287,7 +305,7 @@
         margin: 5px;
     }
     .welcome-box-1 {
-        background-color: #F0F1F7;
+        background-color: #FFF;
         color: #333;
         padding: 25px;
         flex-flow: row wrap;
@@ -298,6 +316,69 @@
     .retirement-text {
         text-align: center;
     }
+   .state-pension-toggle{
+        padding-left: 150px;
+    }
+    /* *********** STATE PENSION ON / OFF TOGGLE ********** */
+
+    .onoffswitch {
+        position: relative; width: 90px;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+        float: right;
+    }
+    .onoffswitch-checkbox {
+        display: none;
+    }
+    .onoffswitch-label {
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #999999; border-radius: 20px;
+    }
+    .onoffswitch-inner {
+        display: block; width: 200%; margin-left: -100%;
+        transition: margin 0.3s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+        box-sizing: border-box;
+    }
+    .onoffswitch-inner:before {
+        content: "OFF";
+        padding-left: 10px;
+        background-color: #7DD2C4; color: #FFFFFF;
+    }
+    .onoffswitch-inner:after {
+        content: "ON";
+        padding-right: 10px;
+        background-color: #EEEEEE; color: #999999;
+        text-align: right;
+    }
+    .onoffswitch-switch {
+        
+        display: block;
+        width: 18px;
+        margin: 8px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 56px;
+        border: 2px solid #999999;
+        border-radius: 20px;
+        transition: all 0.3s ease-in 0s;
+        height: 19px;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px; 
+    }
+
+    /* *********** END OF STATE PENSION ON / OFF TOGGLE ********** */
+
+
+
     .welcome-box-2 {
         background-color: #50C9B5;
         color: #fff;
@@ -850,6 +931,12 @@
 }
 
 /*---------- CARD STYLING -------- */
+.cb-card-lg.no-max-height {
+    max-height: none!important;
+    min-height: 200px;
+    margin: 20px 0px;
+}
+
 .cb-card.no-max-height {
     max-height: none!important;
     min-height: 120px;
@@ -857,6 +944,9 @@
 }
 .il-aquagreen {
     background: #039fbf!important;
+}
+.il-grey {
+    background: #50C9B5;
 }
 .il-orange {
     background: #EEAA02;
@@ -868,6 +958,11 @@
     width: 55px;
     height: 55px;
     background: #F1BC50;
+}
+.icon-circle-grey {
+    width: 55px;
+    height: 55px;
+    background: #79D3C5;
 }
 .dropdown-menu li a {
     padding: 20px;
@@ -890,7 +985,7 @@
     display: none;
     float: right;
     /* min-width: 10rem; */
-    padding: 3.5rem;
+    padding: 10px;
     margin: 0.125rem 0 0;
     font-size: 1rem;
     color: #212529;
@@ -898,15 +993,29 @@
     list-style: none;
     background-color: #F8F9FA !important;
     background-clip: padding-box;
-    border: none !important;
+    border-top: 13px solid #FFF;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
     border-radius: 0.25rem;
+}
+
+.dropdown-menu li {
+    padding: 20px 50px 10px 10px;
+}
+.dropdown-menu li a {
+    vertical-align: top;
 }
 .cb-card {
     height: 99px;
     display: flex;
     max-height: 99px;
 }
-
+.cb-card-lg {
+    height: 99px;
+    display: flex;
+    max-height: 99px;
+}
 .cb-card .left-box {
     float: left;
     width: 99px;
@@ -915,6 +1024,20 @@
     justify-content: center;
 }
 .cb-card .right-box {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.cb-card-lg .left-box {
+    float: left;
+    width: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65%;
+}
+.cb-card-lg .right-box {
     width: 50px;
     display: flex;
     justify-content: center;
@@ -929,10 +1052,20 @@
     height: 55px;
     background: #56B2CC;
 }
+.cb-card-lg .icon-circle{
+    width: 55px;
+    height: 55px;
+    background: #56B2CC;
+}
 .cb-card .icon-circle-orange{
     width: 55px;
     height: 55px;
     background: #F1Bc50;
+}
+.cb-card-lg .icon-circle-grey{
+    width: 55px;
+    height: 55px;
+    background: #79D3C5;
 }
 .icon-circle {
     float: left;
@@ -954,9 +1087,28 @@
     align-items: center;
     justify-content: center;
 }
-.
+.icon-circle-grey {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: #79D3C5;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .cb-card .icon-circle .inner-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+}
+.cb-card .icon-circle-orange .inner-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+}
+.cb-card-lg .icon-circle-grey .inner-icon {
     width: 40px;
     height: 40px;
     font-size: 40px;
@@ -965,13 +1117,23 @@
     color: #C7EBF0!important;
 }
 .il-info-icon.text-darken-1 {
-    color: #99D0E0;
+    color: #CEE8F0;
+}
+.il-info-icon.text-darken-orange {
+    color: #FBEBCE;
 }
 .cb-card .details-box {
     float: right;
     width: calc(100% - 99px);
     padding: 20px 0px 20px 20px;
     color: #fff;
+}
+.cb-card-lg .details-box {
+    float: right;
+    width: calc(100% - 99px);
+    padding: 20px 0px 20px 20px;
+    color: #fff;
+    align-self: center;
 }
 .s-font-16 {
     font-size: 16px!important;
@@ -986,7 +1148,9 @@
 .s-font-14 {
     font-size: 14px!important;
 }
-
+.vertical-align-middle {
+    vertical-align: middle;
+}
 /*----- SIDEBAR DROPDOWN --- */
 .bg-custom-1 {
     background-color: #85144b;
@@ -999,3 +1163,18 @@
   .dropdown-menu {
       right: 0 !important;
   }
+
+/* *********** STATUS UPDATE BOX ********** */
+ul.custom-bullet.plus {
+    list-style: none !important;
+    padding: 5px;
+}
+
+ul.custom-bullet.plus li {
+    
+    padding: 10px;
+}
+
+.material-icons {
+    vertical-align: -6px;
+}
