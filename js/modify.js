@@ -1,4 +1,6 @@
 
+
+// ********** Modify Contributions Sliders ********** 
 $(function () {
     $("#employee-contribution").slider({
         range: "max",
@@ -56,6 +58,8 @@ $(function () {
     $("#amount-employee").val($("#employee-contribution").slider("value") + "%");
 });
 
+//  ********** End of Modify Contributions Sliders ********** 
+
 
 $(function () {
     $("#employer-contribution").slider({
@@ -73,6 +77,8 @@ $(function () {
 
 
 });
+
+// ********** AVC Slider ********** 
 
 $(function () {
     $("#avc-contribution").slider({
@@ -94,14 +100,9 @@ $(function () {
     $("#amount-avc").val($("#avc-contribution").slider("value") + "%");
 });
 
-//var block = document.getElementById('modal-btn-yes');
+// ********** End Of AVC Slider ********** 
 
-// block.addEventListener('click', function () {
-
-//     if (block.getAttribute('class') == 'avc') block.setAttribute('class', 'avc-reordered');
-//     else block.setAttribute('class', 'avc');
-// });
-
+// ********** Modify Summary Modal ********** 
 var modalConfirm = function (callback) {
 
     $("#btn-confirm").on("click", function () {
@@ -129,51 +130,18 @@ modalConfirm(function (confirm) {
     }
 });
 
-
-
+//  ********** End Of Modify Summary Modal  ********** 
+//Tooltip JS
 $(function () {
     $(document).tooltip();
 });
 
+
+//Script for Bootstrap Side Menu (Main Menu)
 $(document).ready(function () {
+
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
     });
+
 });
-
-$('[data-toggle="tooltip1"]').tooltip({ 'placement': 'top' });
-$('[data-toggle="tooltip2"]').tooltip({ 'placement': 'top' });
-$('[data-toggle="tooltip3"]').tooltip({ 'placement': 'top' });
-$('[data-toggle="tooltip4"]').tooltip({ 'placement': 'top' });
-
-
-$(document).ready(function () {
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-    });
-});
-
-var modalConfirm = function (callback) {
-
-    $("#btnSubmit").on("click", function () {
-    $("#my-modal").modal('show');
-    });
-    
-    $("#modal-btn-confirm").on("click", function () {
-    callback(true);
-    $("#my-modal").modal('hide');
-    });
-    
-    $("#modal-btn-cancel").on("click", function () {
-    callback(false);
-    $("#my-modal").modal('hide');
-    });
-    };
-    
-    modalConfirm(function (confirm) {
-    if (confirm) { // Acciones si el usuario confirma
-    $("#result").html("CONFIRMED");
-    } else { // Acciones si el usuario no confirma
-    $("#result").html("NOT CONFIRMED");
-    }
-    });
