@@ -59,6 +59,10 @@
     .btn:focus {
         box-shadow: none;
     }
+    .btn-info {
+        color: #fff;
+        background-color: #5261ac;
+    }
     .bg-light {
         background: #FFF !important;
     }
@@ -238,6 +242,12 @@
             display: flex;
             justify-content: center;
         }
+        .nowrap {
+            flex-flow: nowrap;
+        }
+        .align-items-center {
+            align-items: center;
+        }
     .flex-flow-rw {
         flex-flow: row wrap;
     }
@@ -309,6 +319,9 @@
         color: #333;
         padding: 25px;
         flex-flow: row wrap;
+    }
+    .welcome-box-mobile {
+        background: #F0F1F7;    
     }
     .years {
         font-size: 28px;
@@ -734,8 +747,20 @@
         .x {
             display: none !important;
         }
-        
+        .welcome-box-1 {
+            display: none;
+        } 
+        .welcome-box-mobile {
+            display: block;    
+        }  
+        .cb-card .details-box {
+            margin-left: 40px;
+        }
+        .cb-card-lg .details-box {
+            margin-left: 40px;
+        }
           }
+    /*   ***************** DESKTOP DEVICES ***************** */      
     @media (min-width: 796px){
         .profile {
             display: none;
@@ -743,6 +768,10 @@
         .nav-link {
             display: none;
         }
+        .welcome-box-mobile {
+            display: none;
+        }
+        
         
     }
  /*-- SLIDER STYLES */
@@ -1138,7 +1167,12 @@
 .s-font-16 {
     font-size: 16px!important;
 }
-
+.font-size-20 {
+    font-size: 20px;
+}
+.font-size-35 {
+    font-size: 35px;
+}
 .s-font-28 {
     font-size: 28px!important;
 }
