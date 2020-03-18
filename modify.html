@@ -26,7 +26,8 @@
 				<!-- Our custom JS--> 
 				  <script src="js/modify.js"></script> 
 			  </head>
-	<body>
+	
+			  <body>
 		<div class="wrapper">
 			<!-- Sidebar Menu  -->
 			<nav id="sidebar">
@@ -215,6 +216,17 @@
 					</div>
 					<!--MODIFY HEADER END-->
 					<!-- SLIDERS -->
+					<script> $( function() {
+							var handle = $( "#custom-handle" );
+							$( "#slider" ).slider({
+							  create: function() {
+								handle.text( $( this ).slider( "value" ) );
+							  },
+							  slide: function( event, ui ) {
+								handle.text( ui.value );
+							  }
+							});
+						  } );</script>
 					<div class="row">
 						<div class="col-lg-8 col-md-8 col-sm-8">
 							<div class="col-lg-12 col-md-12 col-sm-12 manage-my-contributions">
@@ -299,10 +311,6 @@
 									<span id="total-percentage-monthly-contribution" class="bold">8%</span>&nbsp;
 								</div>
 								of your salary</div>
-							<div class="contribution-split-box">
-								<span>€169.00 Employee</span>
-								<span>Employer €169.00</span>
-							</div>
 							<div class="col-lg-12 col-md-12 col-sm-12 submit-changes flex-center">
 								<div class="alert" role="alert" id="result"></div>
 								<button class="submit-changes-btn" id="btnSubmit" value="Submit">Submit Changes</button>

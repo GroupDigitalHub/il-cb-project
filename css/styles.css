@@ -510,6 +510,7 @@
         margin-bottom: -5px;
         padding: 20px;
         font-size: 20px;
+        background: #FFF;
     }
     .year-month-tab {
     height: auto;
@@ -529,6 +530,7 @@
         padding: 20px;
         display: flex;
         flex-flow: column;
+        background: #fff;
     }
 
     .contribution-split-box {
@@ -560,6 +562,7 @@
         margin: 5px;
         margin-top: -5px;
         padding: 20px;
+        background: #FFF;
     }
 
    .what-else-can-i-do {
@@ -614,6 +617,7 @@
       border: 1px solid #dfe1e8;
       padding: 25px;
       align-items: center;
+      background: #fff;
   }
   .profile-subtitle {
       font-size: 14px;
