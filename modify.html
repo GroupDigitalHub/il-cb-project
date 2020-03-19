@@ -201,36 +201,36 @@
             <!-- MODIFY HEADER -->
             <div class="container modify-content flex-center">
                 <div class="col-lg-10 col-md-12 col-sm-12">
-                   
-                        <div class="row profile-box">
-                            <div class="col-2"><img src="img/profile.png" alt="profile" /></div>
-                            <div class="col-2">
-                                <span id="customer-name">John Smith</span>
-                                <br>
-                                <span class="profile-subtitle">Age</span>
-                                <br>
-                                <span id="customer-age">40 years</span>
-                            </div>
-                            <div class="col-2">
-                                <br>
-                                <span class="profile-subtitle">Annual Salary</span>
-                                <br>
-                                <span id="customer-annual-salary">€50,776</span>
-                            </div>
-                            <div class="col-2">
-                                <br>
-                                <span class="profile-subtitle">Gross monthly</span>
-                                <br>
-                                <span id="customer-gross-monthly">€4,231</span>
-                            </div>
-                            <div class="col-2">
-                                <br>
-                                <span class="profile-subtitle">Tax Band</span>
-                                <br>
-                                <span id="customer-tax-band">40%</span>
-                            </div>
+
+                    <div class="row profile-box">
+                        <div class="col-2"><img src="img/profile.png" alt="profile" /></div>
+                        <div class="col-2">
+                            <span id="customer-name">John Smith</span>
+                            <br>
+                            <span class="profile-subtitle">Age</span>
+                            <br>
+                            <span id="customer-age">40 years</span>
                         </div>
-                        <!--<div class="row profile-box-mobile">
+                        <div class="col-2">
+                            <br>
+                            <span class="profile-subtitle">Annual Salary</span>
+                            <br>
+                            <span id="customer-annual-salary">€50,776</span>
+                        </div>
+                        <div class="col-2">
+                            <br>
+                            <span class="profile-subtitle">Gross monthly</span>
+                            <br>
+                            <span id="customer-gross-monthly">€4,231</span>
+                        </div>
+                        <div class="col-2">
+                            <br>
+                            <span class="profile-subtitle">Tax Band</span>
+                            <br>
+                            <span id="customer-tax-band">40%</span>
+                        </div>
+                    </div>
+                    <!--<div class="row profile-box-mobile">
                             <div class="col-lg-12 welcome-box-mobile">
                                 <div class="col-lg-12">
                                     <div class="row align-items-center">
@@ -262,153 +262,142 @@
                                 </div>
                             </div>
                         </div>-->
-                  
+
                     <!--MODIFY HEADER END-->
                     <!-- SLIDERS -->
-                    <script>
-                        $(function() {
-                            var handle = $("#custom-handle");
-                            $("#slider").slider({
-                                create: function() {
-                                    handle.text($(this).slider("value"));
-                                },
-                                slide: function(event, ui) {
-                                    handle.text(ui.value);
-                                }
-                            });
-                        });
-                    </script>
+
                     <div class="col-lg-12 col-md-12 col-sm-12 sliders-desktop"></div>
-                        <div class="row">
-                            <div class="col-lg-8 col-md-8 col-sm-8">
-                                <div class="col-lg-12 col-md-12 col-sm-12 manage-my-contributions">
-                                    <div class="row">
-                                        <div class="col-lg-6 ">
-                                            <span>Manage my contributions</span>
-                                        </div>
-                                        <div class="col-lg-6 year-month-tab">
-                                            <span>Monthly</span>
-                                            <span>Yearly</span>
-                                        </div>
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
+                            <div class="col-lg-12 col-md-12 col-sm-12 manage-my-contributions">
+                                <div class="row">
+                                    <div class="col-lg-6 ">
+                                        <span>Manage my contributions</span>
+                                    </div>
+                                    <div class="col-lg-6 year-month-tab">
+                                        <span>Monthly</span>
+                                        <span>Yearly</span>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 contributions-box">
-                                    <!--Employee Contribution Slider-->
-                                    <div class="row employee" style="display: flex;">
-                                        <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
-                                            <label style="font-size: 18px;">My employee contribution</label>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-3" style="flex: 50%; text-align: right; font-size: 18px;">
-                                            <span class="input-group-addon" style="background-color: #fff; font-weight: bold;">€296.00</span>
-
-                                        </div>
-                                        <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Includes tax saving of&nbsp;
-                                            <span id="tax-saving-total" class="bold">€67.00</span>&nbsp;
-                                        </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 contributions-box">
+                                <!--Employee Contribution Slider-->
+                                <div class="row employee" style="display: flex;">
+                                    <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
+                                        <label style="font-size: 18px;">My employee contribution</label>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 flex-center" style="flex: 50%; text-align: right; font-size: 18px;">
+                                        <span class="input-group-addon" style="background-color: #fff; font-weight: bold;">€296.00</span>
 
                                     </div>
-                                    <div class="row employee" style="display: flex;">
-										
-										<div id="slider2"></div>
-                                        <div class="col-lg-8 col-md-8 col-sm-8 flex-center" id="employee-contribution">
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-2 col-sm-2">
-
-                                            <input type="text" id="amount-employee" readonly style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">
-                                        </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Includes tax saving of&nbsp;
+                                        <span id="tax-saving-total" class="bold">€67.00</span>&nbsp;
                                     </div>
 
-                                    <!--End of Employee Contribution Slider-->
-                                    <!--Employer Contribution Slider-->
-                                    <div class="row employer" style="display: flex;">
-                                        <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
-                                            <label style="font-size: 18px;">My employer contribution</label>
+                                </div>
+                                <div class="row employee" style="display: flex;">
 
-                                        </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8 flex-center" id="employee-contribution">
+                                    </div>
 
-                                        <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Your employer will contribute up to&nbsp;
-                                            <span id="employer-contribution-total" class="bold">
+                                    <div class="col-lg-2 col-md-2 col-sm-2" style="display: flex;">
+
+                                        <input type="text" id="amount-employee" readonly style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">
+                                    </div>
+                                </div>
+
+                                <!--End of Employee Contribution Slider-->
+                                <!--Employer Contribution Slider-->
+                                <div class="row employer" style="display: flex;">
+                                    <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
+                                        <label style="font-size: 18px;">My employer contribution</label>
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 flex-center" style="flex: 50%; text-align: right; font-size: 18px;">
+                                        <span class="input-group-addon" style="background-color: #fff; font-weight: bold;">€296.00</span>
+
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Your employer will contribute up to&nbsp;
+                                        <span id="employer-contribution-total" class="bold">
 											7%
 										</span> &nbsp;into your pension</div>
-                                    </div>
-                                    <div class="row employer" style="display: flex;">
-                                        <div class="col-lg-8 col-md-8 col-sm-8 flex-center" id="employer-contribution"></div>
-                                        <div class="col-lg-2 col-md-2 col-sm-2" style="display: flex;">
-                                            <input type="text" id="amount-employer" readonly style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">
-                                        </div>
-                                    </div>
-                                    <!--End of Employer Contribution Slider-->
-                                    <!--AVC Contribution Slider-->
-                                    <div class="row avc">
-                                        <div class="col-lg-10" style="height: 61px;background-color: #a9e2d9;margin: 10px; display: flex;">
-                                            <span style="color: #606060;align-self: center; font-size: 14px;">Ready to start AVCs and unlock more tax savings?</span>
-                                        </div>
-                                        <div class="col-lg-9 col-md-9 col-sm-9 projections-text" style="display: flex;">
-                                            <label style="font-size: 18px;">My additional voluntary contribution (AVCs)</label>
-                                        </div>
-                                        <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">You age related tax relief is&nbsp;
-                                            <span id="tax-relief-total" class="bold">25%</span>&nbsp;
-                                        </div>
-                                    </div>
-                                    <div class="row avc">
-                                        <div class="col-lg-8 col-md-8 col-sm-8" id="avc-contribution" style="display: flex;"></div>
-                                        <div class="col-lg-2 col-md-2 col-sm-2" style="display: flex;">
-                                            <input type="text" id="amount-avc" readonly style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">
-                                        </div>
-                                    </div>
-
-                                    <!--End of AVC Contribution Slider-->
-                                    <div class="contributions-text-subtext">Total monthly contribution of&nbsp;
-                                        <span id="total-monthly-contribution" class="bold">€338.00</span>&nbsp; or&nbsp;
-                                        <span id="total-percentage-monthly-contribution" class="bold">8%</span>&nbsp; of your salary
+                                </div>
+                                <div class="row employer" style="display: flex;">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 flex-center" id="employer-contribution"></div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2" style="display: flex;">
+                                        <input type="text" id="amount-employer" readonly style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 submit-changes flex-center">
-                                    <div class="alert" role="alert" id="result"></div>
-                                    <button class="submit-changes-btn" id="btnSubmit" value="Submit">Submit Changes</button>
-
+                                <!--End of Employer Contribution Slider-->
+                                <!--AVC Contribution Slider-->
+                                <div class="row avc">
+                                    <div class="col-lg-10" style="height: 61px;background-color: #a9e2d9;margin: 10px; display: flex;">
+                                        <span style="color: #606060;align-self: center; font-size: 14px;">Ready to start AVCs and unlock more tax savings?</span>
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-9 projections-text" style="display: flex;">
+                                        <label style="font-size: 18px;">My additional voluntary contribution (AVCs)</label>
+                                    </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">You age related tax relief is&nbsp;
+                                        <span id="tax-relief-total" class="bold">25%</span>&nbsp;
+                                    </div>
                                 </div>
-                                <span style="font-size: 14px; color: #333; margin: 5px;">
+                                <div class="row avc">
+                                    <div class="col-lg-8 col-md-8 col-sm-8" id="avc-contribution" style="display: flex;"></div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2" style="display: flex;">
+                                        <input type="text" id="amount-avc" readonly style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">
+                                    </div>
+                                </div>
+
+                                <!--End of AVC Contribution Slider-->
+                                <div class="contributions-text-subtext">Total monthly contribution of&nbsp;
+                                    <span id="total-monthly-contribution" class="bold">€338.00</span>&nbsp; or&nbsp;
+                                    <span id="total-percentage-monthly-contribution" class="bold">8%</span>&nbsp; of your salary
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 submit-changes flex-center">
+                                <div class="alert" role="alert" id="result"></div>
+                                <button class="submit-changes-btn" id="btnSubmit" value="Submit">Submit Changes</button>
+
+                            </div>
+                            <span style="font-size: 14px; color: #333; margin: 5px;">
 								* Potential projected fund value is an estimation and not guaranteed.</span>
-                            </div>
-                            <!--Start of Simulate Projection Boxes-->
-                            <div class="col-lg-4 col-md-4 col-sm-8">
-                                <div class="row modify-projections-box-1 flex-center">
-                                    <div class="col-lg-3 ">
-                                        <svg class="circle" viewbox="0 0 24 24">
-                                            <path fill="#BABABA" d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64" />
-                                        </svg>
-
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <span class="modify-projections-total" id="projected-fund-value">
-										€127,540
-									</span>
-                                        <span class="modify-projections-subtext">Current projected value</span>
-                                    </div>
-                                </div>
-                                <div class="row modify-projections-box-2 flex-center">
-                                    <div class="col-lg-3 ">
-                                        <svg class="circle-2" viewbox="0 0 24 24">
-                                            <path fill="#D5DAEB" d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64" />
-                                        </svg>
-
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <span class="modify-projections-total" id="potential-fund-value">
-										€127,540
-									</span>
-                                        <span class="modify-projections-subtext">Potential fund value with further investment</span>
-                                    </div>
-                                </div>
-                                <div class="row modify-simulate-button flex-center">
-                                    <span>Simulate</span>
-                                </div>
-                            </div>
-                            <!--End of Projections / Simulate-->
                         </div>
-                    
+                        <!--Start of Simulate Projection Boxes-->
+                        <div class="col-lg-4 col-md-4 col-sm-8">
+                            <div class="row modify-projections-box-1 flex-center">
+                                <div class="col-lg-3 ">
+                                    <svg class="circle" viewbox="0 0 24 24">
+                                        <path fill="#BABABA" d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64" />
+                                    </svg>
+
+                                </div>
+                                <div class="col-lg-9">
+                                    <span class="modify-projections-total" id="projected-fund-value">
+										€127,540
+									</span>
+                                    <span class="modify-projections-subtext">Current projected value</span>
+                                </div>
+                            </div>
+                            <div class="row modify-projections-box-2 flex-center">
+                                <div class="col-lg-3 ">
+                                    <svg class="circle-2" viewbox="0 0 24 24">
+                                        <path fill="#D5DAEB" d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64" />
+                                    </svg>
+
+                                </div>
+                                <div class="col-lg-9">
+                                    <span class="modify-projections-total" id="potential-fund-value">
+										€127,540
+									</span>
+                                    <span class="modify-projections-subtext">Potential fund value with further investment</span>
+                                </div>
+                            </div>
+                            <div class="row modify-simulate-button flex-center">
+                                <span>Simulate</span>
+                            </div>
+                        </div>
+                        <!--End of Projections / Simulate-->
+                    </div>
 
                     <!-- SLIDERS END -->
                     <!-- SIMULATE /PROJECTIONS  BOX -->
@@ -495,38 +484,39 @@
                 </div>
             </div>
         </div>
-    
 
-    <div class="modal-footer">
-        <button type="button" class="btn btn-default" id="modal-btn-cancel">Cancel</button>
-        <button type="button" class="btn btn-primary" id="modal-btn-confirm">Confirm</button>
-	</div>
-	</div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" id="modal-btn-cancel">Cancel</button>
+            <button type="button" class="btn btn-primary" id="modal-btn-confirm">Confirm</button>
+        </div>
+    </div>
     <!-- END OF SUMMARY OF CHANGES MODAL-->
-<script>var modalConfirm = function (callback) {
+    <script>
+        var modalConfirm = function(callback) {
 
-$("#btnSubmit").on("click", function () {
-$("#my-modal").modal('show');
-});
+            $("#btnSubmit").on("click", function() {
+                $("#my-modal").modal('show');
+            });
 
-$("#modal-btn-confirm").on("click", function () {
-callback(true);
-$("#my-modal").modal('hide');
-});
+            $("#modal-btn-confirm").on("click", function() {
+                callback(true);
+                $("#my-modal").modal('hide');
+            });
 
-$("#modal-btn-cancel").on("click", function () {
-callback(false);
-$("#my-modal").modal('hide');
-});
-};
+            $("#modal-btn-cancel").on("click", function() {
+                callback(false);
+                $("#my-modal").modal('hide');
+            });
+        };
 
-modalConfirm(function (confirm) {
-if (confirm) { // Acciones si el usuario confirma
-$("#result").html("CONFIRMED");
-} else { // Acciones si el usuario no confirma
-$("#result").html("NOT CONFIRMED");
-}
-});</script>
+        modalConfirm(function(confirm) {
+            if (confirm) { // Acciones si el usuario confirma
+                $("#result").html("CONFIRMED");
+            } else { // Acciones si el usuario no confirma
+                $("#result").html("NOT CONFIRMED");
+            }
+        });
+    </script>
     <div class="line"></div>
 
 </body>

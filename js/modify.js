@@ -11,22 +11,9 @@ $( function() {
     });
   } );
 // ********** Modify Contributions Sliders ********** 
-$(function () {
-    $('#slider').slider({
-       range: false,
-       value: 15,
-       min: 0,
-       max: 80,
-        slide: function( event, ui ) {
-            $(ui.handle).text(ui.value);
-        }
-  });
-    $('.ui-slider-handle').each(function() {
-       $(this).text($(this).parent().slider('value'));
-    });
-});
 
-/*$(function () {
+
+$(function () {
     $("#employee-contribution").slider({
         range: "max",
         min: 1,
@@ -87,7 +74,7 @@ $(function () {
     
 
 });
-*/
+
 //  ********** End of Modify Contributions Sliders ********** 
 
 

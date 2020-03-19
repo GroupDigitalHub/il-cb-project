@@ -557,7 +557,7 @@
         color: #fff;
     }
     .contributions-text-subtext {
-        display: flex;
+        
         font-size: 14px;
         
     }
@@ -732,19 +732,22 @@
             order: 1;
         }
         #amount-employee {
-            order: 0
+            order: 0;
+            font-size: 24px;
         }
         #employer-contribution {
             order: 1;
         }
         #amount-employer {
-            order: 0
+            order: 0;
+            font-size: 24px;
         }
         #avc-contribution {
             order: 1;
         }
         #amount-avc {
-            order: 0
+            order: 0;
+            font-size: 24px;
         }
         .my-balance-desktop {
             display: none;
@@ -782,6 +785,10 @@
         }
         .profile-box {
             display: none;
+        }
+        .contributions-text-subtext {
+            justify-content: center;
+            margin-bottom: 10px;
         }
           }
     /*   ***************** DESKTOP DEVICES ***************** */      
