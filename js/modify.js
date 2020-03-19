@@ -51,11 +51,14 @@ $(function () {
             else if (ui.value <= 7) {
                 $('#avc-contribution .ui-slider-handle').css("left", "0%");
             }
-
+           
 
         }
     });
     $("#amount-employee").val($("#employee-contribution").slider("value") + "%");
+
+    
+
 });
 
 //  ********** End of Modify Contributions Sliders ********** 
@@ -144,4 +147,10 @@ $(document).ready(function () {
         $('#sidebar').toggleClass('active');
     });
 
+});
+
+// ************* INFO SIDEBAR RIGHT *********** //
+
+$('.toggle-right').on('click', function() {
+    $('.right-sidebar').toggleClass("right-sidebar-collapsed");
 });

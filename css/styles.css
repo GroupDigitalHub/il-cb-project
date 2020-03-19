@@ -43,7 +43,7 @@
         background: #CACFE6;
         border: none;
         border-radius: 0;
-        margin-bottom: 40px;
+        
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     }
 
@@ -321,7 +321,11 @@
         flex-flow: row wrap;
     }
     .welcome-box-mobile {
-        background: #F0F1F7;    
+        background: #F0F1F7; 
+           
+    }
+    .welcome-box-mobile div {
+        margin-bottom: 10px;
     }
     .years {
         font-size: 28px;
@@ -510,17 +514,20 @@
         margin-bottom: -5px;
         padding: 20px;
         font-size: 20px;
+        background: #FFF;
     }
     .year-month-tab {
-    height: auto;
-    background: linear-gradient(to right, #ffff 50%, #e3e3e3 50%);
-    justify-content: space-around;
-    display: flex;
-    padding: 10px 15px 10px 15px;
-    color: #606060;
-    width: 100%;
-    border: 1px solid grey;
-    border-radius: 4px;
+        height: 30px;
+        background: linear-gradient(to right, #ffff 50%, #EDEFF3 50%);
+        justify-content: space-around;
+        display: flex;
+        padding: 10px 15px 10px 15px;
+        color: #606060;
+        width: 100%;
+        border: 1px solid grey;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 14px;
     }
     .contributions-box {
         margin: 5px;
@@ -529,6 +536,7 @@
         padding: 20px;
         display: flex;
         flex-flow: column;
+        background: #fff;
     }
 
     .contribution-split-box {
@@ -560,6 +568,7 @@
         margin: 5px;
         margin-top: -5px;
         padding: 20px;
+        background: #FFF;
     }
 
    .what-else-can-i-do {
@@ -584,7 +593,11 @@
        display: flex;
        justify-content: space-evenly;
    }
-
+   .info-bar-right {
+       
+       width: 100%;
+       background: yellow;
+   }
    .header-headings {
         display: flex;
         justify-content: space-evenly;
@@ -614,6 +627,7 @@
       border: 1px solid #dfe1e8;
       padding: 25px;
       align-items: center;
+      background: #fff;
   }
   .profile-subtitle {
       font-size: 14px;
@@ -759,6 +773,15 @@
         .cb-card-lg .details-box {
             margin-left: 40px;
         }
+        .info-bar {
+            display: none;
+        }
+        .profile-box-mobile {
+            display: block;
+        }
+        .profile-box {
+            display: none;
+        }
           }
     /*   ***************** DESKTOP DEVICES ***************** */      
     @media (min-width: 796px){
@@ -769,6 +792,9 @@
             display: none;
         }
         .welcome-box-mobile {
+            display: none;
+        }
+        .profile-box-mobile {
             display: none;
         }
         
@@ -1170,18 +1196,22 @@
 .font-size-20 {
     font-size: 20px;
 }
+.font-size-18 {
+    font-size: 18px;
+}
 .font-size-35 {
     font-size: 35px;
 }
-.s-font-28 {
+.font-size-28 {
     font-size: 28px!important;
 }
 .s-margin-bottom-5 {
     margin-bottom: 5px!important;
 }
-.s-font-14 {
+.font-size-14 {
     font-size: 14px!important;
 }
+
 .vertical-align-middle {
     vertical-align: middle;
 }
@@ -1211,4 +1241,54 @@ ul.custom-bullet.plus li {
 
 .material-icons {
     vertical-align: -6px;
+}
+
+/* ******** INFO SIDEBAR RIGHT ********** */
+.right-sidebar, .toggle-right {
+    transition:all .5s ease-in-out;
+    -webkit-transition:all .5s ease-in-out;
+}
+
+.right-sidebar {
+    display: flex;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    right:0;
+    margin-top: -5px;
+    margin-right: -10px;
+}
+.mt-20-p-20-0 {
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+.toggle-right {
+    position:absolute;
+    right:5px;
+    top:5px;
+    width:30px;
+    height:30px;
+    
+}
+
+.right-sidebar-collapsed {
+     transform:translateX(100%);   
+    -webkit-transform:translateX(100%);
+}
+
+.right-sidebar-collapsed .toggle-right {
+    left:-5px;
+     transform:translateX(-100%);   
+    -webkit-transform:translateX(-100%);   
+}
+
+.right-sidebar-icon {
+    font-size: 32px !important; 
+    color: #979797;
+}
+.info-bar-text {
+    padding: 30px 0;
+    margin-top: 20px;
 }
