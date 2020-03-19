@@ -201,7 +201,7 @@
             <!-- MODIFY HEADER -->
             <div class="container modify-content flex-center">
                 <div class="col-lg-10 col-md-12 col-sm-12">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
+                   
                         <div class="row profile-box">
                             <div class="col-2"><img src="img/profile.png" alt="profile" /></div>
                             <div class="col-2">
@@ -230,7 +230,7 @@
                                 <span id="customer-tax-band">40%</span>
                             </div>
                         </div>
-                        <div class="row profile-box-mobile">
+                        <!--<div class="row profile-box-mobile">
                             <div class="col-lg-12 welcome-box-mobile">
                                 <div class="col-lg-12">
                                     <div class="row align-items-center">
@@ -261,8 +261,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div>-->
+                  
                     <!--MODIFY HEADER END-->
                     <!-- SLIDERS -->
                     <script>
@@ -278,7 +278,7 @@
                             });
                         });
                     </script>
-                    <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 sliders-desktop"></div>
                         <div class="row">
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <div class="col-lg-12 col-md-12 col-sm-12 manage-my-contributions">
@@ -308,6 +308,8 @@
 
                                     </div>
                                     <div class="row employee" style="display: flex;">
+										
+										<div id="slider2"></div>
                                         <div class="col-lg-8 col-md-8 col-sm-8 flex-center" id="employee-contribution">
                                         </div>
 
@@ -406,7 +408,7 @@
                             </div>
                             <!--End of Projections / Simulate-->
                         </div>
-                    </div>
+                    
 
                     <!-- SLIDERS END -->
                     <!-- SIMULATE /PROJECTIONS  BOX -->
@@ -493,14 +495,38 @@
                 </div>
             </div>
         </div>
-    </div>
+    
 
     <div class="modal-footer">
         <button type="button" class="btn btn-default" id="modal-btn-cancel">Cancel</button>
         <button type="button" class="btn btn-primary" id="modal-btn-confirm">Confirm</button>
-    </div>
+	</div>
+	</div>
     <!-- END OF SUMMARY OF CHANGES MODAL-->
+<script>var modalConfirm = function (callback) {
 
+$("#btnSubmit").on("click", function () {
+$("#my-modal").modal('show');
+});
+
+$("#modal-btn-confirm").on("click", function () {
+callback(true);
+$("#my-modal").modal('hide');
+});
+
+$("#modal-btn-cancel").on("click", function () {
+callback(false);
+$("#my-modal").modal('hide');
+});
+};
+
+modalConfirm(function (confirm) {
+if (confirm) { // Acciones si el usuario confirma
+$("#result").html("CONFIRMED");
+} else { // Acciones si el usuario no confirma
+$("#result").html("NOT CONFIRMED");
+}
+});</script>
     <div class="line"></div>
 
 </body>

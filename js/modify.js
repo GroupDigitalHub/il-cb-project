@@ -1,12 +1,38 @@
-
-
+$( function() {
+    var handle = $( "#custom-handle" );
+    $( "#sliderHandle" ).slider({
+      range:'min',
+      create: function() {
+        handle.text( $( this ).slider( "value" ) );
+      },
+      slide: function( event, ui ) {
+        handle.text( ui.value );
+      }
+    });
+  } );
 // ********** Modify Contributions Sliders ********** 
 $(function () {
+    $('#slider').slider({
+       range: false,
+       value: 15,
+       min: 0,
+       max: 80,
+        slide: function( event, ui ) {
+            $(ui.handle).text(ui.value);
+        }
+  });
+    $('.ui-slider-handle').each(function() {
+       $(this).text($(this).parent().slider('value'));
+    });
+});
+
+/*$(function () {
     $("#employee-contribution").slider({
         range: "max",
         min: 1,
         max: 7,
         value: 4,
+        
         slide: function (event, ui) {
             $("#amount-employee").val(ui.value + "%");
             if (ui.value == 1) {
@@ -54,13 +80,14 @@ $(function () {
            
 
         }
+        
     });
     $("#amount-employee").val($("#employee-contribution").slider("value") + "%");
 
     
 
 });
-
+*/
 //  ********** End of Modify Contributions Sliders ********** 
 
 
@@ -106,32 +133,6 @@ $(function () {
 // ********** End Of AVC Slider ********** 
 
 // ********** Modify Summary Modal ********** 
-var modalConfirm = function (callback) {
-
-    $("#btn-confirm").on("click", function () {
-        $("#my-modal").modal('show');
-    });
-
-    $("#modal-btn-yes").on("click", function () {
-        callback(true);
-        $("#my-modal").modal('hide');
-    });
-
-    $("#modal-btn-no").on("click", function () {
-        callback(false);
-        $("#my-modal").modal('hide');
-    });
-};
-
-modalConfirm(function (confirm) {
-    if (confirm) {
-        //Acciones si el usuario confirma
-        $("#result").html("CONFIRMED");
-    } else {
-        //Acciones si el usuario no confirma
-        $("#result").html("NOT CONFIRMED");
-    }
-});
 
 //  ********** End Of Modify Summary Modal  ********** 
 //Tooltip JS
