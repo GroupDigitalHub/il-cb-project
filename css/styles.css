@@ -205,7 +205,9 @@
         right: 20px;
         transform: translateY(-50%);
     }
-
+    .w100 {
+        width: 100%;
+    }
     ul ul a {
         font-size: 0.9em !important;
         padding-left: 30px !important;
@@ -999,6 +1001,9 @@
 
 .confirm-summary-text {
     padding: 20px 10px 20px 10px;
+}
+.modal-arrow {
+    padding-left: 25%;
 }
 
 /*---------- CARD STYLING -------- */
