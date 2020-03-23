@@ -9,6 +9,8 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
       <!-- Our Custom CSS -->
       <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/mediaQueries.css">
+
       <!-- Material Icons-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- Font Awesome JS -->
@@ -122,7 +124,7 @@
          </nav>
          <!-- Right Side Profile Menu  -->
          <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-light bg-light">
                <div class="container-fluid">
                   <button type="button" id="sidebarCollapse" class="btn btn-info">
                   <i class="material-icons">menu</i>
@@ -158,7 +160,7 @@
                      </ul>
                   </div>
                   <button class="nav-link" type="button" data-toggle="dropdown" data-target="#navbar-list-4" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                     <span class="material-icons il-blue" style="font-size: 32px;">account_circle</span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbar-list-4">
                      <ul class="navbar-nav">
@@ -187,27 +189,27 @@
                   <!-- PROFILE BOX WITH RETIREMENT PROJECTION YEARS-->
                   <div class="col-lg-9 col-sm-9">
                      <div class="row display-flex">
-                        <div class="col-xs-12 col-sm-3 box welcome-box-1 flex-center">
+                        <div class="col-xs-12 col-sm-3 box justify-content-center welcome-box-1">
                            <img src="img/profile.png" alt="profile"/>
                         </div>
-                        <div class="col-xs-12 col-sm-9 box welcome-box-1 flex-center">
-                           <div class="col-lg-6 flex-center years">
+                        <div class="col-xs-12 col-sm-9 box justify-content-center welcome-box-1">
+                           <div class="col-lg-6 d-flex justify-content-center years">
                               <div class="col-lg-2">
                                  <span class="years" id="currentAge">40</span>
                               </div>
                               <div class="col-lg-10"><img src="img/to-retirement.png" alt="to-retirement"></div>
                            </div>
-                           <div class="col-lg-6 years flex-center">
+                           <div class="col-lg-6 years d-flex justify-content-center">
                               <span class="years" id="retirementAge">68</span>
                               <div class="col-lg-10"><img src="img/in-retirement.png" alt="in-retirement"></div>
                            </div>
-                           <div class="col-lg-6 flex-center">
+                           <div class="col-lg-6 d-flex justify-content-center">
                               <div class="col-lg-2">
                                  <div class="col-lg-12">yrs</div>
                               </div>
                               <div class="col-lg-10 retirement-text"><span id="yearsToRetirement">28</span> years to retirement</div>
                            </div>
-                           <div class="col-lg-6 flex-center">
+                           <div class="col-lg-6 d-flex justify-content-center">
                               <div class="col-lg-2">yrs</div>
                               <div class="col-lg-10 retirement-text">in retirement</div>
                            </div>
@@ -231,7 +233,33 @@
                      </div>
                      <!-- END OF PROFILE BOX WITH RETIREMENT PROJECTION YEARS-->
                   </div>
-                  <div class="col-lg-3 col-md-3 col-sm-3">
+                  <!-- IPAD ONLY MY FUND VALUE BOX-->
+                  <div class="col-lg-12 col-md-12 col-sm-12 ipad">
+                     <div class="cb-card-lg no-max-height il-grey hover-lighten  hoverable">
+                        <div class="left-box il-black opacity-25">
+                          <div class="icon-circle-grey">
+                            <i class="material-icons inner-icon il-aquagreen-text text-darken-1">filter_vintage</i>
+                          </div>
+                        </div>
+                        <div class="details-box">
+                        <div class="row font-size-14">
+                              My Fund Value
+                        </div>  
+                        <div class="row font-size-28 s-margin-bottom-5">
+                            <span id="myFundValue">€25,446</span>	
+                        </div>
+                        <div class="view-transactions-btn">View Transactions</div>
+                         
+                        </div>
+                        <div class="right-box il-black opacity-25">
+                          <span class="tt" data-tooltip-text="This is the current value of your total contributions to date.	">
+                          <i class="material-icons inner-icon il-info-icon text-darken-1">info</i>
+                          </span>
+                        </div>
+                     </div>
+                   </div>
+                   <!-- END OF IPAD ONLY MY FUND VALUE BOX-->
+                  <div class="col-lg-3 col-md-3 col-sm-3 my-fund-value">
 						<div class="cb-card-lg no-max-height il-grey hover-lighten  hoverable">
 						   <div class="left-box il-black opacity-25">
 							  <div class="icon-circle-grey">
@@ -239,10 +267,10 @@
 							  </div>
 						   </div>
 						   <div class="details-box">
-							<div class="row s-font-14">
+							<div class="row font-size-14">
 									My Fund Value
 							</div>  
-							<div class="row s-font-28 s-margin-bottom-5">
+							<div class="row font-size-28 s-margin-bottom-5">
 								 <span id="myFundValue">€25,446</span>	
 							</div>
 							<div class="view-transactions-btn">View Transactions</div>
@@ -264,7 +292,7 @@
 				<span class="subtitle">My retirement income projections</span>
 				</div>
 				<div class="col-lg-4 col-md-12 col-sm-12 state-pension-toggle">
-					<span class="s-font-16 vertical-align-middle">State Pension</span>
+					<span class="font-size-16 vertical-align-middle">State Pension</span>
 					<div class="onoffswitch">
 							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
 							<label class="onoffswitch-label" for="myonoffswitch">
@@ -284,10 +312,10 @@
                            </div>
                         </div>
                         <div class="details-box">
-                           <div class="row s-font-28 s-margin-bottom-5">
+                           <div class="row font-size-28 s-margin-bottom-5">
                               <span id="projectedFundValue">€127,540</span>
                            </div>
-                           <div class="row s-font-14">
+                           <div class="row font-size-14">
                               Projected fund value
                            </div>
                         </div>
@@ -306,10 +334,10 @@
                            </div>
                         </div>
                         <div class="details-box">
-                           <div class="row s-font-28 s-margin-bottom-5">
+                           <div class="row font-size-28 s-margin-bottom-5">
                               €4,732
                            </div>
-                           <div class="row s-font-14">
+                           <div class="row font-size-14">
 								<span id="projectedAnnualIncome">Projected annual income</span>
                            </div>
                         </div>
@@ -328,10 +356,10 @@
                            </div>
                         </div>
                         <div class="details-box">
-                           <div class="row s-font-28 s-margin-bottom-5">
+                           <div class="row font-size-28 s-margin-bottom-5">
 								<span id="recommendedAnnualIncome">€16,756</span>
                            </div>
-                           <div class="row s-font-14">
+                           <div class="row font-size-14">
                               Recommended annual income
                            </div>
                         </div>
@@ -350,10 +378,10 @@
                            </div>
                         </div>
                         <div class="details-box">
-                           <div class="row s-font-28 s-margin-bottom-5">
+                           <div class="row font-size-28 s-margin-bottom-5">
 								<span id="opportunityToGrow">€12,024</span>
                            </div>
-                           <div class="row s-font-14">
+                           <div class="row font-size-14">
                               Opportunity to grow
                            </div>
                         </div>
@@ -377,10 +405,10 @@
                            <h2>Boost your savings</h2>
                            <p>Get the most out of your company pension by maximising your employers contribution. Take the next step and get the income you want in retirement.
                            </p>
-                           <button class="button-contributions flex-center">Maximise Contributions</button>
+                           <button class="button-contributions d-flex justify-content-center">Maximise Contributions</button>
                         </div>
                         <div class="col-lg-3">
-                           <div class="flex-center"><img src="img/next-step-briefcase.png" alt="briefcase"/></div>
+                           <div class="d-flex justify-content-center"><img src="img/next-step-briefcase.png" class="img-briefcase" alt="briefcase"/></div>
                         </div>
                      </div>
                   </div>

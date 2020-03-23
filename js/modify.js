@@ -1,25 +1,38 @@
-$( function() {
-    var handle = $( "#custom-handle" );
-    $( "#sliderHandle" ).slider({
-      range:'min',
-      create: function() {
-        handle.text( $( this ).slider( "value" ) );
-      },
-      slide: function( event, ui ) {
-        handle.text( ui.value );
-      }
-    });
-  } );
+
 // ********** Modify Contributions Sliders ********** 
 
+// ********** Employee Contribution ToolTip **********
+var eetooltip = $('<input type="text" id="amount-employee" readonly="" style="border:0; color:#333; font-weight:bold;width: 50px;">').css({
+    position: 'absolute',
+    top: '-25px',
+    height: '25px',
+    width: '40px',
+    display: 'block',
+});
 
+
+var ertooltip = $('<input type="text" id="amount-employer" readonly="" style="border:0; color:#333; font-weight:bold;width: 50px;">').css({
+    position: 'absolute',
+    top: '-25px',
+    height: '25px',
+    width: '40px',
+    display: 'block',
+});
+
+var avctooltip = $('<input type="text" id="amount-avc" readonly="" style="border:0; color:#333; font-weight:bold;width: 50px;">').css({
+    position: 'absolute',
+    top: '-25px',
+    height: '25px',
+    width: '40px',
+    display: 'block',
+});
 $(function () {
     $("#employee-contribution").slider({
         range: "max",
         min: 1,
         max: 7,
         value: 4,
-        
+        step: 1,
         slide: function (event, ui) {
             $("#amount-employee").val(ui.value + "%");
             if (ui.value == 1) {
@@ -64,19 +77,18 @@ $(function () {
             else if (ui.value <= 7) {
                 $('#avc-contribution .ui-slider-handle').css("left", "0%");
             }
+            
            
 
-        }
+        },
+        change: function(event, ui) {}
+        }).find(".ui-slider-handle").prepend(eetooltip).hover(function() {
+            
+        })
         
-    });
-    $("#amount-employee").val($("#employee-contribution").slider("value") + "%");
-
-    
-
 });
 
 //  ********** End of Modify Contributions Sliders ********** 
-
 
 $(function () {
     $("#employer-contribution").slider({
@@ -87,8 +99,12 @@ $(function () {
         slide: function (event, ui) {
             $("#amount-employer").val(ui.value + "%");
 
-        }
-    });
+        },
+        change: function(event, ui) {}
+        }).find(".ui-slider-handle").append(ertooltip).load(function() {
+            
+        })
+    
     $("#amount-employer").val($("#employer-contribution").slider("value") + "%");
     $('#employer-contribution').slider('disable');
 
@@ -112,8 +128,12 @@ $(function () {
             else if (ui.value == 0) {
                 $('#employee-contribution').slider('enable');
             }
-        }
-    });
+        },
+        change: function(event, ui) {}
+    }).find(".ui-slider-handle").append(avctooltip).load(function() {
+        
+    })
+    
     $("#amount-avc").val($("#avc-contribution").slider("value") + "%");
 });
 
