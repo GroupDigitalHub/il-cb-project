@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/mediaQueries.css">
     <!-- Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font Awesome JS -->
@@ -136,7 +136,7 @@
         <!-- MAIN CONTENT  -->
         <div id="content">
             <!-- PROFILE DROPDOWN MENU -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-light bg-light">
                 <div class="container-fluid">
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="material-icons">menu</i>
@@ -172,7 +172,7 @@
                         </ul>
                     </div>
                     <button class="nav-link" type="button" data-toggle="dropdown" data-target="#navbar-list-4" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="material-icons il-blue" style="font-size: 32px;">account_circle</span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbar-list-4">
                         <ul class="navbar-nav">
@@ -248,9 +248,9 @@
                             <!-- SLIDERS -->
                             <div class="col-lg-12 col-md-12 col-sm-12 contributions-box">
                                 <!--EMPLOYEE CONTRIBUTION SLIDER-->
-                                <div class="row employee" style="display: flex;">
+                                <div class="row employee align-items-center">
                                     <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
-                                        <label style="font-size: 18px;">My employee contribution</label>
+                                        <label class="font-size-18">My employee contribution</label>
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-3 flex-center" style="flex: 50%; text-align: right; font-size: 18px;">
                                         <span class="input-group-addon" style="background-color: #fff; font-weight: bold;">€296.00</span>
@@ -261,22 +261,22 @@
                                     </div>
 
                                 </div>
-                                <div class="row employee" style="display: flex;">
+                                <div class="row employee align-items-center">
 
                                     <div class="col-lg-8 col-md-8 col-sm-8 flex-center" id="employee-contribution">
                                     </div>
 
-                                    <div class="col-lg-2 col-md-2 col-sm-2" style="display: flex;">
-
-                                        <input type="text" id="amount-employee" readonly style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 flex">
+										
+                                        <span style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">7%</span>
                                     </div>
                                 </div>
                                 <!--END OF EMPLOYEE CONTRIBUTION SLIDER-->
 
                                 <!--EMPLOYER CONTRIBUTION SLIDER-->
-                                <div class="row employer" style="display: flex;">
+                                <div class="row employer align-items-center">
                                     <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
-                                        <label style="font-size: 18px;">My employer contribution</label>
+                                        <label class="font-size-18">My employer contribution</label>
 
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-3 flex-center" style="flex: 50%; text-align: right; font-size: 18px;">
@@ -288,31 +288,29 @@
 											7%
 										</span> &nbsp;into your pension</div>
                                 </div>
-                                <div class="row employer" style="display: flex;">
+                                <div class="row employer align-items-center">
                                     <div class="col-lg-8 col-md-8 col-sm-8 flex-center" id="employer-contribution"></div>
-                                    <div class="col-lg-2 col-md-2 col-sm-2" style="display: flex;">
-                                        <input type="text" id="amount-employer" readonly style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">
-                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 flex">
+											<span style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">7%</span>                                    </div>
                                 </div>
                                 <!--END OF EMPLOYER CONTRIBUTION SLIDER-->
 
                                 <!--AVC CONTRIBUTION SLIDER-->
-                                <div class="row avc">
+                                <div class="row avc align-items-center">
                                     <div class="col-lg-10" style="height: 61px;background-color: #a9e2d9;margin: 10px; display: flex;">
                                         <span style="color: #606060;align-self: center; font-size: 14px;">Ready to start AVCs and unlock more tax savings?</span>
                                     </div>
-                                    <div class="col-lg-9 col-md-9 col-sm-9 projections-text" style="display: flex;">
-                                        <label style="font-size: 18px;">My additional voluntary contribution (AVCs)</label>
+                                    <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
+                                        <label class="font-size-18">My additional voluntary contribution (AVCs)</label>
                                     </div>
                                     <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">You age related tax relief is&nbsp;
                                         <span id="tax-relief-total" class="bold">25%</span>&nbsp;
                                     </div>
                                 </div>
-                                <div class="row avc">
-                                    <div class="col-lg-8 col-md-8 col-sm-8" id="avc-contribution" style="display: flex;"></div>
-                                    <div class="col-lg-2 col-md-2 col-sm-2" style="display: flex;">
-                                        <input type="text" id="amount-avc" readonly style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">
-                                    </div>
+                                <div class="row avc align-items-center">
+                                    <div class="col-lg-8 col-md-8 col-sm-8 flex" id="avc-contribution"></div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 flex">
+											<span style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">18%</span>                                    </div>
                                 </div>
                                 <!--END OF AVC CONTRIBUTION SLIDER-->
                                 <!-- TOTAL MONTHLY CONTRIBUTION & SUBMIT CHANGES BUTTON-->
@@ -344,7 +342,7 @@
                                 </div>
                                 <div class="col-lg-9">
                                     <span class="modify-projections-total" id="projected-fund-value">
-										€127,540
+										€127,540&nbsp;
 									</span>
                                     <span class="modify-projections-subtext">Current projected value</span>
                                 </div>
@@ -417,9 +415,9 @@
                         <span class="modal-title" id="myModalLabel">Summary of Changes</span>
                     </div>
                     <div class="modal-body">
-                        <div class="col-lg-12 col-md-12 col-sm-12 modal-content" style="display: flex; height: 100%; width: 100%;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 modal-content" style="display: flex; height: 100%; width: 100%;background: linear-gradient(to right, #ffff 75%, #F4F5F7 25%);">
 
-                            <div class="row" style="border: 1px solid #F4F5F7;">
+                            <div class="row" style="border: 1px solid #F4F5F7; margin-bottom: 15px;">
                                 <div class="col-lg-5 col-md-3 col-sm-3"><span>Contribution type</span></div>
                                 <div class="col-lg-3 col-md-3 col-sm-3"><span>Was</span></div>
                                 <div class="col-lg-2 col-md-3 col-sm-3"> <span>Now</span></div>
@@ -446,7 +444,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 confirm-summary-text">
-                        <span>By clicking confirm you are agreeing to update your pension investment.</span>
+                        <span>By clicking confirm you are agreeing to update your pension investment.</span><br>
                         <span>Contribution instruction changes will take effect from the next Payroll
 																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										run.</span>
                     </div>
