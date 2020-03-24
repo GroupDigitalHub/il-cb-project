@@ -12,7 +12,12 @@
     .col-lg-12.col-md-12.col-sm-12.ipad {
         display: none;
     }
-    
+    .modal-body.one {
+        display: flex;
+    }
+    .modal-body.two {
+        display: none;
+    }
   }
   
   /* 
@@ -32,6 +37,12 @@
         display: flex;
     }
     .col-lg-12.col-md-12.col-sm-12.ipad {
+        display: none;
+    }
+    .modal-body.one {
+        display: flex;
+    }
+    .modal-body.two {
         display: none;
     }
     
@@ -129,6 +140,12 @@
     .img-briefcase {
         display: none;
     }
+    .modal-body.one {
+        display: flex;
+    }
+    .modal-body.two {
+        display: none;
+    }
   }
   
   /* 
@@ -213,6 +230,12 @@
         display: none;
     }
     .img-briefcase {
+        display: none;
+    }
+    .modal-body.one {
+        display: flex;
+    }
+    .modal-body.two {
         display: none;
     }
   }
@@ -313,6 +336,15 @@
     .img-briefcase {
         display: none;
     }
+    .modal-body.one {
+        display: none;
+    }
+    .modal-body.two {
+        display: flex;
+    }
+    .modal-arrow {
+        padding-left: 0px;
+    }
   }
   
   /* 
@@ -406,4 +438,19 @@
     .img-briefcase {
         display: none;
     }
+    .modal-body.one {
+        display: none;
+    }
+    .modal-body.two {
+        display: flex;
+    }
+    .modal-arrow {
+        padding-left: 0px;
+    }
+  }
+
+  .j {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
   }
