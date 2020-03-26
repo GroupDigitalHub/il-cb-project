@@ -477,6 +477,21 @@
     .modify-content {
         margin: 5px;
     }
+    /* ****** CONGRATULATIONS BOX STYLES ******** */
+    #congrats{
+        display:none;
+        margin: 10px;
+        }  
+        .congrats--flexbox {
+            display: flex;
+            align-items: center;
+            margin:auto;
+            padding: 10px;
+        border: 1px solid #50C9B5;
+        background: #fff;
+    }
+     /* END OF CONGRATULATIONS BOX STYLES */       
+                                
     .manage-my-contributions {
         margin: 5px;
         border: 1px solid #E0E1E8;
@@ -1140,6 +1155,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 .cb-card .icon-circle .inner-icon {
