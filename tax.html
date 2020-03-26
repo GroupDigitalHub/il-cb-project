@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Corporate Business - Contributions</title>
+    <title>TAX Corporate Business - Contributions</title>
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
@@ -28,15 +28,14 @@
     <!-- Our custom JS-->
     <script src="js/modify.js"></script>
 </head>
-
 <body>
-    <style>
-        @media (min-width: 1200px) {
-            .container {
-                max-width: 1440px;
-            }
-        }
-    </style>
+<style>
+		@media (min-width: 1200px) {
+			.container {
+				max-width: 1440px;
+			}
+		}
+</style>	
     <div class="wrapper">
         <!-- SIDEBAR LEFT MAIN MENU  -->
         <nav id="sidebar">
@@ -58,7 +57,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="tax.html">
+                    <a href="#">
                         <svg style="width:24px;height:24px" viewbox="0 0 24 24">
                             <path fill="currentColor" d="M3,22L4.5,20.5L6,22L7.5,20.5L9,22L10.5,20.5L12,22L13.5,20.5L15,22L16.5,20.5L18,22L19.5,20.5L21,22V2L19.5,3.5L18,2L16.5,3.5L15,2L13.5,3.5L12,2L10.5,3.5L9,2L7.5,3.5L6,2L4.5,3.5L3,2M18,9H6V7H18M18,13H6V11H18M18,17H6V15H18V17Z" />
                         </svg>
@@ -199,7 +198,7 @@
             <!-- START OF CONTAINER -->
             <div class="container modify-content flex-center">
                 <div class="col-lg-10 col-md-12 col-sm-12">
-                    <!-- MODIFY PROFILE BOX -->
+                    <!-- TAX PROFILE BOX -->
                     <div class="row profile-box">
                         <div class="col-2"><img src="img/profile.png" alt="profile" /></div>
                         <div class="col-2">
@@ -231,158 +230,58 @@
                     <!-- END OF MODIFY PROFILE BOX-->
                     <!-- SLIDERS -->
 
-                    <div class="col-lg-12 col-md-12 col-sm-12 sliders-desktop"></div>
                     <div class="row">
-
-                        <!--CONGRATULATIONS BOX-->
-                        
-                        <!--END OF CONGRATULATIONS BOX-->
                         <!-- START OF CONTRIBUTIONS BOX-->
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                                <div class="col-lg-12 col-md-12 col-sm-12" id="congrats">
-                                <div class="congrats--flexbox">
-                                        <div class="icon-circle-grey">
-                                            <i class="material-icons inner-icon il-aquagreen-text text-darken-1">emoji_objects</i>
-                                        </div>
-                                        <span class="j">Congratulations John, your projected fund value has increased from €127,540 to €239,681 as a result of this change.</span>
-                                    </div>
-                                </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10">
                             <div class="col-lg-12 col-md-12 col-sm-12 manage-my-contributions">
                                 <div class="row">
                                     <div class="col-lg-6 ">
-                                        <span>Manage my contributions</span>
+                                        <span>Tax savings calculator</span>
                                     </div>
                                     <div class="col-lg-6 year-month-tab">
                                         <span>Monthly</span>
                                         <span>Yearly</span>
                                     </div>
                                 </div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 tax-box">
+                                    <span>My Monthly Salary</span>
+                                    <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text">€</span>
+                                            </div>
+                                            <input type="text" class="form-control" aria-label="Amount (to the nearest euro)">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text">.00</span>
+                                            </div>
+                                    </div>
+                                    <span>My income tax band</span><br>
+                                    <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">20%</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">40%</label>
+                                          </div>
+                                   <span>My monthly contributions</span> 
+                                   <span>€169.55</span>   
+                                   
+                                   
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 tax-box">
+                                </div>
                             </div>
                             <!-- SLIDERS -->
-                            <div class="col-lg-12 col-md-12 col-sm-12 contributions-box">
-                                <!--EMPLOYEE CONTRIBUTION SLIDER-->
-                                <div class="row employee align-items-center">
-                                    <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
-                                        <label class="font-size-18">My employee contribution</label>
-                                    </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3 flex-center" style="flex: 50%; text-align: right; font-size: 18px;">
-                                        <span class="input-group-addon" style="background-color: #fff; font-weight: bold;">€296.00</span>
-
-                                    </div>
-                                    <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Includes tax saving of&nbsp;
-                                        <span id="tax-saving-total" class="bold">€67.00</span>&nbsp;
-                                    </div>
-
-                                </div>
-                                <div class="row employee align-items-center">
-
-                                    <div class="col-lg-8 col-md-8 col-sm-8 flex-center ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="employee-contribution">
-                                        <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-max" style="width: 50%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 50%;"><input type="text" id="amount-employee" readonly="" style="border: 0px; color: rgb(51, 51, 51); font-weight: bold; width: 40px; position: absolute; top: -25px; height: 25px; display: block;"></span></div>
-
-                                    <div class="col-lg-2 col-md-2 col-sm-2 flex">
-
-                                        <span style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">7%</span>
-                                    </div>
-                                </div>
-                                <!--END OF EMPLOYEE CONTRIBUTION SLIDER-->
-
-                                <!--EMPLOYER CONTRIBUTION SLIDER-->
-                                <div class="row employer align-items-center">
-                                    <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
-                                        <label class="font-size-18">My employer contribution</label>
-
-                                    </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3 flex-center" style="flex: 50%; text-align: right; font-size: 18px;">
-                                        <span class="input-group-addon" style="background-color: #fff; font-weight: bold;">€296.00</span>
-
-                                    </div>
-                                    <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Your employer will contribute up to&nbsp;
-                                        <span id="employer-contribution-total" class="bold">
-                                                7%
-                                            </span> &nbsp;into your pension</div>
-                                </div>
-                                <div class="row employer align-items-center">
-                                    <div class="col-lg-8 col-md-8 col-sm-8 flex-center ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="employer-contribution">
-                                        <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-max" style="width: 50%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 50%;"><input type="text" id="amount-employer" readonly="" style="border: 0px; color: rgb(51, 51, 51); font-weight: bold; width: 40px; position: absolute; top: -25px; height: 25px; display: block;"></span></div>
-                                    <div class="col-lg-2 col-md-2 col-sm-2 flex">
-                                        <span style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">7%</span> </div>
-                                </div>
-                                <!--END OF EMPLOYER CONTRIBUTION SLIDER-->
-
-                                <!--AVC CONTRIBUTION SLIDER-->
-                                <div class="row avc align-items-center">
-                                    <div class="col-lg-10" style="height: 61px;background-color: #a9e2d9;margin: 10px; display: flex;">
-                                        <span style="color: #606060;align-self: center; font-size: 14px;">Ready to start AVCs and unlock more tax savings?</span>
-                                    </div>
-                                    <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
-                                        <label class="font-size-18">My additional voluntary contribution (AVCs)</label>
-                                    </div>
-                                    <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">You age related tax relief is&nbsp;
-                                        <span id="tax-relief-total" class="bold">25%</span>&nbsp;
-                                    </div>
-                                </div>
-                                <div class="row avc align-items-center">
-                                    <div class="col-lg-8 col-md-8 col-sm-8 flex ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="avc-contribution">
-                                        <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-max" style="width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"><input type="text" id="amount-avc" readonly="" style="border: 0px; color: rgb(51, 51, 51); font-weight: bold; width: 40px; position: absolute; top: -25px; height: 25px; display: block;"></span></div>
-                                    <div class="col-lg-2 col-md-2 col-sm-2 flex">
-                                        <span style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">18%</span> </div>
-                                </div>
-                                <!--END OF AVC CONTRIBUTION SLIDER-->
-                                <!-- TOTAL MONTHLY CONTRIBUTION & SUBMIT CHANGES BUTTON-->
-                                <div class="contributions-text-subtext">Total monthly contribution of&nbsp;
-                                    <span id="total-monthly-contribution" class="bold">€338.00</span>&nbsp; or&nbsp;
-                                    <span id="total-percentage-monthly-contribution" class="bold">8%</span>&nbsp; of your salary
-                                </div>
-                            </div>
+                            
                             <!-- END OF SLIDERS -->
-                            <!-- SUBMIT CHANGES BUTTON & REG LINE-->
-                            <div class="col-lg-12 col-md-12 col-sm-12 submit-changes flex-center">
-                                <div class="alert" role="alert" id="result"></div>
-                                <button class="submit-changes-btn" id="btnSubmit" value="Submit">Submit Changes</button>
-
-                            </div>
-                            <span style="font-size: 14px; color: #333; margin: 5px;">
-                                    * Potential projected fund value is an estimation and not guaranteed.</span>
-                            <!--END OF SUBMIT CHANGES BUTTON & REG LINE-->
+                            
                         </div>
                         <!--END OF CONTRIBUTIONS BOX-->
                         <!--Start of Simulate Projection Boxes-->
-                        <div class="col-lg-4 col-md-4 col-sm-8">
-                            <div class="row modify-projections-box-1 flex-center">
-                                <div class="col-lg-3 ">
-                                    <svg class="circle" viewbox="0 0 24 24">
-                                        <path fill="#BABABA" d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64" />
-                                    </svg>
-
-                                </div>
-                                <div class="col-lg-9">
-                                    <span class="modify-projections-total" id="projected-fund-value">
-										€127,540&nbsp;
-									</span>
-                                    <span class="modify-projections-subtext">Current projected value</span>
-                                </div>
-                            </div>
-                            <div class="row modify-projections-box-2 flex-center">
-                                <div class="col-lg-3 ">
-                                    <svg class="circle-2" viewbox="0 0 24 24">
-                                        <path fill="#D5DAEB" d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64" />
-                                    </svg>
-
-                                </div>
-                                <div class="col-lg-9">
-                                    <span class="modify-projections-total" id="potential-fund-value">
-										€127,540
-									</span>
-                                    <span class="modify-projections-subtext">Potential fund value with further investment</span>
-                                </div>
-                            </div>
-                            <div class="row modify-simulate-button flex-center">
-                                <span>Simulate</span>
-                            </div>
-                        </div>
+                        
                         <!--End of Projections / Simulate-->
                     </div>
-
+                
                 </div>
                 <!-- SLIDERS END -->
                 <!-- INFO SIDEBAR (RIGHT)-->
@@ -459,9 +358,10 @@
                         </div>
                     </div>
                     <div class="modal-body two">
-
+                        
                         <div class="col-lg-12 col-md-12 col-sm-12 modal-content" style="display: flex; height: 100%; width: 100%;background: linear-gradient(to right, #ffff 75%, #F4F5F7 25%);">
 
+                            
                             <div class="row">
                                 <div class="col-lg-12 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">My Employee Contribution</span></div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 j"><span>4%<img src="img/arrow-modal.svg" alt="arrow" class="modal-arrow"></span><span>7%</span><span>€2,000</span></div>
@@ -483,8 +383,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 confirm-summary-text">
-                        <span>By clicking confirm you are agreeing to update your pension investment.</span>
-                        <br>
+                        <span>By clicking confirm you are agreeing to update your pension investment.</span><br>
                         <span>Contribution instruction changes will take effect from the next Payroll
 																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										run.</span>
                     </div>
@@ -515,17 +414,11 @@
             };
 
             modalConfirm(function(confirm) {
-                if (confirm) {
-                    $("#result").html(" ");
-                } else { 
-                    $("#result").html("");
+                if (confirm) { // Acciones si el usuario confirma
+                    $("#result").html("CONFIRMED");
+                } else { // Acciones si el usuario no confirma
+                    $("#result").html("NOT CONFIRMED");
                 }
-            });
-            $(document).ready(function() {
-
-                $("#modal-btn-confirm").click(function() {
-                    $("#congrats").show();
-                });
             });
         </script>
 
