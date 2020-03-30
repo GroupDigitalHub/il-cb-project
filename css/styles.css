@@ -506,16 +506,26 @@
         font-size: 20px;
         background: #FFF;
     }
-    .year-month-tab {
+    .month-tab {
         height: 30px;
-        background: linear-gradient(to right, #ffff 50%, #EDEFF3 50%);
+        background: #fff;
         justify-content: space-around;
         display: flex;
         padding: 10px 15px 10px 15px;
         color: #606060;
         width: 100%;
-        border: 1px solid grey;
+        border: 1px solid #E3E4E7;
+        align-items: center;
+        font-size: 14px;
+    }
+    .year-tab {
+        height: 30px;
+        background: #EEEFF3;
         justify-content: space-around;
+        display: flex;
+        padding: 10px 15px 10px 15px;
+        color: #606060;
+        width: 100%;
         align-items: center;
         font-size: 14px;
     }
