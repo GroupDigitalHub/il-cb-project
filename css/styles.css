@@ -238,6 +238,11 @@
     .subtitle {
             font-size: 34px;
             text-align: center;
+            float: left;
+    }
+    .plan-id {
+        margin-top:20px;
+        float: right;
     }
     .box{
  
@@ -330,12 +335,12 @@
         box-sizing: border-box;
     }
     .onoffswitch-inner:before {
-        content: "OFF";
+        content: "ON";
         padding-left: 10px;
         background-color: #7DD2C4; color: #FFFFFF;
     }
     .onoffswitch-inner:after {
-        content: "ON";
+        content: "OFF";
         padding-right: 10px;
         background-color: #EEEEEE; color: #999999;
         text-align: right;

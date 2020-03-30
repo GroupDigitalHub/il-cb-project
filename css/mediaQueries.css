@@ -345,6 +345,9 @@
     .modal-arrow {
         padding-left: 0px;
     }
+    .next-step-box-2 {
+        margin-top: 20px;
+    }
   }
   
   /* 
@@ -446,6 +449,9 @@
     }
     .modal-arrow {
         padding-left: 0px;
+    }
+    .next-step-box-2 {
+        margin-top: 20px;
     }
   }
 
