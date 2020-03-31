@@ -9,7 +9,9 @@
         background: #fafafa;
             
     }
-    
+    input, button, submit { border:none;background: none; } 
+    button:focus {outline:0;}
+
     p {
         font-family: 'Lato', sans-serif;
         font-size: 20px;
@@ -1040,11 +1042,11 @@
     background: #79D3C5;
 }
 .dropdown-menu li a {
-    padding: 20px;
+    padding: 10px 0px;
     margin: 5px;
 }
 .dropdown-menu a {
-    padding: 20px;
+    padding: 10px 0px;
     margin: 5px;
 }
 .x {
@@ -1313,6 +1315,10 @@ ul.custom-bullet.plus li {
     margin-top: 20px;
 }
 
+.mdi {
+    font-size: 24px;
+    padding: 5px;
+}
 /*****TETSING*/
 
 .tooltip {

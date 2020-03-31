@@ -18,6 +18,9 @@
     .modal-body.two {
         display: none;
     }
+    div#navbar-list-3 {
+        display: none;
+    }
   }
   
   /* 
@@ -146,6 +149,9 @@
     .modal-body.two {
         display: none;
     }
+    .dropdown-menu {
+        background-color: #fff !important;
+    }
   }
   
   /* 
@@ -237,6 +243,9 @@
     }
     .modal-body.two {
         display: none;
+    }
+    .dropdown-menu {
+        background-color: #fff !important;
     }
   }
   
@@ -348,6 +357,9 @@
     .next-step-box-2 {
         margin-top: 20px;
     }
+    .dropdown-menu {
+        background-color: #fff !important;
+    }
   }
   
   /* 
@@ -452,6 +464,9 @@
     }
     .next-step-box-2 {
         margin-top: 20px;
+    }
+    .dropdown-menu {
+        background-color: #fff !important;
     }
   }
 
