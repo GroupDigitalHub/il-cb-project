@@ -5,18 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Corporate Business - Contributions</title>
+    <title>Corporate Business</title>
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mediaQueries.css">
+
     <!-- Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.0.45/css/materialdesignicons.min.css" integrity="sha256-nRyVCcVDSlWN9d68r9M+rKBLE4k9Cp1j3XSY/umjvvU=" crossorigin="anonymous" />
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
     <!-- Javascript External Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -24,163 +25,163 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" integrity="sha256-AAhU14J4Gv8bFupUUcHaPQfvrdNauRHMt+S4UVcaJb0=" crossorigin="anonymous"></script>
     <!-- Popper.JS for Tooltips -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-
+    <!-- Bootstrap JS -->
     <!-- Our custom JS-->
     <script src="js/modify.js"></script>
 </head>
 
 <body>
-    <style>
-        @media (min-width: 1200px) {
-            .container {
-                max-width: 1440px;
-            }
-        }
-    </style>
     <div class="wrapper">
-        <!-- SIDEBAR LEFT MAIN MENU  -->
+        <!-- Sidebar Menu - This is the main menu on the left side of the page  -->
         <nav id="sidebar">
-                <ul class="list-unstyled components">
-                   <li>
-                      <a href="index.html">
-                         <svg style="width:24px;height:24px;" viewbox="0 0 24 24">
-                            <path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
-                         </svg>
-                         <span>Home</span>
-                      </a>
-                   </li>
-                   <li>
-                      <a href="modify.html">
-                         <svg style="width:24px;height:24px" viewbox="0 0 24 24">
-                            <path fill="currentColor" d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"/>
-                         </svg>
-                         <span>Contributions</span>
-                      </a>
-                   </li>
-                   <li>
-                      <a href="tax.html">
-                         <svg style="width:24px;height:24px" viewbox="0 0 24 24">
-                            <path fill="currentColor" d="M3,22L4.5,20.5L6,22L7.5,20.5L9,22L10.5,20.5L12,22L13.5,20.5L15,22L16.5,20.5L18,22L19.5,20.5L21,22V2L19.5,3.5L18,2L16.5,3.5L15,2L13.5,3.5L12,2L10.5,3.5L9,2L7.5,3.5L6,2L4.5,3.5L3,2M18,9H6V7H18M18,13H6V11H18M18,17H6V15H18V17Z"/>
-                         </svg>
-                         <span>Tax Savings</span>
-                      </a>
-                   </li>
-                   <li>
-                      <a href="#">
-                         <svg style="width:24px;height:24px" viewbox="0 0 24 24">
-                            <path fill="currentColor" d="M16,11.78L20.24,4.45L21.97,5.45L16.74,14.5L10.23,10.75L5.46,19H22V21H2V3H4V17.54L9.5,8L16,11.78Z"/>
-                         </svg>
-                         <span>Projections</span>
-                      </a>
-                   </li>
-                   <li>
-                      <a href="#">
-                         <svg style="width:24px;height:24px" viewbox="0 0 24 24">
-                            <path fill="currentColor" d="M16,9H19L14,16M10,9H14L12,17M5,9H8L10,16M15,4H17L19,7H16M11,4H13L14,7H10M7,4H9L8,7H5M6,2L2,8L12,22L22,8L18,2H6Z"/>
-                         </svg>
-                         <span>Once-off Payments</span>
-                      </a>
-                   </li>
-                   <li>
-                      <a href="#">
-                         <svg style="width:24px;height:24px" viewbox="0 0 24 24">
-                            <path fill="currentColor" d="M22,21H2V3H4V15.54L9.5,6L16,9.78L20.24,2.45L21.97,3.45L22,21Z"/>
-                         </svg>
-                         <span>Investments</span>
-                      </a>
-                   </li>
-                   <li>
-                      <a href="#">
-                            <i class="material-icons inner-icon text-darken-1">beach_access</i>
-    
-                         <span>Lifestyle Planner</span>
-                      </a>
-                   </li>
-                   <li>
-                      <a href="#">
-                            <i class="material-icons inner-icon text-darken-1">collections_bookmark</i>
-                         <span>Plans</span>
-                      </a>
-                   </li>
-                   <li>
-                      <a href="#">
-                            <i class="material-icons inner-icon text-darken-1">file_copy</i>
-                         <span>Documents</span>
-                      </a>
-                   </li>
-                </ul>
-                <ul class="list-unstyled components">
-                   <li>
-                      <a href="#">
-                            <i class="material-icons inner-icon text-darken-1">security</i>
-                         <span>Insurance</span>
-                      </a>
-                   </li>
-                   <li>
-                      <a href="#">
-                            <i class="material-icons inner-icon text-darken-1">help</i>
-    
-                         <span>Support</span>
-                      </a>
-                   </li>
-                </ul>
-             </nav>
-        <!-- END OF SIDEBAR LEFT MAIN MENU  -->
-        <!-- MAIN CONTENT  -->
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html">
+                        <svg style="width:24px;height:24px;" viewbox="0 0 24 24">
+                            <path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="modify.html">
+                        <svg style="width:24px;height:24px" viewbox="0 0 24 24">
+                            <path fill="currentColor" d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z" />
+                        </svg>
+                        <span>Contributions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tax.html">
+                        <svg style="width:24px;height:24px" viewbox="0 0 24 24">
+                            <path fill="currentColor" d="M3,22L4.5,20.5L6,22L7.5,20.5L9,22L10.5,20.5L12,22L13.5,20.5L15,22L16.5,20.5L18,22L19.5,20.5L21,22V2L19.5,3.5L18,2L16.5,3.5L15,2L13.5,3.5L12,2L10.5,3.5L9,2L7.5,3.5L6,2L4.5,3.5L3,2M18,9H6V7H18M18,13H6V11H18M18,17H6V15H18V17Z" />
+                        </svg>
+                        <span>Tax Savings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg style="width:24px;height:24px" viewbox="0 0 24 24">
+                            <path fill="currentColor" d="M16,11.78L20.24,4.45L21.97,5.45L16.74,14.5L10.23,10.75L5.46,19H22V21H2V3H4V17.54L9.5,8L16,11.78Z" />
+                        </svg>
+                        <span>Projections</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg style="width:24px;height:24px" viewbox="0 0 24 24">
+                            <path fill="currentColor" d="M16,9H19L14,16M10,9H14L12,17M5,9H8L10,16M15,4H17L19,7H16M11,4H13L14,7H10M7,4H9L8,7H5M6,2L2,8L12,22L22,8L18,2H6Z" />
+                        </svg>
+                        <span>Once-off Payments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg style="width:24px;height:24px" viewbox="0 0 24 24">
+                            <path fill="currentColor" d="M22,21H2V3H4V15.54L9.5,6L16,9.78L20.24,2.45L21.97,3.45L22,21Z" />
+                        </svg>
+                        <span>Investments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons inner-icon text-darken-1">beach_access</i>
+
+                        <span>Lifestyle Planner</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons inner-icon text-darken-1">collections_bookmark</i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons inner-icon text-darken-1">file_copy</i>
+                        <span>Documents</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">
+                        <i class="material-icons inner-icon text-darken-1">security</i>
+                        <span>Insurance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons inner-icon text-darken-1">help</i>
+
+                        <span>Support</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Right Side Profile Menu  -->
         <div id="content">
-            <!-- PROFILE DROPDOWN MENU -->
             <nav class="navbar navbar-light bg-light">
                 <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="material-icons">menu</i>
-                        <span>Toggle Sidebar</span>
+                    <button class="nav-link" type="button" data-toggle="dropdown" data-target="#navbar-list-3" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="mdi mdi-menu il-blue"></i>
                     </button>
+
                     <div class="il_logo"><img src="img/IL_Logo.svg" alt="il-logo" /></div>
                     <div class="dropdown x">
                         <button class="btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             <span>
-						  John Smith<img src="img/profile.png" alt="profile" style="width:15%; height: 25%;background: #F8F9FA;"></span>
+                     John Smith<img src="img/profile.png" alt="profile" style="width:15%; height: 25%;"></span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li>
-                                <i class="material-icons inner-icon il-blue text-darken-1">account_circle</i>
-                                <a href="#">My Profile</a>
-                            </li>
-                            <li>
-                                <i class="material-icons inner-icon il-blue text-darken-1">supervisor_account</i>
-                                <a href="#">Beneficiaries</a>
-                            </li>
-                            <li>
-                                <i class="material-icons inner-icon il-blue text-darken-1">lock</i>
-                                <a href="#">Security</a>
-                            </li>
-                            <li>
-                                <hr>
-                            </li>
-                            <li>
-                                <i class="material-icons inner-icon il-blue text-darken-1">exit_to_app
-								</i>
-                                <a href="#">Log out</a>
-                            </li>
+
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle il-blue"></i>My Profile</a>
+
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-account-multiple il-blue"></i>Beneficiaries</a>
+
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-lock il-blue"></i>Security</a>
+
+                            <hr>
+
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-exit-to-app il-blue"></i>Log out</a>
+
                         </ul>
                     </div>
                     <button class="nav-link" type="button" data-toggle="dropdown" data-target="#navbar-list-4" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="material-icons il-blue" style="font-size: 32px;">account_circle</span>
+                        <i class="mdi mdi-account-circle il-blue"></i>
                     </button>
+                    <div class="collapse navbar-collapse" id="navbar-list-3">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="index.html"><i class="mdi mdi-home il-blue"></i>Home</a>
+                                    <a class="dropdown-item" href="modify.html"><i class="mdi mdi-wallet il-blue"></i>Contributions</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-receipt il-blue"></i>Tax Savings</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-chart-bell-curve-cumulative il-blue"></i>Projections</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-diamond-stone il-blue"></i>Once-off Payments</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-chart-areaspline-variant il-blue"></i>Investments</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-umbrella il-blue"></i>Lifestyle Planner</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-book-multiple il-blue"></i>Plans</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-text-box-multiple il-blue"></i>Documents</a>
+                                    <hr>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-shield il-blue"></i>Insurance</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-help-circle il-blue"></i>Support</a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="collapse navbar-collapse" id="navbar-list-4">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">
-                                        <i class="material-icons inner-icon il-blue text-darken-1">account_circle</i>My Profile</a>
-                                    <a class="dropdown-item" href="#">
-                                        <i class="material-icons inner-icon il-blue text-darken-1">supervisor_account</i>Beneficiaries</a>
-                                    <a class="dropdown-item" href="#">
-                                        <i class="material-icons inner-icon il-blue text-darken-1">lock</i>Security</a>
-                                    <hr>
-                                    <a class="dropdown-item" href="#">
-                                        <i class="material-icons inner-icon il-blue text-darken-1">exit_to_app</i> Log out</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle il-blue"></i>My Profile</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-multiple il-blue"></i>Beneficiaries</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-lock il-blue"></i>Security</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-exit-to-app il-blue"></i>Log out</a>
+
                                 </div>
                             </li>
                         </ul>
@@ -213,12 +214,6 @@
                             <br>
                             <span id="customer-gross-monthly">€4,231</span>
                         </div>
-                        <div class="col-2">
-                            <br>
-                            <span class="profile-subtitle">Tax Band</span>
-                            <br>
-                            <span id="customer-tax-band">40%</span>
-                        </div>
                     </div>
                     <!-- END OF MODIFY PROFILE BOX-->
                     <!-- SLIDERS -->
@@ -244,10 +239,14 @@
                                     <div class="col-lg-6 ">
                                         <span>Manage my contributions</span>
                                     </div>
-                                    <div class="col-lg-6 year-month-tab">
-                                        <span>Monthly</span>
-                                        <span>Yearly</span>
-                                    </div>
+                                    <div class="col-lg-3 month-tab">
+                                            <span id="monthTab">Monthly</span>
+    
+                                        </div>
+    
+                                        <div class="col-lg-3 year-tab">
+                                                <span id="yearTab">Yearly</span>
+                                        </div>
                                 </div>
                             </div>
                             <!-- SLIDERS -->
@@ -309,9 +308,13 @@
                                     <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
                                         <label class="font-size-18">My additional voluntary contribution (AVCs)</label>
                                     </div>
+                                    <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Includes tax saving of&nbsp;
+                                            <span id="tax-saving-total" class="bold">€67.00</span>&nbsp;
+                                        </div>
                                     <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">You age related tax relief is&nbsp;
                                         <span id="tax-relief-total" class="bold">25%</span>&nbsp;
                                     </div>
+
                                 </div>
                                 <div class="row avc align-items-center">
                                     <div class="col-lg-8 col-md-8 col-sm-8 flex ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="avc-contribution">

@@ -9,7 +9,9 @@
         background: #fafafa;
             
     }
-    
+    input, button, submit { border:none;background: none; } 
+    button:focus {outline:0;}
+
     p {
         font-family: 'Lato', sans-serif;
         font-size: 20px;
@@ -506,16 +508,28 @@
         font-size: 20px;
         background: #FFF;
     }
-    .year-month-tab {
+    .month-tab {
         height: 30px;
         background: linear-gradient(to right, #ffff 50%, #EDEFF3 50%);
+        background: #fff;
         justify-content: space-around;
         display: flex;
         padding: 10px 15px 10px 15px;
         color: #606060;
         width: 100%;
         border: 1px solid grey;
+        border: 1px solid #E3E4E7;
+        align-items: center;
+        font-size: 14px;
+    }
+    .year-tab {
+        height: 30px;
+        background: #EEEFF3;
         justify-content: space-around;
+        display: flex;
+        padding: 10px 15px 10px 15px;
+        color: #606060;
+        width: 100%;
         align-items: center;
         font-size: 14px;
     }
@@ -1030,11 +1044,11 @@
     background: #79D3C5;
 }
 .dropdown-menu li a {
-    padding: 20px;
+    padding: 10px 0px;
     margin: 5px;
 }
 .dropdown-menu a {
-    padding: 20px;
+    padding: 10px 0px;
     margin: 5px;
 }
 .x {
@@ -1303,6 +1317,10 @@ ul.custom-bullet.plus li {
     margin-top: 20px;
 }
 
+.mdi {
+    font-size: 24px;
+    padding: 5px;
+}
 /*****TETSING*/
 
 .tooltip {
