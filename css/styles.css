@@ -37,6 +37,9 @@
         text-decoration: none;
         transition: all 0.3s;
     }
+    .container {
+        padding: 20px 0px;
+    }
     .il_logo {
         padding-left: 20px;
     }
@@ -467,6 +470,8 @@
         justify-content: flex-start;  
         align-items: center;
         padding: 30px 10px 30px 10px;
+        margin: 10px 0px;
+        height: 100%;
     }
 
     .next-step-box-2 {
@@ -478,6 +483,7 @@
         align-items: center;    
         padding: 5px 10px 5px 10px;
         height: 100%;
+        margin: 10px 0px;
     }
     .button-contributions {
         flex-flow: row wrap;
