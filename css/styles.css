@@ -310,8 +310,17 @@
     .retirement-text {
         text-align: center;
     }
+
+    .state-pension-text {
+        padding: 0px 20px;
+    }
+
    .state-pension-toggle{
-        padding-left: 150px;
+        
+        flex-flow: row wrap;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     }
     /* *********** STATE PENSION ON / OFF TOGGLE ********** */
 
