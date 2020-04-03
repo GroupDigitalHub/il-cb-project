@@ -869,6 +869,7 @@
     height: 8px;
     background: #D3D7E0;
     outline: none;
+    border-radius: 50px;
   }
 
   #employee-contribution .ui-slider-handle {
@@ -914,6 +915,7 @@
     height: 8px;
     background: #DADBDB;
     outline: none;
+    border-radius: 50px;
   }
 
   #employer-contribution .ui-slider-handle {
@@ -959,6 +961,7 @@
     height: 8px;
     background: #D3D7E0;
     outline: none;
+    border-radius: 50px;
   }
 
   #avc-contribution .ui-slider-handle {
