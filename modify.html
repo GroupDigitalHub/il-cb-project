@@ -226,6 +226,24 @@
                         <!--END OF CONGRATULATIONS BOX-->
                         <!-- START OF CONTRIBUTIONS BOX-->
                         <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="col-lg-12 col-md-12 col-sm-12 manage-my-contributions">    
+                            <div class="row profile-box-mobile">
+						
+                                        <div class="col-12">
+                                            <span id="customer-name">John Smith</span>
+                                            
+                                            
+                                        </div>
+                                        <div class="col-6">
+                                            <br>
+                                            <span class="profile-subtitle">Annual Salary</span><br>
+                                            <span id="customer-annual-salary">€50,776</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <br>
+                                            <span class="profile-subtitle">Gross monthly</span><br>
+                                            <span id="customer-gross-monthly">€4,231</span>
+                                        </div></div></div>
                                 <div class="col-lg-12 col-md-12 col-sm-12" id="congrats">
                                 <div class="congrats--flexbox">
                                         <div class="icon-circle-grey">
@@ -255,53 +273,57 @@
                             </div>
                             <!-- SLIDERS -->
                             <div class="col-lg-12 col-md-12 col-sm-12 contributions-box">
+                                    <div class="row taxband"><div class="col-lg-12 font-size-18">My income tax band</div>
+    
+                                    <form class="col-lg-12 tax-band-radio">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="optradio" checked=""> &nbsp;20%</label>
+                                    <label class="radio-inline">
+                                      <input type="radio" name="optradio"> &nbsp;40%</label>
+                                  </form>
+                                  </div>   
                                 <!--EMPLOYEE CONTRIBUTION SLIDER-->
                                 <div class="row employee align-items-center">
-                                    <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 projections-text d-flex">
                                         <label class="font-size-18">My employee contribution</label>
+                                        <span class="input-group-addon" style="background-color: #fff; font-weight: bold; padding-left: 30%;">€296.00</span>
                                     </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3 flex-center" style="flex: 50%; text-align: right; font-size: 18px;">
-                                        <span class="input-group-addon" style="background-color: #fff; font-weight: bold;">€296.00</span>
-
-                                    </div>
-                                    <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Includes tax saving of&nbsp;
+                                    
+                                    <div class="col-lg-12 col-md-12 col-sm-12 contributions-text-subtext">Includes tax saving of&nbsp;
                                         <span id="tax-saving-total" class="bold">€67.00</span>&nbsp;
                                     </div>
-
+                                    <div class="col-10">
+                                    <div class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="employee-contribution">
+                                            <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-max" style="width: 50%;"></div>
+                                            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 50%;">
+                                                <input type="text" id="amount-employee" readonly="" style="border: 0px; color: rgb(51, 51, 51); font-weight: bold; width: 40px; position: absolute; top: -25px; height: 25px; display: block;"></span>
+                                            
+                                            </div>
+                                        </div> 
+                                        <div class="col-2 "><span class="slider-max-value">7%</span></div>
+                                        
                                 </div>
-                                <div class="row employee align-items-center">
-
-                                    <div class="col-lg-8 col-md-8 col-sm-8 flex-center ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="employee-contribution">
-                                        <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-max" style="width: 50%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 50%;"><input type="text" id="amount-employee" readonly="" style="border: 0px; color: rgb(51, 51, 51); font-weight: bold; width: 40px; position: absolute; top: -25px; height: 25px; display: block;"></span></div>
-
-                                    <div class="col-lg-2 col-md-2 col-sm-2 flex">
-
-                                        <span style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">7%</span>
-                                    </div>
-                                </div>
+                                
                                 <!--END OF EMPLOYEE CONTRIBUTION SLIDER-->
 
                                 <!--EMPLOYER CONTRIBUTION SLIDER-->
                                 <div class="row employer align-items-center">
-                                    <div class="col-lg-9 col-md-9 col-sm-9 projections-text">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 projections-text d-flex">
                                         <label class="font-size-18">My employer contribution</label>
-
+                                        <span class="input-group-addon" style="background-color: #fff; font-weight: bold; padding-left: 30%;">€296.00</span>
                                     </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3 flex-center" style="flex: 50%; text-align: right; font-size: 18px;">
-                                        <span class="input-group-addon" style="background-color: #fff; font-weight: bold;">€296.00</span>
-
-                                    </div>
+                                    
                                     <div class="col-lg-9 col-md-9 col-sm-9 contributions-text-subtext">Your employer will contribute up to&nbsp;
                                         <span id="employer-contribution-total" class="bold">
                                                 7%
                                             </span> &nbsp;into your pension</div>
+                                            <div class="col-10">
+                                            <div class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="employer-contribution">
+                                                    <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-max" style="width: 50%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 50%;"><input type="text" id="amount-employer" readonly="" style="border: 0px; color: rgb(51, 51, 51); font-weight: bold; width: 40px; position: absolute; top: -25px; height: 25px; display: block;"></span></div></div>
+                                                    <div class="col-2 "><span class="slider-max-value">7%</span></div>
+                                                
                                 </div>
-                                <div class="row employer align-items-center">
-                                    <div class="col-lg-8 col-md-8 col-sm-8 flex-center ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="employer-contribution">
-                                        <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-max" style="width: 50%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 50%;"><input type="text" id="amount-employer" readonly="" style="border: 0px; color: rgb(51, 51, 51); font-weight: bold; width: 40px; position: absolute; top: -25px; height: 25px; display: block;"></span></div>
-                                    <div class="col-lg-2 col-md-2 col-sm-2 flex">
-                                        <span style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">7%</span> </div>
-                                </div>
+                               
                                 <!--END OF EMPLOYER CONTRIBUTION SLIDER-->
 
                                 <!--AVC CONTRIBUTION SLIDER-->
@@ -320,13 +342,13 @@
                           <i class="material-icons inner-icon il-info-icon text-darken-1">info</i>
                           </span>&nbsp;
                                     </div>
+                                    <div class="col-10">
+                                    <div class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="avc-contribution">
+                                            <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-max" style="width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"><input type="text" id="amount-avc" readonly="" style="border: 0px; color: rgb(51, 51, 51); font-weight: bold; width: 40px; position: absolute; top: -25px; height: 25px; display: block;"></span></div></div>
+                                            <div class="col-2 "><span class="slider-max-value">18%</span></div>
+                                       
               </div>
-                                <div class="row avc align-items-center">
-                                    <div class="col-lg-8 col-md-8 col-sm-8 flex ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" id="avc-contribution">
-                                        <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-max" style="width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"><input type="text" id="amount-avc" readonly="" style="border: 0px; color: rgb(51, 51, 51); font-weight: bold; width: 40px; position: absolute; top: -25px; height: 25px; display: block;"></span></div>
-                                    <div class="col-lg-2 col-md-2 col-sm-2 flex">
-                                        <span style="border:0; color:#333; font-weight:bold;width: 50px;margin-left: 40%;">18%</span> </div>
-                                </div>
+                                
                                 <!--END OF AVC CONTRIBUTION SLIDER-->
                                 <!-- TOTAL MONTHLY CONTRIBUTION & SUBMIT CHANGES BUTTON-->
                                 <div class="contributions-text-subtext">Total monthly contribution of&nbsp;
@@ -490,7 +512,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" id="modal-btn-cancel">Cancel</button>
-                        <button type="button" class="btn btn-primary" id="modal-btn-confirm">Confirm</button>
+                        <button type="button" class="btn btn-primary" id="modal-btn-confirm"><a href="#congrats">Confirm</a></button>
                     </div>
                 </div>
             </div>

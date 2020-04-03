@@ -24,9 +24,10 @@ $(function () {
             $("#amount-employee").val(ui.value + "%");
             if (ui.value == 1) {
                 $("#amount-employer").val(ui.value + "%");
-                $('.ui-slider-handle').css("left", "0%");
+                $('.ui-slider-handle').css("left", "5%");
                 $('#avc-contribution').slider('disable');
             }
+           
             else if (ui.value == 2) {
                 $("#amount-employer").val(ui.value + "%");
                 $('.ui-slider-handle').css("left", "16.667%");
@@ -61,6 +62,7 @@ $(function () {
                 $('.avc').css("display", "flex");
                 $('#avc-contribution .ui-slider-handle').css("display", "flex");
             }
+            
             else if (ui.value <= 7) {
                 $('#avc-contribution .ui-slider-handle').css("left", "0%");
             }
