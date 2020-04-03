@@ -11,7 +11,9 @@
     }
     input, button, submit { border:none;background: none; } 
     button:focus {outline:0;}
-
+    input[type=radio] {
+        
+    }
     p {
         font-family: 'Lato', sans-serif;
         font-size: 20px;
@@ -262,10 +264,9 @@
     .my-balance {
         font-size: 28px;
     }
-    .my-balance-desktop {
-        
+    label.radio-inline {
+        padding-right: 20px;
     }
-
     .my-balance-mobile {
         display: none;
     }
@@ -535,7 +536,7 @@
         margin: 5px;
         border: 1px solid #E0E1E8;
         border-top: 0;
-        padding: 20px;
+        padding: 20px 30px;
         display: flex;
         flex-flow: column;
         background: #fff;
@@ -631,6 +632,11 @@
       align-items: center;
       background: #fff;
   }
+  .profile-box-mobile {
+    
+    align-items: center;
+    background: #fff;
+}
   .profile-subtitle {
       font-size: 14px;
       opacity: 60%;
@@ -812,6 +818,7 @@
         
     }*/
  /*-- SLIDER STYLES */
+    
 
  #custom-handle {
     width: 3em;
@@ -825,7 +832,9 @@
     border-radius: 100%;
     background: #5CBBAF !important
  }
-
+ .slider-max-value {
+    padding-left:10px;
+}   
 .modify-sliders {
     flex-flow: column wrap;
 }
@@ -854,8 +863,8 @@
     }
     
   #employee-contribution {
-    width: 100%;
-    margin: 50px 30px 30px 30px;
+    width: 105%;
+    margin: 30px 0px;
     border: 0;
     height: 8px;
     background: #D3D7E0;
@@ -873,6 +882,7 @@
     width: 24px;
     outline: none;
     cursor: pointer;
+   
   }
   
   
@@ -898,8 +908,8 @@
   }
 
   #employer-contribution {
-    width: 100%;
-    margin: 50px 30px 30px 30px;
+    width: 105%;
+    margin: 30px 0px;
     border: 0;
     height: 8px;
     background: #DADBDB;
@@ -917,6 +927,7 @@
     width: 24px;
     outline: none;
     cursor: pointer;
+    
   }
   
   
@@ -942,8 +953,8 @@
   }
 
   #avc-contribution {
-    width: 100%;
-    margin: 50px 30px 30px 30px;
+    width: 105%;
+    margin: 30px 0px;
     border: 0;
     height: 8px;
     background: #D3D7E0;
@@ -961,6 +972,7 @@
     width: 24px;
     outline: none;
     cursor: pointer;
+    
   }
   
   

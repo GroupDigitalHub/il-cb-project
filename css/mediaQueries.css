@@ -21,6 +21,24 @@
     div#navbar-list-3 {
         display: none;
     }
+    .row.taxband {
+        margin: 15px 0px;
+    }
+    .row.taxband {
+        margin: 15px 0px;
+    }
+    .row.employee {
+        margin: 15px 0px;
+    }
+    .row.employer {
+        margin: 15px 0px;
+    }
+    .row.avc{
+        margin: 15px 0px;
+    }
+    .profile-box-mobile {
+        display: none;
+    }
   }
   
   /* 
@@ -48,7 +66,9 @@
     .modal-body.two {
         display: none;
     }
-    
+    .profile-box-mobile {
+        display: none;
+    }
   }
   
   /* 
@@ -91,9 +111,7 @@
     .button-contributions {
         align-self: center;
     }
-    .projections-text {
-        text-align: center;
-    }
+    
     .projections-icon img {
         padding-bottom: 20px;
     }
@@ -152,6 +170,9 @@
     .dropdown-menu {
         background-color: #fff !important;
     }
+    .profile-box-mobile {
+        display: flex;
+    }
   }
   
   /* 
@@ -184,7 +205,7 @@
         align-self: center;
     }
     .projections-text {
-        text-align: center;
+        
     }
     .projections-icon img {
         padding-bottom: 20px;
@@ -247,6 +268,12 @@
     .dropdown-menu {
         background-color: #fff !important;
     }
+    .profile-box-mobile {
+        display: flex;
+    }
+    .font-size-18 {
+        font-size: 14px;
+    }
   }
   
   /* 
@@ -282,7 +309,7 @@
         align-self: center;
     }
     .projections-text {
-        text-align: center;
+        
     }
     .projections-icon img {
         padding-bottom: 20px;
@@ -360,6 +387,12 @@
     .dropdown-menu {
         background-color: #fff !important;
     }
+    .profile-box-mobile {
+        display: flex;
+    }
+    .font-size-18 {
+        font-size: 14px;
+    }
   }
   
   /* 
@@ -395,7 +428,7 @@
         align-self: center;
     }
     .projections-text {
-        text-align: center;
+        
     }
     .projections-icon img {
         padding-bottom: 20px;
@@ -468,6 +501,13 @@
     .dropdown-menu {
         background-color: #fff !important;
     }
+    .profile-box-mobile {
+        display: flex;
+    }
+    .font-size-18 {
+        font-size: 14px;
+    }
+    
   }
 
   .j {
