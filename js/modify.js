@@ -120,7 +120,19 @@ $(function () {
 });
 
 // ********** End Of AVC Slider ********** 
-
+$(function () {
+    $("#tax-contribution").slider({
+        range: "max",
+        min: 0,
+        max: 25,
+        value: 0,
+        slide: function (event, ui) {
+            $("#amount-tax").val(ui.value + "%");
+            $("#amount-tax").val(ui.value + "%");
+        }
+    });
+    $("#amount-tax").val($("#tax-contribution").slider("value") + "%");
+});
 // ********** Modify Summary Modal ********** 
 
 //  ********** End Of Modify Summary Modal  ********** 
@@ -144,3 +156,6 @@ $(document).ready(function () {
 $('.toggle-right').on('click', function() {
     $('.right-sidebar').toggleClass("right-sidebar-collapsed");
 });
+
+
+// ************** TAX SLIDER ******************* //
