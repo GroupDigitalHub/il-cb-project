@@ -403,6 +403,24 @@
     .input-group-addon{
         padding-left: 30px;
         }
+        .rs-container{
+            height: 200px !important;
+            width: 200px !important;
+          }
+          .month-tab, .year-tab {
+            width: 100%
+        }
+        .ml-pl-0 {
+            margin: 0px;
+            padding: 0px;
+        }
+        .mr-pr-0 {
+            margin: 0px;
+            padding: 0px;
+        }
+        .input-group.mb-3{
+            width: 100%;
+        }
   }
   
   /* 
@@ -519,6 +537,24 @@
     }
     .input-group-addon{
     padding-left: 30px;
+    }
+    .rs-container{
+        height: 200px !important;
+        width: 200px !important;
+      }
+      .month-tab, .year-tab {
+          width: 100%
+      }
+      .ml-pl-0 {
+        margin: 0px;
+        padding: 0px;
+    }
+    .mr-pr-0 {
+        margin: 0px;
+        padding: 0px;
+    }
+    .input-group.mb-3{
+        width: 100%;
     }
   }
 
