@@ -40,6 +40,7 @@
             }
         }
     </style>
+
     <div class="wrapper">
         <!-- SIDEBAR LEFT MAIN MENU  -->
         <nav id="sidebar">
@@ -150,7 +151,7 @@
                     <div class="dropdown x">
                         <button class="btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             <span>
-						  John Smith<img src="img/profile.png" alt="profile" style="width:15%; height: 25%;background: #F8F9FA;"></span>
+						  John Smith<img src="img/profile-user.png" alt="profile" style="width:15%; height: 25%;background:"></span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                             <li>
@@ -201,10 +202,11 @@
             <!-- END OF PROFILE DROPDOWN MENU-->
             <!-- START OF CONTAINER -->
             <div class="container modify-content flex-center">
+
                 <div class="col-lg-10 col-md-12 col-sm-12">
                     <!-- TAX PROFILE BOX -->
                     <div class="row profile-box">
-                        <div class="col-2"><img src="img/profile.png" alt="profile" /></div>
+                        <div class="col-2"><img src="img/profile-user.png" alt="profile" /></div>
                         <div class="col-2">
                             <span id="customer-name">John Smith</span>
                             <br>
@@ -237,37 +239,39 @@
                     <div class="row">
                         <!-- START OF TAX BOX-->
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="col-lg-12 col-md-12 col-sm-12 manage-my-contributions">
+                            <div class="col-lg-12 col-md-12 col-sm-12 tax-contributions">
 
-                                <div class="row">
+                                <div class="row tax-title-bar">
+                                    
                                     <div class="col-lg-6 ">
                                         <span>Tax Savings Calculator</span>
                                     </div>
-                                    <div class="col-lg-3 month-tab">
-
-                                        <span id="monthTab">Monthly</span>
+                                    <div class="col-lg-3 mr-pr-0">
+                                        <div class="month-tab"><span id="monthTab">Monthly</span>
+                                        </div>
 
                                     </div>
-
-                                    <div class="col-lg-3 year-tab">
-                                        <span id="yearTab">Yearly</span>
+                                    <div class="col-lg-3 ml-pl-0">
+                                        <div class="year-tab">
+                                            <span id="yearTab">Yearly</span>
+                                        </div>
                                     </div>
+                                    
                                 </div>
                                 <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 tax-box">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 tax-total-boxes">
-                                        <span class="tax-label">My Monthly Salary</span>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 tax-total-boxes">
+                                        <div class="tax-input-box"><span class="tax-label">My monthly salary</span>
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">€</span>
                                             </div>
                                             <input type="number" class="form-control" aria-label="Amount (to the nearest euro)">
-
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 tax-total-boxes">
+                                        </div>
+                                        <div class="tax-input-box">
                                         <span class="tax-label">My income tax band</span>
                                         <br>
+                                        <div class="tax-radio-btn">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                                             <label class="form-check-label color-60" for="inlineRadio1">20%</label>
@@ -276,310 +280,312 @@
                                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                                             <label class="form-check-label color-60" for="inlineRadio2">40%</label>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 tax-total-boxes d-flex justify-content-between">
-                                        <span class="tax-label">My monthly contributions</span>
-                                        <span class="tax-label">€169.55</span>
-
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 tax-total-boxes">
-                                        <div class="row employer align-items-center">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 projections-text d-flex">
-                                                    <div class="range-slider">
-                                                            <input class="input-range" type="range" value="250" min="1" max="500">
-                                                            <span class="range-value"></span>
-                                                        </div> 
-                                            </div> <div class="col-lg-12 col-md-12 col-sm-12 projections-text d-flex">     
-                                                        
-                                                        
-                                            </div>
-                                           
-                                                <style>
-                                                        .range-slider .input-range {
-                                                          -webkit-appearance: none;
-                                                          width: 300px;
-                                                          height: 10px;
-                                                          border-radius: 5px;
-                                                          background: #353535;
-                                                          outline: none;
-                                                        }
-                                                        .range-slider .input-range::-webkit-slider-thumb {
-                                                          -webkit-appearance: none;
-                                                          width: 20px;
-                                                          height: 20px;
-                                                          border-radius: 50%;
-                                                          background: #666;
-                                                          cursor: pointer;
-                                                          -webkit-transition: background .15s ease-in-out;
-                                                          transition: background .15s ease-in-out;
-                                                        }
-                                                        .range-slider .input-range::-webkit-slider-thumb:hover {
-                                                          background: #fff;
-                                                        }
-                                                        .range-slider .input-range:active::-webkit-slider-thumb {
-                                                          background: #fff;
-                                                        }
-                                                        .range-slider .input-range::-moz-range-thumb {
-                                                          width: 20px;
-                                                          height: 20px;
-                                                          border: 0;
-                                                          border-radius: 50%;
-                                                          background: #666;
-                                                          cursor: pointer;
-                                                          -webkit-transition: background .15s ease-in-out;
-                                                          transition: background .15s ease-in-out;
-                                                        }
-                                                        .range-slider .input-range::-moz-range-thumb:hover {
-                                                          background: #fff;
-                                                        }
-                                                        .range-slider .input-range:active::-moz-range-thumb {
-                                                          background: #fff;
-                                                        }
-                                                        .range-slider .range-value {
-                                                          display: inline-block;
-                                                          position: relative;
-                                                          width: 60px;
-                                                          color: #fff;
-                                                          font-size: 16px;
-                                                          font-weight:bold;
-                                                          line-height: 20px;
-                                                          text-align: center;
-                                                          border-radius: 3px;
-                                                          background: #3f3f3f;
-                                                          padding: 5px 10px;
-                                                          margin-left: 7px;
-                                                        }
-                                                        .range-slider .range-value:after {
-                                                          position: absolute;
-                                                          top: 8px;
-                                                          left: -7px;
-                                                          width: 0;
-                                                          height: 0;
-                                                          border-top: 7px solid transparent;
-                                                          border-right: 7px solid #3f3f3f;
-                                                          border-bottom: 7px solid transparent;
-                                                          content: '';
-                                                        }
-                                                        
-                                                        ::-moz-range-track {
-                                                          background: #353535;
-                                                          border: 0;
-                                                        }
-                                                        
-                                                        input::-moz-focus-inner {
-                                                          border: 0;
-                                                        }   </style>
-<script>var range = $('.input-range'),
-        value = $('.range-value'),
-        roundSlider = $('#slider');
-        
-    value.html(range.attr('value'));
-    
-    roundSlider.roundSlider({
-      radius: 80,
-      circleShape: "half-top",
-      min: range.attr('min'),
-      max: range.attr('max'),
-      sliderType: "min-range",
-      showTooltip: true,
-      value: range.attr('value')
-    });
-    
-    range.on('input', function(){
-            var localValue = this.value;
-        value.html(localValue);
-        roundSlider.roundSlider('setValue', localValue, 1)
-    }); 
-    
-    </script>                                                
-                                            <div class="col-2 "><span class="slider-max-value">25%</span></div>
+                                        </div>
+                                        </div>
+                                        <div class="tax-input-box d-flex justify-content-between">
+                                            <span class="tax-label">My monthly contributions</span>
+                                            <span class="tax-label total-contributions">€169.55</span>
 
                                         </div>
+                                        
+                                        <style>
+                                            * {
+                                                -webkit-box-sizing: border-box;
+                                                -moz-box-sizing: border-box;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .r-s .i-r {
+                                                -webkit-appearance: none;
+                                                width: 300px;
+                                                height: 10px;
+                                                border-radius: 5px;
+                                                background: #353535;
+                                                outline: none;
+                                            }
+                                            
+                                            .r-s .i-r::-webkit-slider-thumb {
+                                                -webkit-appearance: none;
+                                                width: 20px;
+                                                height: 20px;
+                                                border-radius: 50%;
+                                                background: #666;
+                                                cursor: pointer;
+                                                -webkit-transition: background .15s ease-in-out;
+                                                transition: background .15s ease-in-out;
+                                            }
+                                            
+                                            .r-s .i-r::-webkit-slider-thumb:hover {
+                                                background: #fff;
+                                            }
+                                            
+                                            .r-s .i-r:active::-webkit-slider-thumb {
+                                                background: #fff;
+                                            }
+                                            
+                                            .r-s .i-r::-moz-range-thumb {
+                                                width: 20px;
+                                                height: 20px;
+                                                border: 0;
+                                                border-radius: 50%;
+                                                background: #666;
+                                                cursor: pointer;
+                                                -webkit-transition: background .15s ease-in-out;
+                                                transition: background .15s ease-in-out;
+                                            }
+                                            
+                                            .r-s .i-r::-moz-range-thumb:hover {
+                                                background: #fff;
+                                            }
+                                            
+                                            .r-s .i-r:active::-moz-range-thumb {
+                                                background: #fff;
+                                            }
+                                            
+                                            .r-s .r-v {
+                                                display: inline-block;
+                                                position: relative;
+                                                width: 60px;
+                                                color: #fff;
+                                                font-size: 16px;
+                                                font-weight: bold;
+                                                line-height: 20px;
+                                                text-align: center;
+                                                border-radius: 3px;
+                                                background: #3f3f3f;
+                                                padding: 5px 10px;
+                                                margin-left: 7px;
+                                            }
+                                            
+                                            .r-s .r-v:after {
+                                                position: absolute;
+                                                top: 8px;
+                                                left: -7px;
+                                                width: 0;
+                                                height: 0;
+                                                border-top: 7px solid transparent;
+                                                border-right: 7px solid #3f3f3f;
+                                                border-bottom: 7px solid transparent;
+                                                content: '';
+                                            }
+                                            
+                                            ::-moz-range-track {
+                                                background: #353535;
+                                                border: 0;
+                                            }
+                                            
+                                            input::-moz-focus-inner {
+                                                border: 0;
+                                            }
+                                            .rs-container .full .pie {
+                                                height: 200px;
+                                                width: 200px;
+                                            }
+                                        </style>
+
+                                        <body>
+
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <!---<div class="r-s">
+                                                            <input class="i-r" type="range" value="4" min="0" max="25">
+                                                            <span class="r-v"></span>
+                                                        </div> -->
+                                                        <div>
+                                                            <div class="range-wrap">
+                                                            <input type="range" class="range" min="4" max="25" id="amount-employee" class="range" readonly="" min="4" max="100" style="border: 0px; color: rgb(51, 51, 51); font-weight: bold; width: 100%; position: absolute; top: -25px; height: 25px; display: block;">
+                                                            <output class="bubble"></output>
+                                                            </div>
+                                                        
+                                                        </span>
+                                                            <span class="r-v" id="amount-employee"></span>
+
+                                                            <style>
+                                                                .range-wrap {
+                                                                    position: relative;
+                                                                    margin: 0 auto 3rem;
+                                                                }
+                                                                
+                                                                .range {
+                                                                    width: 100%;
+                                                                    outline: none;
+                                                                }
+                                                                
+                                                                .bubble {
+                                                                    
+                                                                    color: #333;
+                                                                    padding: 4px 12px;
+                                                                    position: absolute;
+                                                                    border-radius: 4px;
+                                                                    left: 50%;
+                                                                    transform: translateX(-50%);
+                                                                    margin-top: -60px;
+                                                                }
+                                                                
+                                                                .bubble::after {
+                                                                    content: "";
+                                                                    position: absolute;
+                                                                    width: 2px;
+                                                                    height: 2px;
+                                                                    
+                                                                    top: -1px;
+                                                                    left: 50%;
+                                                                }
+                                                                
+                                                                
+                                                            </style>
+
+                                                            
+                                                        </div>
+                                                        
+                                                        <script>
+                                                            const allRanges = document.querySelectorAll(".range-wrap");
+                                                            allRanges.forEach(wrap => {
+                                                                const range = wrap.querySelector(".range");
+                                                                const bubble = wrap.querySelector(".bubble");
+
+                                                                range.addEventListener("input", () => {
+                                                                    setBubble(range, bubble);
+                                                                });
+                                                                setBubble(range, bubble);
+                                                            });
+
+                                                            function setBubble(range, bubble) {
+                                                                const val = range.value;
+                                                                const min = range.min ? range.min : 0;
+                                                                const max = range.max ? range.max : 100;
+                                                                const newVal = Number(((val - min) * 100) / (max - min));
+                                                                bubble.innerHTML = val;
+
+                                                                // Sorta magic numbers based on size of the native UI thumb
+                                                                bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+                                                            }
+                                                            $('.range').on("input", function() {
+                                                                $('.bubble').val(this.value +" %" );
+                                                                }).trigger("change");
+                                                        </script>
+                                                    </div>
+                                                    <div class="tax-input-box">
+                                                            <span class="tax-label">Cost to <span class="total-contributions">€101.55</span> after tax saving.</span>
+                                                        </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 submit-tax-changes flex-center">
+                                                    
+                                                    <button class="submit-tax-changes-btn" id="btnSubmit" value="Submit">Increase contributions</button>
+                    
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                            <!--<div id="slider1" class="input-range"></div>-->
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 arc-pie">
+                                        <div id="s1" class="i-r"></div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6"><div id="slider" class="input-range"></div>
-                                </div>
-                                </div>
+
                             </div>
-                            <div class="col-lg-5 col-md-5 col-sm-5 tax-box">
+                            <script>
+                                var range = $('.range'),
+                                    value = $('.n-v'),
+                                    roundSlider = $('#s1');
+
+                                value.html(range.attr('value'));
                                 
-                                </div>
+                                window.onSliderCreate = function (e) {
+                                    this._handles().append("<div class='arrow_box'> <div>You saved</div> <b class='box_value'></b> <div>When you sell</div> </div>");
+                                    //this.control.append($("<div class='start'>$ "+this.options.min+"</div>"));
+                                    //this.control.append($("<div class='end'>$ "+this.options.max+"</div>"));
+                                    updateBox.call(this);
+                                  }
+
+                                window.updateBox = function (e) {
+                                    var profit = Math.round(this.options.value * 0.005);
+                                    this._handles().find(".box_value").html("€ " + profit);
+                                  }
+                                  $(document).ready(function() {
+                                    $( ".bubble" ).append('%')
+                                });
+
+
+                                window.changeTooltip = function (e) {
+                                    updateBox.call(this);
+                                    return "€ " + e.value.toFixed(2) + "<div>Tax Saving<div>";
+                                  }
+                                  
+                                roundSlider.roundSlider({
+                                    radius: 80,
+                                    circleShape: "pie",
+                                    min: range.attr('min'),
+                                    max: range.attr('max'),
+                                    sliderType: "min-range",
+                                    showTooltip: true,
+                                    startAngle: 315,
+                                    value: range.attr('value'),
+                                    editableTooltip: false,
+                                    value: 5,
+                                    tooltipFormat: "changeTooltip",
+                                    create: "onSliderCreate",
+                                    min: 4,
+		                            max: 25,
+                                });
+
+                                range.on('input', function() {
+                                    var localValue = this.value;
+                                    value.html(localValue);
+                                    roundSlider.roundSlider('setValue', localValue, 1)
+                                });
+                            </script>
+                            
                         </div>
-                        
+
                     </div>
                     <!-- SLIDERS -->
 
-                    <!-- END OF SLIDERS -->
-
+                    <!--End of Projections / Simulate-->
                 </div>
-                <!--END OF CONTRIBUTIONS BOX-->
-                <!--Start of Simulate Projection Boxes-->
-
-                <!--End of Projections / Simulate-->
-            </div>
-
-        </div>
-        <!-- SLIDERS END -->
-        <!-- INFO SIDEBAR (RIGHT)-->
-        <div class="col-lg-2 col-md-2 col-sm-2 info-bar">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="right-sidebar">
-                        <div class="toggle-right">
-                            <i class="material-icons inner-icon right-sidebar-icon">keyboard_arrow_right</i>
-                        </div>
-                        <div class="col-lg-2 mt-20-p-20-0">
-                            <div class="left-box il-black opacity-25">
-                                <div class="icon-circle-grey">
-                                    <i class="material-icons inner-icon il-aquagreen-text text-darken-1">emoji_objects</i>
+                <div class="col-lg-2 col-md-2 col-sm-2 info-bar">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="right-sidebar">
+                                <div class="toggle-right">
+                                    <i class="material-icons inner-icon right-sidebar-icon">keyboard_arrow_right</i>
+                                </div>
+                                <div class="col-lg-2 mt-20-p-20-0">
+                                    <div class="left-box il-black opacity-25">
+                                        <div class="icon-circle-grey">
+                                            <i class="material-icons inner-icon il-aquagreen-text text-darken-1">emoji_objects</i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10">
+                                    <div class="info-bar-text">
+                                        <span class="font-size-18">Hi John</span>
+                                        <br>
+                                        <span class="font-size-14">Get the most out of your employers contribution by increasing your own contributions now.</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-10">
-                            <div class="info-bar-text">
-                                <span class="font-size-18">Hi John</span>
-                                <br>
-                                <span class="font-size-14">Get the most out of your employers contribution by increasing your own contributions now.</span>
-                            </div>
-                        </div>
                     </div>
+                    <script>
+                        $('.toggle-right').on('click', function() {
+                            $('.right-sidebar').toggleClass("right-sidebar-collapsed");
+                        });
+                    </script>
                 </div>
             </div>
-            <script>
-                $('.toggle-right').on('click', function() {
-                    $('.right-sidebar').toggleClass("right-sidebar-collapsed");
-                });
-            </script>
+            <!-- SLIDERS END -->
+            <!-- INFO SIDEBAR (RIGHT)-->
+
+            <!-- END OF INFO SIDEBAR (RIGHT)-->
         </div>
-        <!-- END OF INFO SIDEBAR (RIGHT)-->
-    </div>
-    <!--END OF CONTAINER-->
+        <!--END OF CONTAINER-->
     </div>
     <!--END OF WRAPPER-->
 
-    <!-- SUMMARY OF CHANGES MODAL-->
-    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="my-modal">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="modal-title" id="myModalLabel">Summary of Changes</span>
-                </div>
-                <div class="modal-body one">
-                    <div class="col-lg-12 col-md-12 col-sm-12 modal-content" style="display: flex; height: 100%; width: 100%;background: linear-gradient(to right, #ffff 75%, #F4F5F7 25%);">
 
-                        <div class="row" style="border: 1px solid #F4F5F7; margin-bottom: 15px;">
-                            <div class="col-lg-5 col-md-3 col-sm-3"><span>Contribution type</span></div>
-                            <div class="col-lg-3 col-md-3 col-sm-3"><span>Was</span></div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>Now</span></div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>Value</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-5 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">My Employee Contribution</span></div>
-                            <div class="col-lg-3 col-md-3 col-sm-3"><span>4%<img src="img/arrow-modal.svg" alt="arrow" class="modal-arrow"/></span></div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>7%</span></div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>€2,000</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-5 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">My Employer Contribution</span></div>
-                            <div class="col-lg-3 col-md-3 col-sm-3"><span>4%<img src="img/arrow-modal.svg"  alt="arrow" class="modal-arrow"/>	</span></div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>7%</span></div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>€2,000</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-5 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">Total Contribution</span></div>
-                            <div class="col-lg-3 col-md-3 col-sm-3"><span>8%<img src="img/arrow-modal.svg"  alt="arrow" class="modal-arrow"/>	</span></div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>14%</span></div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>€10,000</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body two">
-
-                    <div class="col-lg-12 col-md-12 col-sm-12 modal-content" style="display: flex; height: 100%; width: 100%;background: linear-gradient(to right, #ffff 75%, #F4F5F7 25%);">
-
-                        <div class="row">
-                            <div class="col-lg-12 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">My Employee Contribution</span></div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 j"><span>4%<img src="img/arrow-modal.svg" alt="arrow" class="modal-arrow"></span><span>7%</span><span>€2,000</span></div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">My Employer Contribution</span></div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 j"><span>4%<img src="img/arrow-modal.svg" alt="arrow" class="modal-arrow">	</span><span>7%</span><span>€2,000</span></div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">Total Contribution</span></div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 j"><span>8%<img src="img/arrow-modal.svg" alt="arrow" class="modal-arrow">	</span><span>14%</span><span>€10,000</span></div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3"> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 confirm-summary-text">
-                    <span>By clicking confirm you are agreeing to update your pension investment.</span>
-                    <br>
-                    <span>Contribution instruction changes will take effect from the next Payroll
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										run.</span>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" id="modal-btn-cancel">Cancel</button>
-                    <button type="button" class="btn btn-primary" id="modal-btn-confirm">Confirm</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END OF SUMMARY OF CHANGES MODAL-->
-    <script>
-        var modalConfirm = function(callback) {
-
-            $("#btnSubmit").on("click", function() {
-                $("#my-modal").modal('show');
-            });
-
-            $("#modal-btn-confirm").on("click", function() {
-                callback(true);
-                $("#my-modal").modal('hide');
-            });
-
-            $("#modal-btn-cancel").on("click", function() {
-                callback(false);
-                $("#my-modal").modal('hide');
-            });
-        };
-
-        modalConfirm(function(confirm) {
-            if (confirm) { // Acciones si el usuario confirma
-                $("#result").html("CONFIRMED");
-            } else { // Acciones si el usuario no confirma
-                $("#result").html("NOT CONFIRMED");
-            }
-        });
-    </script>
-    <style>
-        .input-group.mb-3 {
-            width: 100%;
-            height: 42pt;
-            border-radius: 4pt;
-            background-color: #ffffff;
-            background-size: cover;
-            font-family: Lato;
-            font-size: 16pt;
-            color: #121212;
-            text-decoration: none solid rgb(18, 18, 18);
-        }
-        
-        .tax-label {
-            margin: 30px 0px;
-            font-size: 18px;
-            color: #606060;
-        }
-        
-        .tax-total-boxes {
-            margin: 30px 0px;
-        }
-    </style>
-</body>
+    </body>
 
 </html>

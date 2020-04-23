@@ -159,3 +159,24 @@ $('.toggle-right').on('click', function() {
 
 
 // ************** TAX SLIDER ******************* //
+var range = $('.input-range'),
+value = $('.range-value'),
+roundSlider = $('#slider1');
+
+value.html(range.attr('value'));
+
+roundSlider.roundSlider({
+radius: 80,
+circleShape: "half-top",
+min: range.attr('min'),
+max: range.attr('max'),
+sliderType: "min-range",
+showTooltip: true,
+value: range.attr('value')
+});
+
+range.on('input', function(){
+var localValue = this.value;
+value.html(localValue);
+roundSlider.roundSlider('setValue', localValue, 1)
+}); 
