@@ -14,6 +14,7 @@
     }
     .modal-body.one {
         display: flex;
+        flex-flow: row wrap;
     }
     .modal-body.two {
         display: none;
@@ -69,6 +70,10 @@
     .profile-box-mobile {
         display: none;
     }
+    .rs-container{
+        height: 150px !important;
+        width: 300px !important;
+      }
     
   }
   
@@ -163,7 +168,8 @@
         display: none;
     }
     .modal-body.one {
-        display: git a;
+        display: flex;
+        flex-flow: row wrap;
     }
     .modal-body.two {
         display: none;
@@ -174,9 +180,14 @@
     .profile-box-mobile {
         display: flex;
     }
+    .rs-container{
+        height: 150px !important;
+        width: 300px !important;
+      }
     .input-group-addon{
         padding-left: 30px;
         }
+        
   }
   
   /* 
@@ -265,6 +276,7 @@
     }
     .modal-body.one {
         display: flex;
+        flex-flow: row wrap;
     }
     .modal-body.two {
         display: none;
@@ -384,6 +396,7 @@
     }
     .modal-body.two {
         display: flex;
+        flex-flow: row wrap;
     }
     .modal-arrow {
         padding-left: 0px;
@@ -519,6 +532,7 @@
     }
     .modal-body.two {
         display: flex;
+        flex-flow: row wrap;
     }
     .modal-arrow {
         padding-left: 0px;
@@ -539,8 +553,8 @@
     padding-left: 30px;
     }
     .rs-container{
-        height: 200px !important;
-        width: 200px !important;
+        height: 150px !important;
+        width: 300px !important;
       }
       .month-tab, .year-tab {
           width: 100%

@@ -9,11 +9,13 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.roundslider/1.0/roundslider.min.css">
+    
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mediaQueries.css">
     <!-- Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.0.45/css/materialdesignicons.min.css" integrity="sha256-nRyVCcVDSlWN9d68r9M+rKBLE4k9Cp1j3XSY/umjvvU=" crossorigin="anonymous" />
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -29,7 +31,8 @@
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <!-- Our custom JS-->
-    <script src="js/modify.js"></script>
+    <script type="text/javascript" src="js/modify.js"></script>
+    <script type="text/javascript" src="js/tax.js"></script>
 </head>
 
 <body>
@@ -62,7 +65,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="tax.html">
                         <svg style="width:24px;height:24px" viewbox="0 0 24 24">
                             <path fill="currentColor" d="M3,22L4.5,20.5L6,22L7.5,20.5L9,22L10.5,20.5L12,22L13.5,20.5L15,22L16.5,20.5L18,22L19.5,20.5L21,22V2L19.5,3.5L18,2L16.5,3.5L15,2L13.5,3.5L12,2L10.5,3.5L9,2L7.5,3.5L6,2L4.5,3.5L3,2M18,9H6V7H18M18,13H6V11H18M18,17H6V15H18V17Z" />
                         </svg>
@@ -95,25 +98,20 @@
                 </li>
                 <li>
                     <a href="#">
-                        <svg style="width:24px;height:24px" viewbox="0 0 24 24">
-                            <path fill="currentColor" d="M12,2A9,9 0 0,1 21,11H13V19A3,3 0 0,1 10,22A3,3 0 0,1 7,19V18H9V19A1,1 0 0,0 10,20A1,1 0 0,0 11,19V11H3A9,9 0 0,1 12,2Z" />
-                        </svg>
+                        <i class="material-icons inner-icon text-darken-1">beach_access</i>
+
                         <span>Lifestyle Planner</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <svg style="width:24px;height:24px" viewbox="0 0 24 24">
-                            <path fill="currentColor" d="M4,6H2V20A2,2 0 0,0 4,22H18V20H4V6M20,2H8A2,2 0 0,0 6,4V16A2,2 0 0,0 8,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M20,12L17.5,10.5L15,12V4H20V12Z" />
-                        </svg>
+                        <i class="material-icons inner-icon text-darken-1">collections_bookmark</i>
                         <span>Plans</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <svg style="width:24px;height:24px" viewbox="0 0 24 24">
-                            <path fill="currentColor" d="M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z" />
-                        </svg>
+                        <i class="material-icons inner-icon text-darken-1">file_copy</i>
                         <span>Documents</span>
                     </a>
                 </li>
@@ -121,78 +119,82 @@
             <ul class="list-unstyled components">
                 <li>
                     <a href="#">
-                        <svg style="width:24px;height:24px" viewbox="0 0 24 24">
-                            <path fill="currentColor" d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18V21Z" />
-                        </svg>
+                        <i class="material-icons inner-icon text-darken-1">security</i>
                         <span>Insurance</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <svg style="width:24px;height:24px" viewbox="0 0 24 24">
-                            <path fill="currentColor" d="M12,1C7,1 3,5 3,10V17A3,3 0 0,0 6,20H9V12H5V10A7,7 0 0,1 12,3A7,7 0 0,1 19,10V12H15V20H18A3,3 0 0,0 21,17V10C21,5 16.97,1 12,1Z" />
-                        </svg>
+                        <i class="material-icons inner-icon text-darken-1">help</i>
+
                         <span>Support</span>
                     </a>
                 </li>
             </ul>
         </nav>
-        <!-- END OF SIDEBAR LEFT MAIN MENU  -->
-        <!-- MAIN CONTENT  -->
+        <!-- Right Side Profile Menu  -->
         <div id="content">
-            <!-- PROFILE DROPDOWN MENU -->
             <nav class="navbar navbar-light bg-light">
                 <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="material-icons">menu</i>
-                        <span>Toggle Sidebar</span>
+                    <button class="nav-link" type="button" data-toggle="dropdown" data-target="#navbar-list-3" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="mdi mdi-menu il-blue"></i>
                     </button>
+
                     <div class="il_logo"><img src="img/IL_Logo.svg" alt="il-logo" /></div>
                     <div class="dropdown x">
                         <button class="btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             <span>
-						  John Smith<img src="img/profile-user.png" alt="profile" style="width:15%; height: 25%;background:"></span>
+                     John Smith<span class="icon-user-sm"></span></span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li>
-                                <i class="material-icons inner-icon il-blue text-darken-1">account_circle</i>
-                                <a href="#">My Profile</a>
-                            </li>
-                            <li>
-                                <i class="material-icons inner-icon il-blue text-darken-1">supervisor_account</i>
-                                <a href="#">Beneficiaries</a>
-                            </li>
-                            <li>
-                                <i class="material-icons inner-icon il-blue text-darken-1">lock</i>
-                                <a href="#">Security</a>
-                            </li>
-                            <li>
-                                <hr>
-                            </li>
-                            <li>
-                                <i class="material-icons inner-icon il-blue text-darken-1">exit_to_app
-								</i>
-                                <a href="#">Log out</a>
-                            </li>
+
+                            <a class="dropdown-item" href="#"><span class="icon-user-sm"></span></i>My Profile</a>
+
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-account-multiple il-blue"></i>Beneficiaries</a>
+
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-lock il-blue"></i>Security</a>
+
+                            <hr>
+
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-exit-to-app il-blue"></i>Log out</a>
+
                         </ul>
                     </div>
                     <button class="nav-link" type="button" data-toggle="dropdown" data-target="#navbar-list-4" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="material-icons il-blue" style="font-size: 32px;">account_circle</span>
+                        <i class="mdi mdi-account-circle il-blue"></i>
                     </button>
+                    <div class="collapse navbar-collapse" id="navbar-list-3">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="index.html"><i class="mdi mdi-home il-blue"></i>Home</a>
+                                    <a class="dropdown-item" href="modify.html"><i class="mdi mdi-wallet il-blue"></i>Contributions</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-receipt il-blue"></i>Tax Savings</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-chart-bell-curve-cumulative il-blue"></i>Projections</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-diamond-stone il-blue"></i>Once-off Payments</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-chart-areaspline-variant il-blue"></i>Investments</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-umbrella il-blue"></i>Lifestyle Planner</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-book-multiple il-blue"></i>Plans</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-text-box-multiple il-blue"></i>Documents</a>
+                                    <hr>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-shield il-blue"></i>Insurance</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-help-circle il-blue"></i>Support</a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="collapse navbar-collapse" id="navbar-list-4">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">
-                                        <i class="material-icons inner-icon il-blue text-darken-1">account_circle</i>My Profile</a>
-                                    <a class="dropdown-item" href="#">
-                                        <i class="material-icons inner-icon il-blue text-darken-1">supervisor_account</i>Beneficiaries</a>
-                                    <a class="dropdown-item" href="#">
-                                        <i class="material-icons inner-icon il-blue text-darken-1">lock</i>Security</a>
-                                    <hr>
-                                    <a class="dropdown-item" href="#">
-                                        <i class="material-icons inner-icon il-blue text-darken-1">exit_to_app</i> Log out</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle il-blue"></i>My Profile</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-multiple il-blue"></i>Beneficiaries</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-lock il-blue"></i>Security</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-exit-to-app il-blue"></i>Log out</a>
+
                                 </div>
                             </li>
                         </ul>
@@ -206,7 +208,7 @@
                 <div class="col-lg-10 col-md-12 col-sm-12">
                     <!-- TAX PROFILE BOX -->
                     <div class="row profile-box">
-                        <div class="col-2"><img src="img/profile-user.png" alt="profile" /></div>
+                        <div class="col-2"><span class="icon-user-lg" style="font-size: 48px;"></span></div>
                         <div class="col-2">
                             <span id="customer-name">John Smith</span>
                             <br>
@@ -258,7 +260,8 @@
                                     </div>
                                     
                                 </div>
-                                <div class="row">
+                                
+                                <div class="row d-flex">
                                     <div class="col-lg-6 col-md-6 col-sm-6 tax-total-boxes">
                                         <div class="tax-input-box"><span class="tax-label">My monthly salary</span>
                                         <div class="input-group mb-3">
@@ -289,98 +292,7 @@
                                         </div>
                                         
                                         <style>
-                                            * {
-                                                -webkit-box-sizing: border-box;
-                                                -moz-box-sizing: border-box;
-                                                box-sizing: border-box;
-                                            }
-                                            
-                                            .r-s .i-r {
-                                                -webkit-appearance: none;
-                                                width: 300px;
-                                                height: 10px;
-                                                border-radius: 5px;
-                                                background: #353535;
-                                                outline: none;
-                                            }
-                                            
-                                            .r-s .i-r::-webkit-slider-thumb {
-                                                -webkit-appearance: none;
-                                                width: 20px;
-                                                height: 20px;
-                                                border-radius: 50%;
-                                                background: #666;
-                                                cursor: pointer;
-                                                -webkit-transition: background .15s ease-in-out;
-                                                transition: background .15s ease-in-out;
-                                            }
-                                            
-                                            .r-s .i-r::-webkit-slider-thumb:hover {
-                                                background: #fff;
-                                            }
-                                            
-                                            .r-s .i-r:active::-webkit-slider-thumb {
-                                                background: #fff;
-                                            }
-                                            
-                                            .r-s .i-r::-moz-range-thumb {
-                                                width: 20px;
-                                                height: 20px;
-                                                border: 0;
-                                                border-radius: 50%;
-                                                background: #666;
-                                                cursor: pointer;
-                                                -webkit-transition: background .15s ease-in-out;
-                                                transition: background .15s ease-in-out;
-                                            }
-                                            
-                                            .r-s .i-r::-moz-range-thumb:hover {
-                                                background: #fff;
-                                            }
-                                            
-                                            .r-s .i-r:active::-moz-range-thumb {
-                                                background: #fff;
-                                            }
-                                            
-                                            .r-s .r-v {
-                                                display: inline-block;
-                                                position: relative;
-                                                width: 60px;
-                                                color: #fff;
-                                                font-size: 16px;
-                                                font-weight: bold;
-                                                line-height: 20px;
-                                                text-align: center;
-                                                border-radius: 3px;
-                                                background: #3f3f3f;
-                                                padding: 5px 10px;
-                                                margin-left: 7px;
-                                            }
-                                            
-                                            .r-s .r-v:after {
-                                                position: absolute;
-                                                top: 8px;
-                                                left: -7px;
-                                                width: 0;
-                                                height: 0;
-                                                border-top: 7px solid transparent;
-                                                border-right: 7px solid #3f3f3f;
-                                                border-bottom: 7px solid transparent;
-                                                content: '';
-                                            }
-                                            
-                                            ::-moz-range-track {
-                                                background: #353535;
-                                                border: 0;
-                                            }
-                                            
-                                            input::-moz-focus-inner {
-                                                border: 0;
-                                            }
-                                            .rs-container .full .pie {
-                                                height: 200px;
-                                                width: 200px;
-                                            }
+                                           
                                         </style>
 
                                         <body>
@@ -400,70 +312,34 @@
                                                         
                                                         </span>
                                                             <span class="r-v" id="amount-employee"></span>
-
-                                                            <style>
-                                                                .range-wrap {
-                                                                    position: relative;
-                                                                    margin: 0 auto 3rem;
-                                                                }
-                                                                
-                                                                .range {
-                                                                    width: 100%;
-                                                                    outline: none;
-                                                                }
-                                                                
-                                                                .bubble {
-                                                                    
-                                                                    color: #333;
-                                                                    padding: 4px 12px;
-                                                                    position: absolute;
-                                                                    border-radius: 4px;
-                                                                    left: 50%;
-                                                                    transform: translateX(-50%);
-                                                                    margin-top: -60px;
-                                                                }
-                                                                
-                                                                .bubble::after {
-                                                                    content: "";
-                                                                    position: absolute;
-                                                                    width: 2px;
-                                                                    height: 2px;
-                                                                    
-                                                                    top: -1px;
-                                                                    left: 50%;
-                                                                }
-                                                                
-                                                                
-                                                            </style>
-
                                                             
                                                         </div>
                                                         
                                                         <script>
-                                                            const allRanges = document.querySelectorAll(".range-wrap");
-                                                            allRanges.forEach(wrap => {
-                                                                const range = wrap.querySelector(".range");
-                                                                const bubble = wrap.querySelector(".bubble");
+                                        const allRanges = document.querySelectorAll(".range-wrap");
+                                        allRanges.forEach(wrap => {
+                                            const range = wrap.querySelector(".range");
+                                            const bubble = wrap.querySelector(".bubble");
 
-                                                                range.addEventListener("input", () => {
-                                                                    setBubble(range, bubble);
-                                                                });
-                                                                setBubble(range, bubble);
-                                                            });
+                                            range.addEventListener("input", () => {
+                                                setBubble(range, bubble);
+                                            });
+                                            setBubble(range, bubble);
+                                        });
 
-                                                            function setBubble(range, bubble) {
-                                                                const val = range.value;
-                                                                const min = range.min ? range.min : 0;
-                                                                const max = range.max ? range.max : 100;
-                                                                const newVal = Number(((val - min) * 100) / (max - min));
-                                                                bubble.innerHTML = val;
+                                        function setBubble(range, bubble) {
+                                            const val = range.value;
+                                            const min = range.min ? range.min : 0;
+                                            const max = range.max ? range.max : 100;
+                                            const newVal = Number(((val - min) * 100) / (max - min));
+                                            bubble.innerHTML = val;
 
-                                                                // Sorta magic numbers based on size of the native UI thumb
-                                                                bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
-                                                            }
-                                                            $('.range').on("input", function() {
-                                                                $('.bubble').val(this.value +" %" );
-                                                                }).trigger("change");
+                                            // Sorta magic numbers based on size of the native UI thumb
+                                            bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+                                        }
+                                        $('.range').on("input", function() {
+                                            $('.bubble').val(this.value +" %" );
+                                            }).trigger("change");
                                                         </script>
                                                     </div>
                                                     <div class="tax-input-box">
@@ -471,7 +347,7 @@
                                                         </div>
                                             <div class="col-lg-12 col-md-12 col-sm-12 submit-tax-changes flex-center">
                                                     
-                                                    <button class="submit-tax-changes-btn" id="btnSubmit" value="Submit">Increase contributions</button>
+                                                    <button class="submit-tax-changes-btn" id="increaseContributions" value="Submit">Increase contributions</button>
                     
                                                 </div>
                                                 </div>
@@ -486,6 +362,7 @@
                                 </div>
 
                             </div>
+                           
                             <script>
                                 var range = $('.range'),
                                     value = $('.n-v'),
@@ -508,28 +385,31 @@
                                     $( ".bubble" ).append('%')
                                 });
 
-
+                                    
                                 window.changeTooltip = function (e) {
                                     updateBox.call(this);
                                     return "€ " + e.value.toFixed(2) + "<div>Tax Saving<div>";
                                   }
-                                  
+                                 
                                 roundSlider.roundSlider({
                                     radius: 80,
-                                    circleShape: "pie",
+                                    circleShape: "half-top",
                                     min: range.attr('min'),
                                     max: range.attr('max'),
                                     sliderType: "min-range",
                                     showTooltip: true,
-                                    startAngle: 315,
                                     value: range.attr('value'),
                                     editableTooltip: false,
-                                    value: 5,
+                                    value: 15,
                                     tooltipFormat: "changeTooltip",
                                     create: "onSliderCreate",
-                                    min: 4,
-		                            max: 25,
-                                });
+                                    
+                                    label: {
+                                        min: 4,
+                                      max: 25,
+                                      step: 21
+                                    }
+                                    });
 
                                 range.on('input', function() {
                                     var localValue = this.value;
@@ -542,7 +422,116 @@
 
                     </div>
                     <!-- SLIDERS -->
+<!-- SUMMARY OF CHANGES MODAL-->
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="increaseContribModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-title" id="myModalLabel">Summary of Changes</span>
+                </div>
+                <div class="modal-body one">
+                        <div class="col-lg-12 col-md-12 col-sm-12 confirm-summary-text">
+                                <span>These changes are based on your current actual salary and tax information and not necessarily on the data you entered in the calculator.</span>
+                            </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 modal-content" style="display: flex; height: 100%; width: 100%;background: linear-gradient(to right, #ffff 80%, #F4F5F7 20%);">
+                        
+                        <div class="row">
+                            <div class="col-lg-5 col-md-3 col-sm-3"><span></span></div>
+                            <div class="col-lg-3 col-md-3 col-sm-3"><span>Was</span></div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>Now</span></div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>Difference</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">Total contribution <span>(Up 3%)</span></span></div>
+                            <div class="col-lg-3 col-md-3 col-sm-3"><span>€10<img src="img/arrow-modal.svg" alt="arrow" class="modal-arrow"/></span></div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>€20.00</span></div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>€30.00</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">Updated cost to you</span></div>
+                            <div class="col-lg-3 col-md-3 col-sm-3"><span>€10<img src="img/arrow-modal.svg" alt="arrow" class="modal-arrow"/></span></div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>€20.00</span></div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>€30.00</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">Tax Saving of</span></div>
+                            <div class="col-lg-3 col-md-3 col-sm-3"><span>€10<img src="img/arrow-modal.svg" alt="arrow" class="modal-arrow"/></span></div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>€20.00</span></div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> <span>€30.00</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body two">
+                        <div class="col-lg-12 col-md-12 col-sm-12 confirm-summary-text">
+                                <span>These changes are based on your current actual salary and tax information and not necessarily on the data you entered in the calculator.</span>
+                            </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 modal-content" style="display: flex; height: 100%; width: 100%;background: linear-gradient(to right, #ffff 75%, #F4F5F7 25%);">
 
+                        <div class="row">
+                            <div class="col-lg-12 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">Total contribution <span>(Up 3%)</span></span></div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 j"><span>4%<img src="img/arrow-modal.svg" alt="arrow" class="modal-arrow"></span><span>7%</span><span>€296.19</span></div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">Updated cost to you</span></div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 j"><span>4%<img src="img/arrow-modal.svg" alt="arrow" class="modal-arrow">	</span><span>7%</span><span>€177.06</span></div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-3 col-sm-3"><span style="flex-flow: nowrap;">Tax Saving of</span></div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 j"><span>8%<img src="img/arrow-modal.svg" alt="arrow" class="modal-arrow">	</span><span>14%</span><span>€118.48</span></div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 confirm-summary-text">
+                    <span>By clicking confirm you are agreeing to update your pension investment.</span>
+                    <br>
+                    <span>Contribution instruction changes will take effect from the next Payrollrun.</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="increaseContrib-btn-cancel">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="increaseContrib-btn-confirm"><a href="#congrats">Confirm</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF SUMMARY OF CHANGES MODAL-->
+    <script>
+            var modalConfirm = function(callback) {
+
+                $("#increaseContributions").on("click", function() {
+                    $("#increaseContribModal").modal('show');
+                });
+
+                $("#increaseContrib-btn-confirm").on("click", function() {
+                    callback(true);
+                    $("#increaseContribModal").modal('hide');
+                });
+
+                $("#increaseContrib-btn-cancel").on("click", function() {
+                    callback(false);
+                    $("#increaseContribModal").modal('hide');
+                });
+            };
+
+            modalConfirm(function(confirm) {
+                if (confirm) {
+                    $("#result").html(" ");
+                } else { 
+                    $("#result").html("");
+                }
+            });
+            $(document).ready(function() {
+
+                $("#increaseContrib-btn-confirm").click(function() {
+                    $("#congrats").show();
+                });
+            });
+        </script>
                     <!--End of Projections / Simulate-->
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 info-bar">
@@ -585,7 +574,7 @@
     </div>
     <!--END OF WRAPPER-->
 
-
+    
     </body>
-
+   
 </html>
