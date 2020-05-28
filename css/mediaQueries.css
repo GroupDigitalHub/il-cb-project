@@ -71,8 +71,8 @@
         display: none;
     }
     .rs-container{
-        height: 150px !important;
-        width: 300px !important;
+        height: 125px !important;
+        width: 250px !important;
       }
     
   }
@@ -553,8 +553,8 @@
     padding-left: 30px;
     }
     .rs-container{
-        height: 150px !important;
-        width: 300px !important;
+        height: 125px !important;
+        width: 250px !important;
       }
       .month-tab, .year-tab {
           width: 100%
