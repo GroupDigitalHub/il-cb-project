@@ -515,7 +515,7 @@
         justify-content: space-around;
         display: flex;
         padding: 10px 15px 10px 15px;
-        color: #606060;
+        color: #37948F;
         width: 50%;
         border: 1px solid #E3E4E7;
         align-items: center;
@@ -528,7 +528,7 @@
         justify-content: space-around;
         display: flex;
         padding: 10px 15px 10px 15px;
-        color: #606060;
+        color: #37948F;
         width: 50%;
         align-items: center;
         font-size: 14px;
@@ -1539,11 +1539,13 @@ input::-moz-focus-inner {
     position: absolute;
     width: 2px;
     height: 2px;
-    background: red;
     top: -1px;
     left: 50%;
 }
-  
+input[type="range"]{
+    background-color: yellow;
+    height: 20px
+  }
   .rs-container{
     height: 200px !important;
     width: 400px !important;
@@ -1555,6 +1557,7 @@ input::-moz-focus-inner {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    margin: 20px 0px;
   }
 
   input[type=range] {
@@ -1576,17 +1579,12 @@ input::-moz-focus-inner {
     border: none;
   }
   .tax-contributions {
-    margin: 5px;
-    border: 1px solid #E0E1E8;
-    border-bottom: 1px solid #E0E1E8;
-    margin-bottom: -5px;
     padding: 0px;
     font-size: 20px;
     background: #FFF;
   }
   .tax-title-bar {
     border-bottom: 1px solid #E3E4E7;
-    margin: 0px;
     padding: 10px;
   }
   .mr-pr-0 {
@@ -1615,6 +1613,12 @@ input::-moz-focus-inner {
     color: #121212;
     text-decoration: none solid rgb(18, 18, 18);
     padding: 10px 0px;
+}
+.tax-calculator-box {
+    margin: 5px;
+    border: 1px solid #dfe1e8;
+    align-items: center;
+    background: #fff;
 }
 .tax-label {
     font-size: 18px;
@@ -1651,9 +1655,17 @@ div#s1.i-r.rs-chrome.rs-control.rs-animation {
     align-items: center;
     display: flex;
     justify-content: center;
-    background: #FAFAFB;
+    background: #FFF;
+    margin-top: 20%;
 }
-
+div#s1.i-r.rs-firefox.rs-control.rs-animation {
+    height: 100% !important;
+    width: 100% !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: #FFF;
+}
 .rs-path-color {
     background: #E0E1E6;
 }
@@ -1665,7 +1677,13 @@ background: #5261ac;
     font-size: 24px;
 }
 .rs-block .rs-inner, .rs-control .rs-overlay{
-    background: #FAFAFB;
+    background: #FFF;
+}
+.rs-border {
+    border: none;
+}
+.rs-disabled {
+    opacity: 1;
 }
 .start {
     left: -35px;
@@ -1717,44 +1735,4 @@ input[type=range]::-webkit-slider-thumb {
   }
   
 
-  /* *********** CUSTOM ICONS ************** */
-  @font-face {
-    font-family: 'icomoon';
-    src:  url('/Users/conorkelly/Development/CB/il-cb-project/fonts/icomoon.eot?lzknwd');
-    src:  url('/Users/conorkelly/Development/CB/il-cb-project/fonts/icomoon.eot?lzknwd#iefix') format('embedded-opentype'),
-      url('/Users/conorkelly/Development/CB/il-cb-project/fonts/icomoon.ttf?lzknwd') format('truetype'),
-      url('/Users/conorkelly/Development/CB/il-cb-project/fonts/icomoon.woff?lzknwd') format('woff'),
-      url('/Users/conorkelly/Development/CB/il-cb-project/fonts/icomoon.svg?lzknwd#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-user-sm:before {
-    content: "\e901";
-    color: #a9b0d6;
-    font-size: 24px;
-    padding: 5px;
-  }
-  .icon-user-lg:before {
-    content: "\e900";
-    color: #a9b0d6;
-    font-size: 74px;
-    padding: 5px;
-  }
   
