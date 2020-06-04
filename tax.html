@@ -465,6 +465,7 @@
                                 type="number"
                                 class="form-control"
                                 aria-label="Amount (to the nearest euro)"
+                                value="4231.33"
                               />
                             </div>
                           </div>
@@ -527,7 +528,7 @@
                                     <input
                                       type="range"
                                       class="range"
-                                      min="4"
+                                      min="0"
                                       max="25"
                                       id="amount-employee"
                                       readonly=""
@@ -542,18 +543,14 @@
                                         display: block;
                                       "
                                     />
-                                    <output
-                                      class="bubble"
-                                      style="left: calc(52.381% + 0.142857px);"
-                                      >15%</output
-                                    >
+                                    <output class="bubble"></output>
                                   </div>
 
                                   <span class="r-v" id="amount-employee"></span>
                                 </div>
 
                                 <script>
-                                  allRanges = document.querySelectorAll(
+                                  var allRanges = document.querySelectorAll(
                                     ".range-wrap"
                                   );
                                   allRanges.forEach((wrap) => {
@@ -657,6 +654,7 @@
                       };
 
                       roundSlider.roundSlider({
+                        // readOnly: true,
                         radius: 80,
                         circleShape: "half-top",
                         min: range.attr("min"),
