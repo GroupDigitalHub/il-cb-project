@@ -1,11 +1,11 @@
 /* *********** CUSTOM ICONS ************** */
 @font-face {
     font-family: 'icomoon';
-    src:  url('https://www.dighubtest.com/fonts/icomoon.eot?lzknwd');
-    src:  url('https://www.dighubtest.com/fonts/icomoon.eot?lzknwd#iefix') format('embedded-opentype'),
-      url('https://www.dighubtest.com/fonts/icomoon.ttf?lzknwd') format('truetype'),
-      url('https://www.dighubtest.com/fonts/icomoon.woff?lzknwd') format('woff'),
-      url('https://www.dighubtest.com/fonts/icomoon.svg?lzknwd#icomoon') format('svg');
+    src:  url('/fonts/icomoon.eot?lzknwd');
+    src:  url('/fonts/icomoon.eot?lzknwd#iefix') format('embedded-opentype'),
+      url('/fonts/icomoon.ttf?lzknwd') format('truetype'),
+      url('/fonts/icomoon.woff?lzknwd') format('woff'),
+      url('/fonts/icomoon.svg?lzknwd#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
