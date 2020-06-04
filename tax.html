@@ -13,6 +13,7 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="stylesheet" href="css/custom-icons.css">
     <!-- Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.0.45/css/materialdesignicons.min.css" integrity="sha256-nRyVCcVDSlWN9d68r9M+rKBLE4k9Cp1j3XSY/umjvvU=" crossorigin="anonymous" />
@@ -228,17 +229,12 @@
                             <br>
                             <span id="customer-gross-monthly">€4,231</span>
                         </div>
-                        <div class="col-2">
-                            <br>
-                            <span class="profile-subtitle">Tax Band</span>
-                            <br>
-                            <span id="customer-tax-band">40%</span>
-                        </div>
+                        
                     </div>
                     <!-- END OF MODIFY PROFILE BOX-->
                     <!-- SLIDERS -->
 
-                    <div class="row">
+                    <div class="row tax-calculator-box">
                         <!-- START OF TAX BOX-->
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="col-lg-12 col-md-12 col-sm-12 tax-contributions">
@@ -268,7 +264,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">€</span>
                                             </div>
-                                            <input type="number" class="form-control" aria-label="Amount (to the nearest euro)">
+                                            <input type="text" class="form-control" id="disabledInput" aria-label="Amount (to the nearest euro)" placeholder="10,000">
                                         </div>
                                         </div>
                                         <div class="tax-input-box">
@@ -298,59 +294,56 @@
                                         <body>
 
                                             <div class="col-lg-12">
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <!---<div class="r-s">
-                                                            <input class="i-r" type="range" value="4" min="0" max="25">
-                                                            <span class="r-v"></span>
-                                                        </div> -->
-                                                        <div>
-                                                            <div class="range-wrap">
-                                                            <input type="range" class="range" min="4" max="25" id="amount-employee" class="range" readonly="" min="4" max="100" style="border: 0px; color: rgb(51, 51, 51); font-weight: bold; width: 100%; position: absolute; top: -25px; height: 25px; display: block;">
-                                                            <output class="bubble"></output>
+                                                    <div class="row">
+                                                            <div class="col-10">
+                                                                <!---<div class="r-s">
+                                                                    <input class="i-r" type="range" value="4" min="0" max="25">
+                                                                    <span class="r-v"></span>
+                                                                </div> -->
+                                                                <div>
+                                                                    <div class="range-wrap">
+                                                                    <input type="range" class="range" min="0" max="40" id="amount-employee" readonly="" style="border: 0px; color: rgb(51, 51, 51); font-weight: bold; width: 100%; position: absolute; top: -25px; height: 25px; display: block;">
+                                                                    <output class="bubble" style="left: calc(52.381% + 0.142857px);">15%</output>
+                                                                    </div>
+                                                                
+                                                                
+                                                                    <span class="r-v" id="amount-employee"></span>
+                                                                    
+                                                                </div>
+                                                                
+                                                                <script>
+                                                const allRanges = document.querySelectorAll(".range-wrap");
+                                                allRanges.forEach(wrap => {
+                                                    const range = wrap.querySelector(".range");
+                                                    const bubble = wrap.querySelector(".bubble");
+        
+                                                    range.addEventListener("input", () => {
+                                                        setBubble(range, bubble);
+                                                    });
+                                                    setBubble(range, bubble);
+                                                });
+        
+                                                function setBubble(range, bubble) {
+                                                    const val = range.value;
+                                                    const min = range.min ? range.min : 0;
+                                                    const max = range.max ? range.max : 100;
+                                                    const newVal = Number(((val - min) * 100) / (max - min));
+                                                    bubble.innerHTML = val;
+        
+                                                    // Sorta magic numbers based on size of the native UI thumb
+                                                    bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+                                                }
+                                                $('.range').on("input", function() {
+                                                    $('.bubble').val(this.value +" %" );
+                                                    }).trigger("change");
+                                                                </script>
                                                             </div>
-                                                        
-                                                        </span>
-                                                            <span class="r-v" id="amount-employee"></span>
-                                                            
-                                                        </div>
-                                                        
-                                                        <script>
-                                        const allRanges = document.querySelectorAll(".range-wrap");
-                                        allRanges.forEach(wrap => {
-                                            const range = wrap.querySelector(".range");
-                                            const bubble = wrap.querySelector(".bubble");
-
-                                            range.addEventListener("input", () => {
-                                                setBubble(range, bubble);
-                                            });
-                                            setBubble(range, bubble);
-                                        });
-
-                                        function setBubble(range, bubble) {
-                                            const val = range.value;
-                                            const min = range.min ? range.min : 0;
-                                            const max = range.max ? range.max : 100;
-                                            const newVal = Number(((val - min) * 100) / (max - min));
-                                            bubble.innerHTML = val;
-
-                                            // Sorta magic numbers based on size of the native UI thumb
-                                            bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
-                                        }
-                                        $('.range').on("input", function() {
-                                            $('.bubble').val(this.value +" %" );
-                                            }).trigger("change");
-                                                        </script>
-                                                    </div>
-                                                    <div class="tax-input-box">
-                                                            <span class="tax-label">Cost to <span class="total-contributions">€101.55</span> after tax saving.</span>
-                                                        </div>
-                                            <div class="col-lg-12 col-md-12 col-sm-12 submit-tax-changes flex-center">
+        <div class="col-2"><span>40%</span></div>
+                                                            <div class="tax-input-box">
+                                                                    <span class="tax-label">Cost to <span class="total-contributions">€101.55</span> after tax saving.</span>
+                                                                </div>
                                                     
-                                                    <button class="submit-tax-changes-btn" id="increaseContributions" value="Submit">Increase contributions</button>
-                    
-                                                </div>
-                                                </div>
+                                                        </div>
                                             </div>
 
                                             <!--<div id="slider1" class="input-range"></div>-->
@@ -359,6 +352,11 @@
                                     <div class="col-lg-6 col-md-6 col-sm-6 arc-pie">
                                         <div id="s1" class="i-r"></div>
                                     </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 submit-tax-changes flex-center">
+                                                    
+                                            <button class="submit-tax-changes-btn" id="increaseContributions" value="Submit">Increase contributions</button>
+            
+                                        </div>
                                 </div>
 
                             </div>
@@ -403,11 +401,11 @@
                                     value: 15,
                                     tooltipFormat: "changeTooltip",
                                     create: "onSliderCreate",
-                                    
+                                    disabled: true,
                                     label: {
-                                        min: 4,
-                                      max: 25,
-                                      step: 21
+                                        min: 0,
+                                      max: 40,
+                                      step: 39
                                     }
                                     });
 
