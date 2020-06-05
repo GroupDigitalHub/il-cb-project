@@ -1,579 +1,572 @@
-
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 
 @media (min-width: 1281px) {
-  
-    .nav-link {
-        display: none;
-    }
-    .col-lg-12.col-md-12.col-sm-12.ipad {
-        display: none;
-    }
-    .modal-body.one {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .modal-body.two {
-        display: none;
-    }
-    div#navbar-list-3 {
-        display: none;
-    }
-    .row.taxband {
-        margin: 15px 0px;
-    }
-    .row.taxband {
-        margin: 15px 0px;
-    }
-    .row.employee {
-        margin: 15px 0px;
-    }
-    .row.employer {
-        margin: 15px 0px;
-    }
-    .row.avc{
-        margin: 15px 0px;
-    }
-    .profile-box-mobile {
-        display: none;
-    }
+  .nav-link {
+    display: none;
   }
-  
-  /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    
-    .nav-link {
-        display: none;
-    }
-    .profile-box {
-        display: flex;
-    }
-    .welcome-box-1 {
-        display: flex;
-    }
-    .col-lg-12.col-md-12.col-sm-12.ipad {
-        display: none;
-    }
-    .modal-body.one {
-        display: flex;
-    }
-    .modal-body.two {
-        display: none;
-    }
-    .profile-box-mobile {
-        display: none;
-    }
-    .rs-container{
-        height: 125px !important;
-        width: 250px !important;
-      }
-    
+  .col-lg-12.col-md-12.col-sm-12.ipad {
+    display: none;
   }
-  
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
-    
-    .col-lg-12.col-md-12.col-sm-12.ipad {
-        display: flex;
-        justify-content: center;
-    }
-    .col-lg-3.col-md-3.col-sm-3.my-fund-value {
-        display: none;
-    }
-    .modify-projections-total {
-        font-size: 24px;
-    }
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-    
-    #sidebarCollapse {
-        display: block;
-    }
-    .projections-total {
-        justify-content: center;
-    }
-    .upper-right {
-        top: 15%;
-    }
-    .button-contributions {
-        align-self: center;
-    }
-    
-    .projections-icon img {
-        padding-bottom: 20px;
-    }
-    #employee-contribution {
-        order: 1;
-    }
-    #amount-employee {
-        order: 0
-    }
-    #employer-contribution {
-        order: 1;
-    }
-    #amount-employer {
-        order: 0
-    }
-    #avc-contribution {
-        order: 1;
-    }
-    #amount-avc {
-        order: 0
-    }
-    .my-balance-desktop {
-        display: none;
-    }
-    .my-balance-mobile {
-        display: block;
-    }
-    
-    .circle, .circle-2 {
-        border-radius: 90px;
-    }
-    .x {
-        display: none !important;
-    }  
-    .info-bar {
-        display: none;
-    } 
-    .welcome-box-mobile {
-        display: none !important;
-    }
-    .welcome-box-1 {
-        display: none !important;
-    }
-    .profile-box {
-        display: none;
-    }
-    .img-briefcase {
-        display: none;
-    }
-    .modal-body.one {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .modal-body.two {
-        display: none;
-    }
-    .dropdown-menu {
-        background-color: #fff !important;
-    }
-    .profile-box-mobile {
-        display: flex;
-    }
-    .rs-container{
-        height: 150px !important;
-        width: 300px !important;
-      }
-    .input-group-addon{
-        padding-left: 30px;
-        }
-        
+  .modal-body.one {
+    display: flex;
+    flex-flow: row wrap;
   }
-  
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-    
-    #sidebarCollapse {
-        display: block;
-    }
-    .projections-total {
-        justify-content: center;
-    }
-    .upper-right {
-        top: 15%;
-    }
-    .button-contributions {
-        align-self: center;
-    }
-    .projections-text {
-        
-    }
-    .projections-icon img {
-        padding-bottom: 20px;
-    }
-    #employee-contribution {
-        order: 1;
-    }
-    #amount-employee {
-        order: 0
-    }
-    #employer-contribution {
-        order: 1;
-    }
-    #amount-employer {
-        order: 0
-    }
-    #avc-contribution {
-        order: 1;
-    }
-    #amount-avc {
-        order: 0
-    }
-    .my-balance-desktop {
-        display: none;
-    }
-    .my-balance-mobile {
-        display: block;
-    }
-    
-    .circle, .circle-2 {
-        border-radius: 90px;
-    }
-    .x {
-        display: none !important;
-    }
-    .info-bar {
-        display: none;
-    }
-    .welcome-box-mobile {
-        display: none;
-    }
-    .welcome-box-1 {
-        display: none !important;
-    }
-    .profile-box {
-        display: none;
-    }
-    .col-lg-12.col-md-12.col-sm-12.ipad {
-        display: none;
-    }
-    .img-briefcase {
-        display: none;
-    }
-    .modal-body.one {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .modal-body.two {
-        display: none;
-    }
-    .dropdown-menu {
-        background-color: #fff !important;
-    }
-    .profile-box-mobile {
-        display: flex;
-    }
-    .font-size-18 {
-        font-size: 14px;
-    }
-    .input-group-addon{
-        padding-left: 30px;
-        }
+  .modal-body.two {
+    display: none;
   }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
-    h2 {
-        font-size: 1.8em;   
-    }
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-    
-    #sidebarCollapse {
-        display: block;
-    }
-    .projections-total {
-        justify-content: center;
-    }
-    .upper-right {
-        top: 15%;
-    }
-    .button-contributions {
-        align-self: center;
-    }
-    .projections-text {
-        
-    }
-    .projections-icon img {
-        padding-bottom: 20px;
-    }
-    #employee-contribution {
-        order: 1;
-    }
-    #amount-employee {
-        order: 0
-    }
-    #employer-contribution {
-        order: 1;
-    }
-    #amount-employer {
-        order: 0
-    }
-    #avc-contribution {
-        order: 1;
-    }
-    #amount-avc {
-        order: 0
-    }
-    .my-balance-desktop {
-        display: none;
-    }
-    .my-balance-mobile {
-        display: block;
-    }
-    
-    .circle, .circle-2 {
-        border-radius: 90px;
-    }
-    .x {
-        display: none !important;
-    }
-    .info-bar {
-        display: none;
-    } 
-    .profile-box {
-        display: none;
-    }
-    .profile {
-        display: none;
-    }
-    .nav-link {
-        display: none;
-    }
-    .welcome-box-mobile {
-        display: none;
-    }
-    .profile-box-mobile {
-        display: none;
-    }
-    .welcome-box-1 {
-        display: none !important;
-    }
-    .col-lg-12.col-md-12.col-sm-12.ipad {
-        display: none;
-    }
-    .img-briefcase {
-        display: none;
-    }
-    .modal-body.one {
-        display: none;
-    }
-    .modal-body.two {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .modal-arrow {
-        padding-left: 0px;
-    }
-    .next-step-box-2 {
-        margin-top: 20px;
-    }
-    .dropdown-menu {
-        background-color: #fff !important;
-    }
-    .profile-box-mobile {
-        display: flex;
-    }
-    .font-size-18 {
-        font-size: 14px;
-    }
-    .input-group-addon{
-        padding-left: 30px;
-        }
-        .rs-container{
-            height: 200px !important;
-            width: 200px !important;
-          }
-          .month-tab, .year-tab {
-            width: 100%
-        }
-        .ml-pl-0 {
-            margin: 0px;
-            padding: 0px;
-        }
-        .mr-pr-0 {
-            margin: 0px;
-            padding: 0px;
-        }
-        .input-group.mb-3{
-            width: 100%;
-        }
+  div#navbar-list-3 {
+    display: none;
   }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    
-    h2 {
-        font-size: 1.8em;   
-    }
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-    
-    #sidebarCollapse {
-        display: block;
-    }
-    .projections-total {
-        justify-content: center;
-    }
-    .upper-right {
-        top: 15%;
-    }
-    .button-contributions {
-        align-self: center;
-    }
-    .projections-text {
-        
-    }
-    .projections-icon img {
-        padding-bottom: 20px;
-    }
-    #employee-contribution {
-        order: 1;
-    }
-    #amount-employee {
-        order: 0
-    }
-    #employer-contribution {
-        order: 1;
-    }
-    #amount-employer {
-        order: 0
-    }
-    #avc-contribution {
-        order: 1;
-    }
-    #amount-avc {
-        order: 0
-    }
-    .my-balance-desktop {
-        display: none;
-    }
-    .my-balance-mobile {
-        display: block;
-    }
-    
-    .circle, .circle-2 {
-        border-radius: 90px;
-    }
-    .x {
-        display: none !important;
-    }
-    .profile {
-        display: none;
-    }
-    .info-bar {
-        display: none;
-    } 
-    .profile-box {
-        display: none;
-    }
-    
-    .welcome-box-1 {
-        display: none;
-    }
-    .profile-box-1 {
-        display: none;
-    }
-    .col-lg-12.col-md-12.col-sm-12.ipad {
-        display: none;
-    }
-    .img-briefcase {
-        display: none;
-    }
-    .modal-body.one {
-        display: none;
-    }
-    .modal-body.two {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .modal-arrow {
-        padding-left: 0px;
-    }
-    .next-step-box-2 {
-        margin-top: 20px;
-    }
-    .dropdown-menu {
-        background-color: #fff !important;
-    }
-    .profile-box-mobile {
-        display: flex;
-    }
-    .font-size-18 {
-        font-size: 14px;
-    }
-    .input-group-addon{
-    padding-left: 30px;
-    }
-    .rs-container{
-        height: 125px !important;
-        width: 250px !important;
-      }
-      .month-tab, .year-tab {
-          width: 100%
-      }
-      .ml-pl-0 {
-        margin: 0px;
-        padding: 0px;
-    }
-    .mr-pr-0 {
-        margin: 0px;
-        padding: 0px;
-    }
-    .input-group.mb-3{
-        width: 100%;
-    }
+  .row.taxband {
+    margin: 15px 0px;
+  }
+  .row.taxband {
+    margin: 15px 0px;
+  }
+  .row.employee {
+    margin: 15px 0px;
+  }
+  .row.employer {
+    margin: 15px 0px;
+  }
+  .row.avc {
+    margin: 15px 0px;
+  }
+  .profile-box-mobile {
+    display: none;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .nav-link {
+    display: none;
+  }
+  .profile-box {
+    display: flex;
+  }
+  .welcome-box-1 {
+    display: flex;
+  }
+  .col-lg-12.col-md-12.col-sm-12.ipad {
+    display: none;
+  }
+  .modal-body.one {
+    display: flex;
+  }
+  .modal-body.two {
+    display: none;
+  }
+  .profile-box-mobile {
+    display: none;
+  }
+  .rs-container {
+    height: 125px !important;
+    width: 250px !important;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .col-lg-12.col-md-12.col-sm-12.ipad {
+    display: flex;
+    justify-content: center;
+  }
+  .col-lg-3.col-md-3.col-sm-3.my-fund-value {
+    display: none;
+  }
+  .modify-projections-total {
+    font-size: 24px;
+  }
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
   }
 
-  .j {
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
+  #sidebarCollapse {
+    display: block;
   }
+  .projections-total {
+    justify-content: center;
+  }
+  .upper-right {
+    top: 15%;
+  }
+  .button-contributions {
+    align-self: center;
+  }
+
+  .projections-icon img {
+    padding-bottom: 20px;
+  }
+  #employee-contribution {
+    order: 1;
+  }
+  #amount-employee {
+    order: 0;
+  }
+  #employer-contribution {
+    order: 1;
+  }
+  #amount-employer {
+    order: 0;
+  }
+  #avc-contribution {
+    order: 1;
+  }
+  #amount-avc {
+    order: 0;
+  }
+  .my-balance-desktop {
+    display: none;
+  }
+  .my-balance-mobile {
+    display: block;
+  }
+
+  .circle,
+  .circle-2 {
+    border-radius: 90px;
+  }
+  .x {
+    display: none !important;
+  }
+  .info-bar {
+    display: none;
+  }
+  .welcome-box-mobile {
+    display: none !important;
+  }
+  .welcome-box-1 {
+    display: none !important;
+  }
+  .profile-box {
+    display: none;
+  }
+  .img-briefcase {
+    display: none;
+  }
+  .modal-body.one {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .modal-body.two {
+    display: none;
+  }
+  .dropdown-menu {
+    background-color: #fff !important;
+  }
+  .profile-box-mobile {
+    display: flex;
+  }
+  .rs-container {
+    height: 150px !important;
+    width: 300px !important;
+  }
+  .input-group-addon {
+    padding-left: 30px;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+
+  #sidebarCollapse {
+    display: block;
+  }
+  .projections-total {
+    justify-content: center;
+  }
+  .upper-right {
+    top: 15%;
+  }
+  .button-contributions {
+    align-self: center;
+  }
+  .projections-text {
+  }
+  .projections-icon img {
+    padding-bottom: 20px;
+  }
+  #employee-contribution {
+    order: 1;
+  }
+  #amount-employee {
+    order: 0;
+  }
+  #employer-contribution {
+    order: 1;
+  }
+  #amount-employer {
+    order: 0;
+  }
+  #avc-contribution {
+    order: 1;
+  }
+  #amount-avc {
+    order: 0;
+  }
+  .my-balance-desktop {
+    display: none;
+  }
+  .my-balance-mobile {
+    display: block;
+  }
+
+  .circle,
+  .circle-2 {
+    border-radius: 90px;
+  }
+  .x {
+    display: none !important;
+  }
+  .info-bar {
+    display: none;
+  }
+  .welcome-box-mobile {
+    display: none;
+  }
+  .welcome-box-1 {
+    display: none !important;
+  }
+  .profile-box {
+    display: none;
+  }
+  .col-lg-12.col-md-12.col-sm-12.ipad {
+    display: none;
+  }
+  .img-briefcase {
+    display: none;
+  }
+  .modal-body.one {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .modal-body.two {
+    display: none;
+  }
+  .dropdown-menu {
+    background-color: #fff !important;
+  }
+  .profile-box-mobile {
+    display: flex;
+  }
+  .font-size-18 {
+    font-size: 14px;
+  }
+  .input-group-addon {
+    padding-left: 30px;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  h2 {
+    font-size: 1.8em;
+  }
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+
+  #sidebarCollapse {
+    display: block;
+  }
+  .projections-total {
+    justify-content: center;
+  }
+  .upper-right {
+    top: 15%;
+  }
+  .button-contributions {
+    align-self: center;
+  }
+  .projections-text {
+  }
+  .projections-icon img {
+    padding-bottom: 20px;
+  }
+  #employee-contribution {
+    order: 1;
+  }
+  #amount-employee {
+    order: 0;
+  }
+  #employer-contribution {
+    order: 1;
+  }
+  #amount-employer {
+    order: 0;
+  }
+  #avc-contribution {
+    order: 1;
+  }
+  #amount-avc {
+    order: 0;
+  }
+  .my-balance-desktop {
+    display: none;
+  }
+  .my-balance-mobile {
+    display: block;
+  }
+
+  .circle,
+  .circle-2 {
+    border-radius: 90px;
+  }
+  .x {
+    display: none !important;
+  }
+  .info-bar {
+    display: none;
+  }
+  .profile-box {
+    display: none;
+  }
+  .profile {
+    display: none;
+  }
+  .nav-link {
+    display: none;
+  }
+  .welcome-box-mobile {
+    display: none;
+  }
+  .profile-box-mobile {
+    display: none;
+  }
+  .welcome-box-1 {
+    display: none !important;
+  }
+  .col-lg-12.col-md-12.col-sm-12.ipad {
+    display: none;
+  }
+  .img-briefcase {
+    display: none;
+  }
+  .modal-body.one {
+    display: none;
+  }
+  .modal-body.two {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .modal-arrow {
+    padding-left: 0px;
+  }
+  .next-step-box-2 {
+    margin-top: 20px;
+  }
+  .dropdown-menu {
+    background-color: #fff !important;
+  }
+  .profile-box-mobile {
+    display: flex;
+  }
+  .font-size-18 {
+    font-size: 14px;
+  }
+  .input-group-addon {
+    padding-left: 30px;
+  }
+  .rs-container {
+    height: 200px !important;
+    width: 200px !important;
+  }
+  .month-tab,
+  .year-tab {
+    width: 100%;
+  }
+  .ml-pl-0 {
+    margin: 0px;
+    padding: 0px;
+  }
+  .mr-pr-0 {
+    margin: 0px;
+    padding: 0px;
+  }
+  .input-group.mb-3 {
+    width: 100%;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  h2 {
+    font-size: 1.8em;
+  }
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+
+  #sidebarCollapse {
+    display: block;
+  }
+  .projections-total {
+    justify-content: center;
+  }
+  .upper-right {
+    top: 15%;
+  }
+  .button-contributions {
+    align-self: center;
+  }
+  .projections-text {
+  }
+  .projections-icon img {
+    padding-bottom: 20px;
+  }
+  #employee-contribution {
+    order: 1;
+  }
+  #amount-employee {
+    order: 0;
+  }
+  #employer-contribution {
+    order: 1;
+  }
+  #amount-employer {
+    order: 0;
+  }
+  #avc-contribution {
+    order: 1;
+  }
+  #amount-avc {
+    order: 0;
+  }
+  .my-balance-desktop {
+    display: none;
+  }
+  .my-balance-mobile {
+    display: block;
+  }
+
+  .circle,
+  .circle-2 {
+    border-radius: 90px;
+  }
+  .x {
+    display: none !important;
+  }
+  .profile {
+    display: none;
+  }
+  .info-bar {
+    display: none;
+  }
+  .profile-box {
+    display: none;
+  }
+
+  .welcome-box-1 {
+    display: none;
+  }
+  .profile-box-1 {
+    display: none;
+  }
+  .col-lg-12.col-md-12.col-sm-12.ipad {
+    display: none;
+  }
+  .img-briefcase {
+    display: none;
+  }
+  .modal-body.one {
+    display: none;
+  }
+  .modal-body.two {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .modal-arrow {
+    padding-left: 0px;
+  }
+  .next-step-box-2 {
+    margin-top: 20px;
+  }
+  .dropdown-menu {
+    background-color: #fff !important;
+  }
+  .profile-box-mobile {
+    display: flex;
+  }
+  .font-size-18 {
+    font-size: 14px;
+  }
+  .input-group-addon {
+    padding-left: 30px;
+  }
+  .rs-container {
+    height: 125px !important;
+    width: 250px !important;
+  }
+  .month-tab,
+  .year-tab {
+    width: 100%;
+  }
+  .ml-pl-0 {
+    margin: 0px;
+    padding: 0px;
+  }
+  .mr-pr-0 {
+    margin: 0px;
+    padding: 0px;
+  }
+  .input-group.mb-3 {
+    width: 100%;
+  }
+}
+
+.j {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
