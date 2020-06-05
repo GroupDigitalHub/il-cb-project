@@ -14,7 +14,7 @@ body {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
   height: 72px;
   width: 100%;
-  z-index: 0;
+  z-index: 1000;
 }
 #sidebar {
   width: 250px;
