@@ -1,0 +1,14 @@
+{
+  "name": "cb-prototype",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.com:effco/cb-prototype.git",
+  "author": "Tom <tom@effco.net>",
+  "license": "MIT",
+  "scripts": {
+    "publish-rpi": "scp -r * rpi010:~/cb-prototype"
+  },
+  "prettier": {
+    "semi": true
+  }
+}
